@@ -1,0 +1,203 @@
+{
+  "initialLabel": "initial",
+  "initialWidths": [
+    1920
+  ],
+  "changes": [
+    {
+      "label": "scrolled",
+      "baselineLabel": "initial",
+      "kind": "scroll",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "scrollX": 0,
+        "scrollY": 10644
+      },
+      "changed": [
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1)",
+          "changes": [
+            "attribute class",
+            "style background"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(1)",
+          "changes": [
+            "attribute class",
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+          "changes": [
+            "attribute class",
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(1)",
+          "changes": [
+            "attribute class",
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(1)",
+          "changes": [
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(2)",
+          "changes": [
+            "attribute class",
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(2) > span:nth-of-type(1)",
+          "changes": [
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(3)",
+          "changes": [
+            "attribute class",
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(3) > span:nth-of-type(1)",
+          "changes": [
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(4)",
+          "changes": [
+            "attribute class",
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(4) > span:nth-of-type(1)",
+          "changes": [
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(5)",
+          "changes": [
+            "attribute class",
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(5) > span:nth-of-type(1)",
+          "changes": [
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(6)",
+          "changes": [
+            "attribute class",
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(6) > span:nth-of-type(1)",
+          "changes": [
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(7)",
+          "changes": [
+            "attribute class",
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(7) > span:nth-of-type(1)",
+          "changes": [
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(8)",
+          "changes": [
+            "attribute class",
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(8) > span:nth-of-type(1)",
+          "changes": [
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1)",
+          "changes": [
+            "attribute class",
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > i:nth-of-type(1)",
+          "changes": [
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > button:nth-of-type(1)",
+          "changes": [
+            "attribute class",
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > button:nth-of-type(1) > i:nth-of-type(1)",
+          "changes": [
+            "style color"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(1)",
+          "changes": [
+            "attribute style"
+          ]
+        },
+        {
+          "selector": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(1)",
+          "changes": [
+            "attribute style"
+          ]
+        }
+      ],
+      "unmatchedInitial": []
+    },
+    {
+      "label": "returned",
+      "baselineLabel": "initial",
+      "kind": "return",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "scrollX": 0,
+        "scrollY": 0
+      },
+      "changed": [],
+      "unmatchedInitial": []
+    }
+  ],
+  "gaps": [
+    "Responsive initial states are untested; do not generalize this viewport.",
+    "No opened/closed interaction state was captured; inspect relevant controls.",
+    "initial: Some stylesheet bodies are unavailable"
+  ]
+}

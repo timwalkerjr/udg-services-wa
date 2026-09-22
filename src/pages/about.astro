@@ -1,0 +1,457 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/config/site';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: 'About UDG Services',
+  description: 'Learn about UDG Services, veteran-owned appliance repair company serving Richland, Pasco, Kennewick and the wider Tri-Cities.',
+  url: `${SITE.url}/about/`,
+};
+---
+
+<BaseLayout
+  title="About Us | Veteran-Owned Appliance Repair | UDG Services"
+  description="UDG Services is a veteran-owned appliance repair company serving homes and businesses across Richland, Pasco, Kennewick and the wider Tri-Cities."
+  headerVariant="solid"
+  jsonLd={jsonLd}
+>
+  <div class="pt-20" data-ps="src/pages/about.astro:4st1d3">
+    <!-- Hero Banner Section -->
+    <section class="px-3 md:px-4 pt-3 md:pt-4" data-ps="src/pages/about.astro:518k3t">
+      <div class="relative w-full min-h-[380px] sm:min-h-[420px] md:min-h-[520px] rounded-2xl md:rounded-3xl overflow-hidden shadow-sm" data-ps="src/pages/about.astro:4st1d5">
+        <img
+          src="https://pagesmith-cdn.com/9cf36851/images/edited_ef4725fdbd0b7442b2c254b377634693_7f0c8625-b22d03-1024.webp"
+          alt="UDG Services appliance repair crew in front of their service vans"
+          class="absolute inset-0 w-full h-full object-cover object-center"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+          data-ps="src/pages/about.astro:2ajx0m" />
+        <!-- Dark Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#090a0d]/70 via-[#090a0d]/45 to-[#090a0d]/80 pointer-events-none" data-ps="src/pages/about.astro:4st1d6"></div>
+
+        <!-- Hero Content Overlay -->
+        <div class="relative z-10 flex flex-col justify-end h-full min-h-[380px] sm:min-h-[420px] md:min-h-[520px] py-8 sm:py-10 md:py-14" data-ps="src/pages/about.astro:4st1ds">
+          <div class="max-w-7xl mx-auto w-full px-6 sm:px-8" data-ps="src/pages/about.astro:txwtwt">
+          <div class="inline-flex self-start items-center gap-2 mb-4 sm:mb-5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/25 text-white text-[10px] sm:text-xs uppercase tracking-[0.16em] font-medium" data-ps="src/pages/about.astro:4st1dt">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/about.astro:5nwamk"></span>
+            About
+          </div>
+
+          <h1 class="font-heading font-semibold text-white text-[32px] sm:text-[40px] md:text-[56px] lg:text-[72px] leading-[1.02] tracking-tight max-w-4xl" data-ps="src/pages/about.astro:h98bdw">
+            Veteran-owned,<br />
+            <em class="not-italic text-[#EC5A00]">Tri-Cities proud.</em>
+          </h1>
+
+          <p class="mt-3 sm:mt-4 md:mt-6 max-w-xl text-sm sm:text-base md:text-lg text-white/90 leading-relaxed font-normal" data-ps="src/pages/about.astro:qlqfxy">
+            UDG Services is a veteran-owned appliance repair company serving homes and businesses across Richland, Pasco, Kennewick and the wider Tri-Cities.
+          </p>
+
+          <div class="mt-5 sm:mt-6 md:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3" data-ps="src/pages/about.astro:4st1du">
+            <a
+              href="/book"
+              class="group inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-full bg-[#EC5A00] text-white text-sm md:text-base font-semibold hover:bg-[#d45100] transition-all hover:-translate-y-0.5 no-underline shadow-sm whitespace-nowrap"
+              data-ps="src/pages/about.astro:javfo9"
+            >
+              Book Service
+              <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <a
+              href="/services"
+              class="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-full bg-white/10 border border-white/25 text-white text-sm md:text-base font-semibold hover:bg-white/20 transition-all no-underline whitespace-nowrap backdrop-blur-sm"
+              data-ps="src/pages/about.astro:javfo8"
+            >
+              See services
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-16 sm:py-20 md:py-28 bg-[#FBFAF7]" data-ps="src/pages/about.astro:518k3u">
+      <div class="max-w-7xl mx-auto px-6 sm:px-8" data-ps="src/pages/about.astro:4st1dv">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-14 items-center" data-ps="src/pages/about.astro:4st1dw">
+          <!-- Left Column (Story Text) -->
+          <div class="lg:col-span-7 order-2 lg:order-1" data-ps="src/pages/about.astro:4st1dx">
+            <div class="inline-flex items-center gap-2 mb-6" data-ps="src/pages/about.astro:4st1dy">
+              <span class="w-2 h-2 rounded-full bg-[#020203]" data-ps="src/pages/about.astro:5nwami"></span>
+              <span class="text-[11px] uppercase tracking-[0.18em] font-semibold text-[#5a5661]" data-ps="src/pages/about.astro:5nwamh">OUR STORY</span>
+            </div>
+
+            <blockquote class="relative pl-0">
+              <span class="text-5xl sm:text-6xl md:text-7xl font-heading text-[#EC5A00] leading-none block -mb-2 select-none" data-ps="src/pages/about.astro:5nwalv">“</span>
+              <p class="text-2xl sm:text-3xl md:text-[38px] lg:text-[42px] font-heading font-medium tracking-tight leading-[1.18] text-[#020203]" data-ps="src/pages/about.astro:qlqfxx">
+                UDG Services was founded by Coast Guard veteran Greg Cooper with a simple idea: bring military discipline and honest service to appliance repair in the Tri-Cities. We show up on time, tell you straight what's wrong, and fix it right the first time.
+              </p>
+            </blockquote>
+
+            <div class="mt-8 pt-8 border-t border-[#eae6de] flex flex-wrap items-center gap-4 sm:gap-6" data-ps="src/pages/about.astro:4st1dz">
+              <div data-ps="src/pages/about.astro:4st1e0">
+                <p class="text-base font-semibold text-[#020203] font-heading" data-ps="src/pages/about.astro:qlqfxw">UDG Services LLC</p>
+                <p class="text-xs text-[#5a5661] mt-0.5" data-ps="src/pages/about.astro:qlqfxv">Veteran-owned · Tri-Cities, WA · License #UDGSES*15704</p>
+              </div>
+              <span class="hidden sm:block w-px h-8 bg-[#eae6de]" data-ps="src/pages/about.astro:5nwalu"></span>
+              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F5F3ED] border border-[#eae6de] text-xs font-medium text-[#020203]" data-ps="src/pages/about.astro:4st1e1">
+                <svg class="w-4 h-4 text-emerald-600" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+                </svg>
+                Veteran-Owned &amp; Operated
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column (Image) -->
+          <div class="lg:col-span-5 order-1 lg:order-2" data-ps="src/pages/about.astro:4st1en">
+            <div class="rounded-2xl sm:rounded-3xl overflow-hidden bg-[#F5F3ED] border border-[#eae6de] shadow-sm" data-ps="src/pages/about.astro:4st1eo">
+              <img
+                src="https://pagesmith-cdn.com/9cf36851/images/edited_bfac6f062abfff94440bf01b90863d42_528639fe-ed38ce-768.webp"
+                alt="UDG Services technicians in front of a service van"
+                class="w-full aspect-[4/5] object-cover object-top"
+                loading="lazy"
+                decoding="async" data-ps="src/pages/about.astro:2ajx0n" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Locals Trust Us Section -->
+    <section class="py-16 sm:py-20 md:py-24 bg-[#F5F3ED] border-y border-[#eae6de]" data-ps="src/pages/about.astro:518k3v">
+      <div class="max-w-7xl mx-auto px-6 sm:px-8" data-ps="src/pages/about.astro:4st1ep">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-12 items-start" data-ps="src/pages/about.astro:4st1eq">
+          <!-- Left: Title & Stats -->
+          <div class="lg:col-span-6" data-ps="src/pages/about.astro:4st1er">
+            <div class="inline-flex items-center gap-2 mb-4 px-3.5 py-1 rounded-full bg-[#FBFAF7] border border-[#eae6de] text-[11px] uppercase tracking-[0.18em] font-medium text-[#5a5661]" data-ps="src/pages/about.astro:4st1es">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/about.astro:5nwalt"></span>
+              Why locals trust us
+            </div>
+
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold tracking-tight text-[#020203] leading-[1.08] max-w-xl" data-ps="src/pages/about.astro:2kte69">
+              Honest service,<br />
+              <span class="italic text-[#EC5A00]" data-ps="src/pages/about.astro:5nwals">veteran-owned and local.</span>
+            </h2>
+
+            <!-- Stats Bar -->
+            <div class="mt-8 sm:mt-10 grid grid-cols-3 gap-4 border-t border-[#eae6de] pt-8" data-ps="src/pages/about.astro:4st1et">
+              <div class="pr-2 sm:pr-4 border-r border-[#eae6de]" data-ps="src/pages/about.astro:4st1eu">
+                <div class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-[#EC5A00] tracking-tight" data-ps="src/pages/about.astro:4st1ev">90%+</div>
+                <div class="mt-2 text-xs sm:text-sm text-[#5a5661] leading-snug" data-ps="src/pages/about.astro:4st1ew">Repairs completed on the first visit</div>
+              </div>
+              <div class="pr-2 sm:pr-4 border-r border-[#eae6de]" data-ps="src/pages/about.astro:4st1fi">
+                <div class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-[#020203] tracking-tight" data-ps="src/pages/about.astro:4st1fj">24/7</div>
+                <div class="mt-2 text-xs sm:text-sm text-[#5a5661] leading-snug" data-ps="src/pages/about.astro:4st1fk">Same-day emergency service</div>
+              </div>
+              <div data-ps="src/pages/about.astro:4st1fl">
+                <div class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-[#EC5A00] tracking-tight" data-ps="src/pages/about.astro:4st1fm">All</div>
+                <div class="mt-2 text-xs sm:text-sm text-[#5a5661] leading-snug" data-ps="src/pages/about.astro:4st1fn">Major appliance brands serviced</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Trust Features Grid -->
+          <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4" data-ps="src/pages/about.astro:4st1fo">
+            <!-- Card 1 -->
+            <div class="p-5 sm:p-6 rounded-2xl bg-[#FBFAF7] border border-[#eae6de] hover:border-[#EC5A00]/50 transition-colors" data-ps="src/pages/about.astro:4st1fp">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-[#F5F3ED] text-[#EC5A00]" data-ps="src/pages/about.astro:4st1fq">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+              </div>
+              <h3 class="mt-4 text-base font-semibold font-heading text-[#020203]" data-ps="src/pages/about.astro:jxyya5">Licensed &amp; Insured</h3>
+              <p class="mt-1.5 text-xs sm:text-sm text-[#5a5661] leading-relaxed" data-ps="src/pages/about.astro:qlqfxu">
+                Fully licensed and insured in Washington State (License #UDGSES*15704).
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="p-5 sm:p-6 rounded-2xl bg-[#FBFAF7] border border-[#eae6de] hover:border-[#EC5A00]/50 transition-colors" data-ps="src/pages/about.astro:4st1fr">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-[#F5F3ED] text-[#EC5A00]" data-ps="src/pages/about.astro:4st1gd">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <polygon points="12 8 13.5 11 17 11.5 14.5 14 15 17.5 12 16 9 17.5 9.5 14 7 11.5 10.5 11"/>
+                </svg>
+              </div>
+              <h3 class="mt-4 text-base font-semibold font-heading text-[#020203]" data-ps="src/pages/about.astro:jxyya4">Veteran-Owned</h3>
+              <p class="mt-1.5 text-xs sm:text-sm text-[#5a5661] leading-relaxed" data-ps="src/pages/about.astro:qlqfxt">
+                Founded by Coast Guard veteran Greg Cooper, we bring military discipline to every call.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="p-5 sm:p-6 rounded-2xl bg-[#FBFAF7] border border-[#eae6de] hover:border-[#EC5A00]/50 transition-colors" data-ps="src/pages/about.astro:4st1ge">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-[#F5F3ED] text-[#EC5A00]" data-ps="src/pages/about.astro:4st1gf">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <h3 class="mt-4 text-base font-semibold font-heading text-[#020203]" data-ps="src/pages/about.astro:c3lj1h">Upfront Pricing</h3>
+              <p class="mt-1.5 text-xs sm:text-sm text-[#5a5661] leading-relaxed" data-ps="src/pages/about.astro:qlqfx7">
+                You approve a clear repair price before any work begins.
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="p-5 sm:p-6 rounded-2xl bg-[#FBFAF7] border border-[#eae6de] hover:border-[#EC5A00]/50 transition-colors" data-ps="src/pages/about.astro:4st1gg">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-[#F5F3ED] text-[#EC5A00]" data-ps="src/pages/about.astro:4st1gh">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                </svg>
+              </div>
+              <h3 class="mt-4 text-base font-semibold font-heading text-[#020203]" data-ps="src/pages/about.astro:c3lj1g">Honesty is Our Policy</h3>
+              <p class="mt-1.5 text-xs sm:text-sm text-[#5a5661] leading-relaxed" data-ps="src/pages/about.astro:qlqfx6">
+                If a repair isn't worth it, we'll tell you. No upselling, no hidden fees.
+              </p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="p-5 sm:p-6 rounded-2xl bg-[#FBFAF7] border border-[#eae6de] hover:border-[#EC5A00]/50 transition-colors" data-ps="src/pages/about.astro:4st1gi">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-[#F5F3ED] text-[#EC5A00]" data-ps="src/pages/about.astro:4st1gj">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <h3 class="mt-4 text-base font-semibold font-heading text-[#020203]" data-ps="src/pages/about.astro:c3lj1f">Same-Day Emergency Service</h3>
+              <p class="mt-1.5 text-xs sm:text-sm text-[#5a5661] leading-relaxed" data-ps="src/pages/about.astro:qlqfx5">
+                Cooling failures and urgent breakdowns get priority response.
+              </p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="p-5 sm:p-6 rounded-2xl bg-[#FBFAF7] border border-[#eae6de] hover:border-[#EC5A00]/50 transition-colors" data-ps="src/pages/about.astro:4st1gk">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-[#F5F3ED] text-[#EC5A00]" data-ps="src/pages/about.astro:4st1gl">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m15 12-8.5 8.5c-.83.83-2.17.83-3 0 0 0 0 0 0 0a2.12 2.12 0 0 1 0-3L12 9"/>
+                  <path d="M17.64 15 22 10.64"/>
+                  <path d="m20.91 3.26-6.5 6.5"/>
+                  <path d="m9.09 15.09-6.5 6.5"/>
+                </svg>
+              </div>
+              <h3 class="mt-4 text-base font-semibold font-heading text-[#020203]" data-ps="src/pages/about.astro:c3lj1e">Warranty-Backed Repairs</h3>
+              <p class="mt-1.5 text-xs sm:text-sm text-[#5a5661] leading-relaxed" data-ps="src/pages/about.astro:qlqfx4">
+                Parts and labor backed by our warranty on every repair.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- On the job & In the community (Two Cards) -->
+    <section class="py-16 sm:py-20 md:py-28 bg-[#FBFAF7]" data-ps="src/pages/about.astro:518k3w">
+      <div class="max-w-7xl mx-auto px-6 sm:px-8" data-ps="src/pages/about.astro:4st1gm">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8" data-ps="src/pages/about.astro:4st1h8">
+          <!-- Card 1: On the job -->
+          <div class="rounded-2xl sm:rounded-3xl overflow-hidden bg-[#F5F3ED] border border-[#eae6de] flex flex-col" data-ps="src/pages/about.astro:4st1h9">
+            <div class="relative aspect-[16/10] overflow-hidden" data-ps="src/pages/about.astro:4st1ha">
+              <img
+                src="https://pagesmith-cdn.com/9cf36851/images/edited_42bef9163f16b0ddabbd205f495a62e3_f62b941f-6d2af7-1024.webp"
+                alt="UDG technician repairing a refrigerator in a Tri-Cities home"
+                class="w-full h-full object-cover object-center"
+                loading="lazy"
+                decoding="async" data-ps="src/pages/about.astro:2ajx0o" />
+            </div>
+            <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between" data-ps="src/pages/about.astro:4st1hb">
+              <div data-ps="src/pages/about.astro:4st1hc">
+                <h3 class="text-xl sm:text-2xl font-heading font-semibold text-[#020203]" data-ps="src/pages/about.astro:c3lj1d">On the job</h3>
+                <p class="mt-3 text-sm sm:text-base text-[#5a5661] leading-relaxed" data-ps="src/pages/about.astro:qlqfx3">
+                  We service every major appliance brand — refrigerators, washers, dryers, dishwashers, ovens, freezers and more — for homes and businesses across the Tri-Cities. Our technicians arrive with diagnostic tools and common parts, which is why we complete 90%+ of repairs on the first visit.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: In the community -->
+          <div class="rounded-2xl sm:rounded-3xl overflow-hidden bg-[#F5F3ED] border border-[#eae6de] flex flex-col" data-ps="src/pages/about.astro:4st1hd">
+            <div class="relative aspect-[16/10] overflow-hidden" data-ps="src/pages/about.astro:4st1he">
+              <img
+                src="https://pagesmith-cdn.com/9cf36851/images/edited_bba61f648c62e2a08b391e2eea5c0530_09d496cc-f9afa9-1024.webp"
+                alt="UDG Services technician greeting a homeowner in the Tri-Cities"
+                class="w-full h-full object-cover object-center"
+                loading="lazy"
+                decoding="async" data-ps="src/pages/about.astro:2ajx0p" />
+            </div>
+            <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between" data-ps="src/pages/about.astro:4st1hf">
+              <div data-ps="src/pages/about.astro:4st1hg">
+                <h3 class="text-xl sm:text-2xl font-heading font-semibold text-[#020203]" data-ps="src/pages/about.astro:c3lj1c">In the community</h3>
+                <p class="mt-3 text-sm sm:text-base text-[#5a5661] leading-relaxed" data-ps="src/pages/about.astro:qlqfx2">
+                  Veteran-owned and locally based, we're proud to keep the Tri-Cities running. From same-day emergency repairs for families to priority service for local restaurants and hotels, we treat every customer like a neighbor — because that's exactly what you are.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Meet crew button -->
+        <div class="mt-10 sm:mt-12 flex justify-center" data-ps="src/pages/about.astro:4st1hh">
+          <a
+            href="/team"
+            class="group inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[#F5F3ED] border border-[#eae6de] text-sm font-semibold text-[#020203] hover:border-[#EC5A00] hover:text-[#EC5A00] transition-all no-underline shadow-2xs"
+           data-ps="src/pages/about.astro:javfo7">
+            Meet the full crew
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Straight From the Shop / Real Work Gallery -->
+    <section class="py-16 sm:py-20 md:py-28 bg-[#F5F3ED] border-t border-[#eae6de]" data-ps="src/pages/about.astro:518k3x">
+      <div class="max-w-7xl mx-auto px-6 sm:px-8" data-ps="src/pages/about.astro:4st1i3">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10 sm:mb-12" data-ps="src/pages/about.astro:4st1i4">
+          <div data-ps="src/pages/about.astro:4st1i5">
+            <div class="inline-flex items-center gap-2 mb-4 px-3.5 py-1 rounded-full bg-[#FBFAF7] border border-[#eae6de] text-[11px] uppercase tracking-[0.18em] font-medium text-[#5a5661]" data-ps="src/pages/about.astro:4st1i6">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/about.astro:5nwalr"></span>
+              Straight from the shop
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold tracking-tight text-[#020203] leading-[1.08]" data-ps="src/pages/about.astro:2kte6a">
+              Real work,<br />
+              <span class="italic text-[#EC5A00]" data-ps="src/pages/about.astro:5nwalq">real repairs.</span>
+            </h2>
+          </div>
+          <p class="text-sm sm:text-base text-[#5a5661] max-w-md md:text-right" data-ps="src/pages/about.astro:qlqfx1">
+            No stock photos here — these are actual jobs our techs handled on benches and in Tri-Cities kitchens.
+          </p>
+        </div>
+
+        <!-- 6 Photos Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-5" data-ps="src/pages/about.astro:4st1i7">
+          <!-- Item 1 -->
+          <div class="group relative rounded-xl sm:rounded-2xl overflow-hidden bg-[#eae6de] aspect-square shadow-sm" data-ps="src/pages/about.astro:4st1i8">
+            <img
+              src="https://pagesmith-cdn.com/9cf36851/images/4be905af-3070-4ba8-96c6-ac131969fb84_compressed_full-size-12-48bb73-640.webp"
+              alt="UDG Services technician servicing a dishwasher motor assembly in the shop"
+              class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              decoding="async" data-ps="src/pages/about.astro:2ajx0q" />
+            <div class="absolute inset-x-0 bottom-0 p-3 sm:p-4 bg-gradient-to-t from-[#090a0d]/85 via-[#090a0d]/40 to-transparent" data-ps="src/pages/about.astro:4st1i9">
+              <span class="text-xs sm:text-sm font-medium text-white block" data-ps="src/pages/about.astro:5nwalp">Dishwasher motor teardown</span>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="group relative rounded-xl sm:rounded-2xl overflow-hidden bg-[#eae6de] aspect-square shadow-sm" data-ps="src/pages/about.astro:4st1ia">
+            <img
+              src="https://pagesmith-cdn.com/9cf36851/images/9a781284-08fb-418a-80bb-66a1ee75406b_compressed_full-size-11-42d6d2-640.webp"
+              alt="Close-up of gas range valve and wiring harness during a cooktop repair"
+              class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              decoding="async" data-ps="src/pages/about.astro:2ajx0r" />
+            <div class="absolute inset-x-0 bottom-0 p-3 sm:p-4 bg-gradient-to-t from-[#090a0d]/85 via-[#090a0d]/40 to-transparent" data-ps="src/pages/about.astro:4st1ib">
+              <span class="text-xs sm:text-sm font-medium text-white block" data-ps="src/pages/about.astro:5nwalo">Gas valve &amp; harness</span>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="group relative rounded-xl sm:rounded-2xl overflow-hidden bg-[#eae6de] aspect-square shadow-sm" data-ps="src/pages/about.astro:4st1ic">
+            <img
+              src="https://pagesmith-cdn.com/9cf36851/images/78092741-7ba5-4f1c-9e3f-d680ce8e16a8_compressed_full-size-1-fc9f80-640.webp"
+              alt="Front-load washing machine opened up to the drum during a repair diagnosis"
+              class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              decoding="async" data-ps="src/pages/about.astro:2ajx0s" />
+            <div class="absolute inset-x-0 bottom-0 p-3 sm:p-4 bg-gradient-to-t from-[#090a0d]/85 via-[#090a0d]/40 to-transparent" data-ps="src/pages/about.astro:txwtwk">
+              <span class="text-xs sm:text-sm font-medium text-white block" data-ps="src/pages/about.astro:5nwaln">Washer drum diagnosis</span>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="group relative rounded-xl sm:rounded-2xl overflow-hidden bg-[#eae6de] aspect-square shadow-sm" data-ps="src/pages/about.astro:txwtwl">
+            <img
+              src="https://pagesmith-cdn.com/9cf36851/images/01425b3c-e768-4d54-a86e-0b3b15092578_compressed_full-size-3-a717b9-768.webp"
+              alt="UDG Services technician inspecting an oven range at the parts warehouse"
+              class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              decoding="async" data-ps="src/pages/about.astro:2ajx0t" />
+            <div class="absolute inset-x-0 bottom-0 p-3 sm:p-4 bg-gradient-to-t from-[#090a0d]/85 via-[#090a0d]/40 to-transparent" data-ps="src/pages/about.astro:txwtwm">
+              <span class="text-xs sm:text-sm font-medium text-white block" data-ps="src/pages/about.astro:5nwalm">Oven range inspection</span>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="group relative rounded-xl sm:rounded-2xl overflow-hidden bg-[#eae6de] aspect-square shadow-sm" data-ps="src/pages/about.astro:txwtwn">
+            <img
+              src="https://pagesmith-cdn.com/9cf36851/images/0023e8ec-11bb-4f96-ae17-f480d684402a_compressed_full-size-5-8ad6cf-1024.webp"
+              alt="Close-up of an appliance control board during diagnostics"
+              class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              decoding="async" data-ps="src/pages/about.astro:2ajx0u" />
+            <div class="absolute inset-x-0 bottom-0 p-3 sm:p-4 bg-gradient-to-t from-[#090a0d]/85 via-[#090a0d]/40 to-transparent" data-ps="src/pages/about.astro:txwtwo">
+              <span class="text-xs sm:text-sm font-medium text-white block" data-ps="src/pages/about.astro:5nwal0">Control board diagnostics</span>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="group relative rounded-xl sm:rounded-2xl overflow-hidden bg-[#eae6de] aspect-square shadow-sm" data-ps="src/pages/about.astro:txwtwp">
+            <img
+              src="https://pagesmith-cdn.com/9cf36851/images/2c0a1202-6910-4253-b555-c2bf392959de_compressed_full-size-9-46a2c3-640.webp"
+              alt="Dryer opened up showing the blower wheel and vent during service"
+              class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              decoding="async" data-ps="src/pages/about.astro:2ajx0v" />
+            <div class="absolute inset-x-0 bottom-0 p-3 sm:p-4 bg-gradient-to-t from-[#090a0d]/85 via-[#090a0d]/40 to-transparent" data-ps="src/pages/about.astro:txwtwq">
+              <span class="text-xs sm:text-sm font-medium text-white block" data-ps="src/pages/about.astro:5nwakz">Dryer blower service</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pre-Footer CTA Section -->
+    <section class="py-16 sm:py-24 md:py-28 bg-[#FBFAF7] text-center" data-ps="src/pages/about.astro:518k3y">
+      <div class="max-w-4xl mx-auto px-6 sm:px-8 flex flex-col items-center" data-ps="src/pages/about.astro:txwtwr">
+        <div class="inline-flex items-center gap-2 mb-5 px-3.5 py-1 rounded-full bg-[#F5F3ED] border border-[#eae6de] text-[11px] uppercase tracking-[0.18em] font-medium text-[#5a5661]" data-ps="src/pages/about.astro:txwtws">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/about.astro:5nwaky"></span>
+          SAY HI
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-semibold tracking-tight text-[#020203] leading-[1.06] max-w-3xl" data-ps="src/pages/about.astro:2kte6b">
+          Prefer a quick chat<br />
+          <span class="italic text-[#EC5A00]" data-ps="src/pages/about.astro:5nwakx">before booking?</span>
+        </h2>
+
+        <p class="mt-4 sm:mt-5 text-sm sm:text-base md:text-lg text-[#5a5661] max-w-xl" data-ps="src/pages/about.astro:qlqfx0">
+          Send a message and we'll get back to you as soon as we can.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5 w-full sm:w-auto" data-ps="src/pages/about.astro:txwtwt">
+          <a
+            href="/book"
+            class="group inline-flex items-center justify-center gap-2 px-7 py-3.5 sm:py-4 rounded-full bg-[#090a0d] text-white text-sm md:text-base font-semibold hover:bg-black transition-all hover:-translate-y-0.5 shadow-sm no-underline w-full sm:w-auto"
+           data-ps="src/pages/about.astro:javfo6">
+            Book Service
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+          <a
+            href="/contact"
+            class="inline-flex items-center justify-center gap-2 px-7 py-3.5 sm:py-4 rounded-full bg-transparent text-[#020203] text-sm md:text-base font-semibold hover:text-[#EC5A00] transition-colors no-underline w-full sm:w-auto"
+           data-ps="src/pages/about.astro:javfo5">
+            Send a message
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

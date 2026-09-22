@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "hasForms": false,
+  "embeds": [
+    {
+      "src": "https://www.google.com/maps?q=Richland%2C+WA&t=&z=12&ie=UTF8&iwloc=&output=embed",
+      "title": "UDG Services location — Tri-Cities, WA",
+      "width": "100%",
+      "height": "360",
+      "allowFullscreen": false,
+      "observation": {
+        "state": "initial",
+        "viewportWidth": 1920,
+        "width": 741.75,
+        "height": 360
+      }
+    }
+  ]
+}

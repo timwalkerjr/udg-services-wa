@@ -1,0 +1,496 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/config/site';
+
+export const prerender = true;
+
+const title = "Our Services | Appliance Repair | UDG Services";
+const description = "Appliance repair for every room across Richland, Pasco, Kennewick, and the Tri-Cities. Refrigerators, washers, dryers, dishwashers, ovens, and more.";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "UDG Services",
+  "image": "https://public.readdy.ai/ai/img_res/fca5f491f55ac01816dd784e81032f29.webp",
+  "description": description,
+  "url": `${SITE.url}/services/`,
+  "telephone": "+15093004042",
+  "priceRange": "$$",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Richland, Pasco, Kennewick, and surrounding Tri-Cities areas"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Richland",
+    "addressRegion": "WA",
+    "addressCountry": "US"
+  }
+};
+
+const services = [
+  {
+    title: "Refrigerator Repair",
+    tag: "Home",
+    badge: "Upfront pricing",
+    description: "Not cooling, leaking, or making odd noises? We repair all refrigerator types — French door, side-by-side, top and bottom freezer — across every major brand in the Tri-Cities.",
+    image: "https://pagesmith-cdn.com/9cf36851/images/edited_385936e84d932591c8aa593ecd7b7e10_c8d2122b-a31ff6-1024.webp",
+    alt: "Refrigerator Repair — appliance repair in the Tri-Cities, WA",
+    icon: "fridge",
+  },
+  {
+    title: "Washing Machine Repair",
+    tag: "Home",
+    badge: "Upfront pricing",
+    description: "Won't drain, won't spin, or leaking water? We fix front-load and top-load washers quickly — most repairs completed on the first visit with parts on hand.",
+    image: "https://pagesmith-cdn.com/9cf36851/images/edited_d52c0cb057202bd3cdccce92215f54bc_d2b89a67-66aea3-1024.webp",
+    alt: "Washing Machine Repair — appliance repair in the Tri-Cities, WA",
+    icon: "washer",
+  },
+  {
+    title: "Dryer Repair",
+    tag: "Home",
+    badge: "Upfront pricing",
+    description: "No heat, long dry times, or a drum that won't turn? Our technicians repair both gas and electric dryers and check your vent system for safe, efficient operation.",
+    image: "https://pagesmith-cdn.com/9cf36851/images/edited_716ff553a05b0285809b25976ad5b3b6_eace0517-9e1298-1024.webp",
+    alt: "Dryer Repair — appliance repair in the Tri-Cities, WA",
+    icon: "dryer",
+  },
+  {
+    title: "Dishwasher Repair",
+    tag: "Home",
+    badge: "Upfront pricing",
+    description: "Not cleaning, not draining, or leaking? We service every major dishwasher brand including built-in, portable and drawer-style models across Richland, Pasco and Kennewick.",
+    image: "https://pagesmith-cdn.com/9cf36851/images/edited_11a0a3ac65001e70382c5a2b0fd1f192_1db7a44d-9a9bed-1024.webp",
+    alt: "Dishwasher Repair — appliance repair in the Tri-Cities, WA",
+    icon: "dishwasher",
+  },
+  {
+    title: "Oven & Range Repair",
+    tag: "Home",
+    badge: "Upfront pricing",
+    description: "Oven not heating, burners not lighting, or temperature off? We repair gas and electric ovens, ranges, cooktops and wall ovens from all major brands.",
+    image: "https://pagesmith-cdn.com/9cf36851/images/edited_7ba145b9fbc4ab97cdbeadad49592c44_00b3ef17-e98db1-1024.webp",
+    alt: "Oven & Range Repair — appliance repair in the Tri-Cities, WA",
+    icon: "oven",
+  },
+  {
+    title: "Freezer Repair",
+    tag: "Home",
+    badge: "Upfront pricing",
+    description: "Food at risk? A freezer failure is urgent. We prioritize freezer emergencies with same-day service to protect your stored meat, produce and bulk purchases.",
+    image: "https://pagesmith-cdn.com/9cf36851/images/edited_111b0210779a1edab38e97dda744a454_def42300-7ae885-1024.webp",
+    alt: "Freezer Repair — appliance repair in the Tri-Cities, WA",
+    icon: "freezer",
+  },
+  {
+    title: "Microwave Repair",
+    tag: "Home",
+    badge: "Upfront pricing",
+    description: "Not heating, sparking, or the turntable stopped? We repair over-the-range, built-in and countertop microwaves safely and quickly.",
+    image: "https://pagesmith-cdn.com/9cf36851/images/edited_c26aa81334f0b97ce8812b4ecc394e88_1aae6299-dc077e-1024.webp",
+    alt: "Microwave Repair — appliance repair in the Tri-Cities, WA",
+    icon: "microwave",
+  },
+  {
+    title: "Garbage Disposal Repair",
+    tag: "Home",
+    badge: "Upfront pricing",
+    description: "Jammed, leaking, or humming without grinding? We repair and replace all disposal models, from basic Badger series to powerful Evolution units.",
+    image: "https://pagesmith-cdn.com/9cf36851/images/edited_8412afa070350eb0e0efcefafdc2c6bd_c14ee467-5bf506-1024.webp",
+    alt: "Garbage Disposal Repair — appliance repair in the Tri-Cities, WA",
+    icon: "disposal",
+  },
+  {
+    title: "Ice Maker Repair",
+    tag: "Home",
+    badge: "Upfront pricing",
+    description: "No ice or leaking water lines? We diagnose and repair built-in and freestanding ice makers so your fridge or freezer keeps producing ice reliably.",
+    image: "https://pagesmith-cdn.com/9cf36851/images/edited_65e45019c945f4a36e910d544601eddb_6ce52ca3-f6b121-1024.webp",
+    alt: "Ice Maker Repair — appliance repair in the Tri-Cities, WA",
+    icon: "icemaker",
+  },
+  {
+    title: "Grill & BBQ Repair",
+    tag: "Home",
+    badge: "Upfront pricing",
+    description: "Grill not lighting or heating unevenly? We repair gas grills, infrared systems and smokers — including Char-Broil TRU-Infrared — so your outdoor cooking stays on track.",
+    image: "https://pagesmith-cdn.com/9cf36851/images/edited_1deb67900f8fb397ac3a03ec251a280e_b3fbef0d-dbc16c-1024.webp",
+    alt: "Grill & BBQ Repair — appliance repair in the Tri-Cities, WA",
+    icon: "grill",
+  },
+  {
+    title: "Appliance Maintenance",
+    tag: "Home",
+    badge: "Upfront pricing",
+    description: "An ounce of prevention is worth a pound of cure. Our maintenance plans inspect, clean and test your appliances to extend their life and reduce surprise breakdowns.",
+    image: "https://pagesmith-cdn.com/9cf36851/images/edited_24d29355a96821540d685ff1ec7bd59c_35c41c15-469e74-1024.webp",
+    alt: "Appliance Maintenance — appliance repair in the Tri-Cities, WA",
+    icon: "maintenance",
+  },
+  {
+    title: "Emergency Appliance Repair",
+    tag: "Home",
+    badge: "Upfront pricing",
+    description: "Same-day emergency service for refrigerators, freezers, ovens and freezers. 90%+ of our repairs are completed on the first visit — no waiting around for return trips.",
+    image: "https://pagesmith-cdn.com/9cf36851/images/edited_4842ac3566ef055345de2ceaec1b5a0e_ec4dcfad-f64e69-1024.webp",
+    alt: "Emergency Appliance Repair — appliance repair in the Tri-Cities, WA",
+    icon: "emergency",
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  headerVariant="solid"
+  jsonLd={jsonLd}
+>
+  <div class="pt-16 md:pt-20 pb-24 lg:pb-0" data-ps="src/pages/services.astro:root">
+    <!-- Hero Banner Section -->
+    <section class="px-3 md:px-4 pt-3 md:pt-4" data-ps="src/pages/services.astro:hero-sec">
+      <div class="relative w-full min-h-[380px] sm:min-h-[420px] md:min-h-[520px] rounded-2xl md:rounded-3xl overflow-hidden shadow-sm" data-ps="src/pages/services.astro:hero-box">
+        <img
+          alt="UDG Services appliance technician working on a repair"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+          class="absolute inset-0 w-full h-full object-cover object-top"
+          src="https://pagesmith-cdn.com/9cf36851/images/edited_f6b3bd27f23e0f98faf0cc5c9884dd46_a74b9826-a162e8-1024.webp"
+          data-ps="src/pages/services.astro:hero-img"
+        />
+        <!-- Dark Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#090a0d]/70 via-[#090a0d]/45 to-[#090a0d]/80 pointer-events-none" data-ps="src/pages/services.astro:hero-grad"></div>
+
+        <!-- Hero Content Overlay -->
+        <div class="relative z-10 flex flex-col justify-end h-full min-h-[380px] sm:min-h-[420px] md:min-h-[520px] max-w-7xl mx-auto w-full px-6 sm:px-8 py-8 sm:py-10 md:py-14" data-ps="src/pages/services.astro:hero-content">
+          <div class="inline-flex self-start items-center gap-2 mb-4 sm:mb-5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/25 text-white text-[10px] sm:text-xs uppercase tracking-[0.16em] font-medium" data-ps="src/pages/services.astro:hero-badge">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/services.astro:6ra1jb"></span>
+            What We Do
+          </div>
+          <h1 class="font-heading font-semibold text-white text-[32px] sm:text-[40px] md:text-[56px] lg:text-[72px] leading-[1.02] tracking-tight max-w-4xl" data-ps="src/pages/services.astro:hero-title">
+            Appliance repair<br />
+            <em class="not-italic text-[#EC5A00]">for every room.</em>
+          </h1>
+          <p class="mt-3 sm:mt-4 md:mt-6 max-w-xl text-sm sm:text-base md:text-lg text-white/90 leading-relaxed font-normal" data-ps="src/pages/services.astro:hero-desc">
+            Every major brand, homes and businesses across the Tri-Cities — no confusing jargon, no surprise pricing.
+          </p>
+          <div class="mt-5 sm:mt-6 md:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3" data-ps="src/pages/services.astro:hero-actions">
+            <a
+              class="group inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-full bg-[#EC5A00] text-white text-sm md:text-base font-semibold hover:bg-[#d45100] transition-all hover:-translate-y-0.5 no-underline shadow-sm whitespace-nowrap"
+              href="/book"
+              data-ps="src/pages/services.astro:hero-book-btn"
+            >
+              Book Service
+              <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <a
+              class="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-full bg-white/10 border border-white/25 text-white text-sm md:text-base font-semibold hover:bg-white/20 transition-all no-underline whitespace-nowrap backdrop-blur-sm"
+              href="/pricing"
+              data-ps="src/pages/services.astro:hero-pricing-btn"
+            >
+              View pricing
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Grid Section with Toggle -->
+    <section class="px-4 md:px-8 py-12 md:py-20 bg-[#FBFAF7]" data-ps="src/pages/services.astro:services-sec">
+      <!-- Filter Toggle Tabs -->
+      <div class="flex items-center justify-center mb-8 sm:mb-10" data-ps="src/pages/services.astro:filter-wrap">
+        <div class="inline-flex items-center p-1 rounded-full bg-[#F5F3ED] border border-[#eae6de] max-w-full" data-ps="src/pages/services.astro:filter-box">
+          <button
+            type="button"
+            class="px-3 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold cursor-pointer whitespace-nowrap transition-colors bg-[#090a0d] text-white"
+            data-ps="src/pages/services.astro:tab-res"
+          >
+            Homes &amp; residential
+          </button>
+          <button
+            type="button"
+            class="px-3 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold cursor-pointer whitespace-nowrap transition-colors text-[#5a5661] hover:text-[#020203]"
+            data-ps="src/pages/services.astro:tab-comm"
+          >
+            Commercial &amp; business
+          </button>
+        </div>
+      </div>
+
+      <!-- Section Title -->
+      <div class="max-w-5xl mx-auto text-center mb-10 md:mb-14" data-ps="src/pages/services.astro:title-wrap">
+        <h2 class="text-2xl sm:text-3xl md:text-5xl font-heading font-semibold tracking-tight text-[#020203] leading-[1.05]" data-ps="src/pages/services.astro:title-h2">
+          Residential — <em class="not-italic text-[#EC5A00]">homes &amp; properties.</em>
+        </h2>
+        <p class="mt-4 text-[#5a5661] max-w-2xl mx-auto" data-ps="src/pages/services.astro:title-desc">
+          From a fridge that won't cool to a washer that won't spin — quick, clean, and clearly priced.
+        </p>
+      </div>
+
+      <!-- Grid of 12 Services -->
+      <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5" data-ps="src/pages/services.astro:grid-cards">
+        {services.map((item, idx) => (
+          <article class="group relative flex flex-col rounded-2xl overflow-hidden bg-[#FBFAF7] border border-[#eae6de] hover:border-[#cfc9be] transition-all duration-300 hover:-translate-y-1 shadow-2xs" data-ps={`src/pages/services.astro:card-${idx}`}>
+            <div class="relative aspect-[4/3] overflow-hidden bg-[#eae6de]" data-ps={`src/pages/services.astro:on4k2h-${idx}`}>
+              <img
+                alt={item.alt}
+                loading="lazy"
+                decoding="async"
+                class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                src={item.image} data-ps={`src/pages/services.astro:ex27fo-${idx}`} />
+              <div class="absolute top-3 left-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#FBFAF7]/90 backdrop-blur-sm text-[11px] text-[#27272a] uppercase tracking-[0.14em] font-medium" data-ps={`src/pages/services.astro:on4k2g-${idx}`}>
+                {item.icon === 'fridge' && (
+                  <svg class="w-3.5 h-3.5 text-[#EC5A00]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                    <line x1="4" y1="10" x2="20" y2="10"></line>
+                    <line x1="9" y1="6" x2="9" y2="7"></line>
+                    <line x1="9" y1="14" x2="9" y2="16"></line>
+                  </svg>
+                )}
+                {item.icon === 'washer' && (
+                  <svg class="w-3.5 h-3.5 text-[#EC5A00]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.47a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.47a2 2 0 00-1.34-2.23z"></path>
+                  </svg>
+                )}
+                {item.icon === 'dryer' && (
+                  <svg class="w-3.5 h-3.5 text-[#EC5A00]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>
+                  </svg>
+                )}
+                {item.icon === 'dishwasher' && (
+                  <svg class="w-3.5 h-3.5 text-[#EC5A00]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                    <path d="M8 14h.01M12 14h.01M16 14h.01"></path>
+                  </svg>
+                )}
+                {item.icon === 'oven' && (
+                  <svg class="w-3.5 h-3.5 text-[#EC5A00]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+                  </svg>
+                )}
+                {item.icon === 'freezer' && (
+                  <svg class="w-3.5 h-3.5 text-[#EC5A00]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="2" x2="12" y2="22"></line>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+                    <line x1="19.07" y1="4.93" x2="4.93" y2="19.07"></line>
+                  </svg>
+                )}
+                {item.icon === 'microwave' && (
+                  <svg class="w-3.5 h-3.5 text-[#EC5A00]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                )}
+                {item.icon === 'disposal' && (
+                  <svg class="w-3.5 h-3.5 text-[#EC5A00]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.785 1.785 0 0 1-.004-1.784L7.196 9.5"></path>
+                    <path d="M11 19h8.203a1.83 1.83 0 0 0 1.556-.89 1.784 1.784 0 0 0 0-1.775l-1.226-2.12"></path>
+                    <path d="m14 16-3 3 3 3"></path>
+                    <path d="M8.293 13.596 5.6 9.5 9.5 3"></path>
+                    <path d="m14.5 3 4.5 7.5-2.293 4.096"></path>
+                    <path d="M21 9h-4"></path>
+                  </svg>
+                )}
+                {item.icon === 'icemaker' && (
+                  <svg class="w-3.5 h-3.5 text-[#EC5A00]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"></path>
+                    <line x1="8" y1="16" x2="8.01" y2="16"></line>
+                    <line x1="8" y1="20" x2="8.01" y2="20"></line>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                    <line x1="12" y1="22" x2="12.01" y2="22"></line>
+                    <line x1="16" y1="16" x2="16.01" y2="16"></line>
+                    <line x1="16" y1="20" x2="16.01" y2="20"></line>
+                  </svg>
+                )}
+                {item.icon === 'grill' && (
+                  <svg class="w-3.5 h-3.5 text-[#EC5A00]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+                  </svg>
+                )}
+                {item.icon === 'maintenance' && (
+                  <svg class="w-3.5 h-3.5 text-[#EC5A00]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                    <path d="m9 16 2 2 4-4"></path>
+                  </svg>
+                )}
+                {item.icon === 'emergency' && (
+                  <svg class="w-3.5 h-3.5 text-[#EC5A00]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="13" r="8"></circle>
+                    <path d="M12 9v4l2 2"></path>
+                    <path d="M5 3 2 6"></path>
+                    <path d="m22 6-3-3"></path>
+                    <path d="M6.38 18.7 4 21"></path>
+                    <path d="M17.64 18.67 20 21"></path>
+                  </svg>
+                )}
+                {item.tag}
+              </div>
+              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-[#090a0d] text-white text-xs font-semibold" data-ps={`src/pages/services.astro:on4k2f-${idx}`}>
+                {item.badge}
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between" data-ps={`src/pages/services.astro:on4k2e-${idx}`}>
+              <div data-ps={`src/pages/services.astro:on4k2d-${idx}`}>
+                <h3 class="text-lg font-heading font-semibold text-[#020203]" data-ps={`src/pages/services.astro:bkhybv-${idx}`}>{item.title}</h3>
+                <p class="mt-2 text-sm text-[#5a5661] leading-relaxed" data-ps={`src/pages/services.astro:gtmjuw-${idx}`}>{item.description}</p>
+              </div>
+              <div class="mt-5 flex items-center justify-between pt-2" data-ps={`src/pages/services.astro:on4k2c-${idx}`}>
+                <a
+                  class="group/btn inline-flex items-center gap-1.5 text-sm font-semibold text-[#171F2E] hover:text-[#020203] transition-colors cursor-pointer whitespace-nowrap no-underline"
+                  href="/book"
+                 data-ps={`src/pages/services.astro:9pon5y-${idx}`}>
+                  Book this service
+                  <svg class="w-4 h-4 transition-transform group-hover/btn:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <a
+                  aria-label={`Ask about ${item.title}`}
+                  class="w-8 h-8 flex items-center justify-center rounded-full bg-[#F5F3ED] text-[#27272a] hover:bg-[#EC5A00] hover:text-white transition-colors cursor-pointer no-underline"
+                  href="/contact"
+                 data-ps={`src/pages/services.astro:9pon5x-${idx}`}>
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- Emergency & Warranty Dual Section -->
+    <section class="px-4 md:px-8 py-12 sm:py-16 md:py-24 bg-[#F5F3ED]" data-ps="src/pages/services.astro:dual-sec">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-5" data-ps="src/pages/services.astro:dual-grid">
+        <!-- Emergency Left Card -->
+        <div class="lg:col-span-1 flex flex-col justify-center p-6 sm:p-8 md:p-10 rounded-2xl bg-[#090a0d] text-white" data-ps="src/pages/services.astro:emg-card">
+          <span class="text-xs uppercase tracking-[0.18em] text-[#EC5A00] mb-3 font-medium" data-ps="src/pages/services.astro:6ra1ja">Emergency</span>
+          <h3 class="text-xl sm:text-2xl md:text-3xl font-heading font-semibold leading-tight text-white" data-ps="src/pages/services.astro:bkhybu">Appliance emergency right now?</h3>
+          <p class="mt-3 text-sm text-[#d4d4d8] leading-relaxed" data-ps="src/pages/services.astro:gtmjuv">
+            If your fridge or freezer has stopped cooling, or your oven quit before a big meal, call us immediately. We offer same-day emergency service across the Tri-Cities.
+          </p>
+          <a
+            href="tel:+15093004042"
+            class="mt-6 inline-flex self-start items-center gap-2 px-5 py-3 rounded-full bg-[#EC5A00] text-white text-sm font-semibold hover:bg-[#d45100] transition-colors cursor-pointer whitespace-nowrap shadow-sm no-underline"
+            data-ps="src/pages/services.astro:emg-call-btn"
+          >
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/>
+            </svg>
+            (509) 300-4042
+          </a>
+        </div>
+
+        <!-- Warranty & Maintenance Right Card -->
+        <div class="lg:col-span-2 rounded-2xl overflow-hidden bg-[#FBFAF7] border border-[#eae6de] flex flex-col md:flex-row shadow-2xs" data-ps="src/pages/services.astro:wty-card">
+          <div class="relative w-full md:w-1/2 aspect-[4/3] md:aspect-auto md:min-h-[320px]" data-ps="src/pages/services.astro:on4k2b">
+            <img
+              alt="UDG technician repairing a refrigerator"
+              loading="lazy"
+              decoding="async"
+              class="w-full h-full object-cover object-top"
+              src="https://pagesmith-cdn.com/9cf36851/images/edited_d52d8607c47473582932d7bbbf9a6a4c_508a8695-f9afde-1024.webp" data-ps="src/pages/services.astro:ex27fp" />
+          </div>
+          <div class="flex-1 p-5 sm:p-6 md:p-10 flex flex-col justify-center" data-ps="src/pages/services.astro:on4k2a">
+            <span class="text-xs uppercase tracking-[0.18em] text-[#5a5661] mb-3 font-medium" data-ps="src/pages/services.astro:6ra1io">Warranty &amp; maintenance</span>
+            <h3 class="text-xl sm:text-2xl md:text-3xl font-heading font-semibold text-[#020203] leading-tight" data-ps="src/pages/services.astro:bkhybt">Warranty-backed repairs, every time.</h3>
+            <p class="mt-3 text-sm text-[#5a5661] leading-relaxed max-w-md" data-ps="src/pages/services.astro:gtmjuu">
+              Every repair is backed by our warranty on parts and labor. Our maintenance plans keep your appliances efficient year-round and catch small issues before they become big ones.
+            </p>
+            <div class="mt-6" data-ps="src/pages/services.astro:on4k29">
+              <a
+                class="group inline-flex items-center gap-2 px-5 py-3 rounded-full bg-[#090a0d] text-white text-sm font-semibold hover:bg-black transition-all hover:-translate-y-0.5 cursor-pointer whitespace-nowrap shadow-sm no-underline"
+                href="/book"
+               data-ps="src/pages/services.astro:9pon5w">
+                Book a visit
+                <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom "Not sure which service you need?" Section -->
+    <section class="px-4 md:px-8 py-12 sm:py-16 md:py-24 bg-[#FBFAF7]" data-ps="src/pages/services.astro:cta-sec">
+      <div class="max-w-5xl mx-auto text-center flex flex-col items-center" data-ps="src/pages/services.astro:cta-wrap">
+        <div class="inline-flex items-center gap-2 mb-5 px-3 py-1 rounded-full bg-[#F5F3ED] border border-[#eae6de] text-[11px] uppercase tracking-[0.18em] text-[#5a5661]" data-ps="src/pages/services.astro:cta-badge">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/services.astro:6ra1in"></span>
+          Ready when you are
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-6xl font-heading font-semibold tracking-tight text-[#020203] leading-[1.05] max-w-3xl" data-ps="src/pages/services.astro:cta-h2">
+          Not sure which service<br />
+          <em class="not-italic text-[#EC5A00]">you need?</em>
+        </h2>
+        <p class="mt-4 sm:mt-5 text-sm sm:text-base md:text-lg text-[#5a5661] max-w-xl" data-ps="src/pages/services.astro:cta-desc">
+          Send a few details and we'll point you in the right direction — no pressure.
+        </p>
+        <div class="mt-6 sm:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto" data-ps="src/pages/services.astro:cta-actions">
+          <a
+            class="group inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-full bg-[#090a0d] text-white text-sm font-semibold hover:bg-black transition-all hover:-translate-y-0.5 cursor-pointer whitespace-nowrap no-underline shadow-sm"
+            href="/book"
+           data-ps="src/pages/services.astro:9pon5v">
+            Book a visit
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+          <a
+            class="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-full bg-transparent text-[#020203] text-sm font-semibold hover:text-[#EC5A00] transition-colors cursor-pointer whitespace-nowrap no-underline"
+            href="/contact"
+           data-ps="src/pages/services.astro:9pon5u">
+            Send a message
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile Floating Action Bar -->
+    <div class="lg:hidden fixed bottom-3 left-3 right-3 z-40" data-ps="src/pages/services.astro:floating-bar">
+      <div class="flex items-center gap-2 p-2 rounded-2xl bg-[#090a0d]/95 backdrop-blur-md border border-[#27272a] shadow-lg" data-ps="src/pages/services.astro:on4k28">
+        <a
+          href="tel:+15093004042"
+          aria-label="Call UDG Services"
+          class="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 text-white hover:bg-white/15 transition-colors cursor-pointer no-underline"
+         data-ps="src/pages/services.astro:9pon5t">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/>
+          </svg>
+        </a>
+        <a
+          class="flex-1 h-12 flex items-center justify-center gap-2 rounded-xl bg-[#EC5A00] text-white text-sm font-semibold hover:bg-[#d45100] transition-colors cursor-pointer whitespace-nowrap no-underline shadow-sm"
+          href="/book"
+         data-ps="src/pages/services.astro:9pon5s">
+          Book a Repair Now
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "linkTypography": {
+      "rawFontSize": "14px",
+      "normalizedFontSize": "14px",
+      "source": "computed-navigation",
+      "confidence": "medium"
+    }
+  },
+  "warnings": [
+    "nav links have mixed sizes: dominant 14px vs 16px"
+  ]
+}

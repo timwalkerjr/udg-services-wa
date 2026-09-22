@@ -1,0 +1,373 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/config/site';
+
+export const prerender = true;
+
+const title = "Customer Reviews | Real Tri-Cities Appliance Repair Feedback | UDG Services";
+const description = "Read verified 5-star customer reviews for UDG Services across Richland, Kennewick, and Pasco, WA. Fast diagnostics, upfront pricing, and friendly service.";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Customer Reviews | UDG Services",
+  "image": "https://public.readdy.ai/ai/img_res/fca5f491f55ac01816dd784e81032f29.webp",
+  "description": description,
+  "url": `${SITE.url}/reviews/`,
+};
+
+const reviews = [
+  {
+    id: 1,
+    initials: "MT",
+    name: "Marcus T.",
+    location: "Richland, WA",
+    quote: "“Our fridge died on a Friday and they had a tech out the same day. Diagnosed it, quoted the repair upfront, and had it cooling again within the hour. Honest, veteran-owned crew.”",
+    rating: 5,
+    source: "Google Reviews",
+  },
+  {
+    id: 2,
+    initials: "DR",
+    name: "Dana R.",
+    location: "Kennewick, WA",
+    quote: "“Washer wouldn't spin and I figured I'd be buying a new one. They fixed it on the first visit for a fraction of the cost. Friendly and explained everything.”",
+    rating: 5,
+    source: "Google Reviews",
+  },
+  {
+    id: 3,
+    initials: "SM",
+    name: "Sofia M.",
+    location: "Pasco, WA",
+    quote: "“Oven quit the day before Thanksgiving. UDG treated it like the emergency it was — same-day service and back to baking by dinner. Can't thank them enough.”",
+    rating: 5,
+    source: "Google Reviews",
+  },
+  {
+    id: 4,
+    initials: "GP",
+    name: "Gregory P.",
+    location: "West Richland, WA",
+    quote: "“Dishwasher was leaving grit on everything. The tech found a blocked spray arm and a failing pump, had the parts on the truck and finished the job in one visit.”",
+    rating: 5,
+    source: "Google Reviews",
+  },
+  {
+    id: 5,
+    initials: "HK",
+    name: "Helen K.",
+    location: "Richland, WA",
+    quote: "“Veteran-owned and it shows — punctual, respectful and tidy. Left the kitchen cleaner than they found it. Will use them for all our appliances now.”",
+    rating: 5,
+    source: "Google Reviews",
+  },
+  {
+    id: 6,
+    initials: "AV",
+    name: "Antonio V.",
+    location: "Burbank, WA",
+    quote: "“We keep extra freezers for meat and one stopped holding temperature. They prioritised it as an emergency and saved us hundreds in spoiled food.”",
+    rating: 5,
+    source: "Google Reviews",
+  },
+  {
+    id: 7,
+    initials: "RD",
+    name: "Rachel D.",
+    location: "Kennewick, WA",
+    quote: "“Dryer was taking three cycles to dry a load. Turned out to be a vent issue plus a weak element. Fixed both and explained how to prevent it happening again.”",
+    rating: 5,
+    source: "Google Reviews",
+  },
+  {
+    id: 8,
+    initials: "PW",
+    name: "Paul W.",
+    location: "Pasco, WA",
+    quote: "“Called about a commercial range at our restaurant and they understood the urgency immediately. Back up and running the same afternoon.”",
+    rating: 5,
+    source: "Google Reviews",
+  },
+  {
+    id: 9,
+    initials: "JT",
+    name: "Jason T.",
+    location: "Richland, WA",
+    quote: "“Called early morning for our broken freezer. Technician arrived by noon with replacement seals and got everything running perfectly. Highly recommend!”",
+    rating: 5,
+    source: "Google Reviews",
+  },
+  {
+    id: 10,
+    initials: "KL",
+    name: "Karen L.",
+    location: "Kennewick, WA",
+    quote: "“Super knowledgeable and polite technicians. Upfront with the estimate and finished the washing machine repair faster than expected.”",
+    rating: 5,
+    source: "Google Reviews",
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  headerVariant="solid"
+  jsonLd={jsonLd}
+>
+  <div class="pt-16 md:pt-20 pb-24 lg:pb-0" data-ps="src/pages/reviews.astro:main-wrapper">
+    <!-- Hero Banner Section -->
+    <section class="px-3 md:px-4 pt-3 md:pt-4" data-ps="src/pages/reviews.astro:hero-section">
+      <div class="relative w-full min-h-[380px] sm:min-h-[420px] md:min-h-[520px] rounded-2xl md:rounded-3xl overflow-hidden shadow-sm" data-ps="src/pages/reviews.astro:18bily">
+        <img
+          alt="Satisfied West Michigan customer"
+          loading="eager"
+          decoding="async"
+          class="absolute inset-0 w-full h-full object-cover object-top"
+          src="https://pagesmith-cdn.com/9cf36851/images/edited_587618dba2c663ca325c7b811a2b8821_104ec36b-6f5f10-1024.webp" data-ps="src/pages/reviews.astro:3qkmy0" />
+        <div class="absolute inset-0 bg-gradient-to-b from-[#090a0d]/70 via-[#090a0d]/45 to-[#090a0d]/80 pointer-events-none" data-ps="src/pages/reviews.astro:18bilx"></div>
+        <div class="relative z-10 flex flex-col justify-end h-full min-h-[380px] sm:min-h-[420px] md:min-h-[520px] max-w-7xl mx-auto w-full px-6 sm:px-8 py-8 sm:py-10 md:py-14" data-ps="src/pages/reviews.astro:18bilw">
+          <div class="inline-flex self-start items-center gap-2 mb-4 sm:mb-5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/25 text-white text-[10px] sm:text-xs uppercase tracking-[0.16em]" data-ps="src/pages/reviews.astro:18bilv">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/reviews.astro:z5g4ko"></span>
+            Customer Reviews
+          </div>
+          <h1 class="font-heading font-semibold text-white text-[32px] sm:text-[40px] md:text-[56px] lg:text-[72px] leading-[1.02] tracking-tight max-w-4xl" data-ps="src/pages/reviews.astro:drxyqz">
+            What locals say<br />
+            <em class="not-italic text-[#EC5A00]">about our work.</em>
+          </h1>
+          <p class="mt-3 sm:mt-4 md:mt-6 max-w-xl text-sm sm:text-base md:text-lg text-white/90 leading-relaxed" data-ps="src/pages/reviews.astro:nx7zkm">
+            Real reviews from real customers across Richland, Pasco, Kennewick and the Tri-Cities. No edits, no cherry-picking — just honest feedback.
+          </p>
+          <div class="mt-5 sm:mt-6 md:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3" data-ps="src/pages/reviews.astro:18bilu">
+            <a
+              class="group inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-full bg-[#EC5A00] text-white text-sm md:text-base font-semibold hover:bg-[#d45100] transition-all hover:-translate-y-0.5 cursor-pointer whitespace-nowrap shadow-sm no-underline"
+              href="/book"
+             data-ps="src/pages/reviews.astro:gta2wa">
+              Book Service
+              <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <a
+              class="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-full bg-white/10 border border-white/25 text-white text-sm md:text-base font-semibold hover:bg-white/20 transition-all cursor-pointer whitespace-nowrap no-underline"
+              href="/services"
+             data-ps="src/pages/reviews.astro:gta2vo">
+              View services
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="px-4 md:px-8 py-10 md:py-14 bg-[#F5F3ED]" data-ps="src/pages/reviews.astro:stats-section">
+      <div class="grid grid-cols-3 gap-4 md:gap-8 max-w-4xl mx-auto" data-ps="src/pages/reviews.astro:18bilt">
+        <div class="text-center" data-ps="src/pages/reviews.astro:18bils">
+          <div class="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold text-[#EC5A00] tracking-tight" data-ps="src/pages/reviews.astro:18bilr">90%+</div>
+          <div class="mt-2 text-xs md:text-sm text-[#5a5661] leading-snug" data-ps="src/pages/reviews.astro:18bilq">Repairs completed on the first visit</div>
+        </div>
+        <div class="text-center" data-ps="src/pages/reviews.astro:18bilp">
+          <div class="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold text-[#EC5A00] tracking-tight" data-ps="src/pages/reviews.astro:18bil3">24/7</div>
+          <div class="mt-2 text-xs md:text-sm text-[#5a5661] leading-snug" data-ps="src/pages/reviews.astro:18bil2">Same-day emergency service</div>
+        </div>
+        <div class="text-center" data-ps="src/pages/reviews.astro:18bil1">
+          <div class="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold text-[#EC5A00] tracking-tight" data-ps="src/pages/reviews.astro:18bil0">All</div>
+          <div class="mt-2 text-xs md:text-sm text-[#5a5661] leading-snug" data-ps="src/pages/reviews.astro:18bikz">Major appliance brands serviced</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Grid Section -->
+    <section class="px-4 md:px-8 py-12 sm:py-16 md:py-24 bg-[#FBFAF7]" data-ps="src/pages/reviews.astro:reviews-section">
+      <!-- Section Header with Filter Controls -->
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 md:mb-12" data-ps="src/pages/reviews.astro:18biky">
+        <div data-ps="src/pages/reviews.astro:18bikx">
+          <div class="inline-flex items-center gap-2 mb-3 px-3 py-1 rounded-full bg-[#F5F3ED] border border-[#eae6de] text-[11px] uppercase tracking-[0.18em] text-[#5a5661]" data-ps="src/pages/reviews.astro:18bikw">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/reviews.astro:z5g4kp"></span>
+            Verified Google Reviews
+          </div>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-heading font-semibold tracking-tight text-[#020203] leading-[1.05]" data-ps="src/pages/reviews.astro:wgygn">
+            10 reviews, <em class="not-italic text-[#EC5A00]">all real.</em>
+          </h2>
+        </div>
+        <div class="flex items-center gap-2 p-1 rounded-full bg-[#F5F3ED] border border-[#eae6de]" data-ps="src/pages/reviews.astro:18bikv">
+          <button
+            type="button"
+            id="filter-all-btn"
+            class="px-4 py-2 rounded-full text-sm font-medium cursor-pointer whitespace-nowrap transition-colors bg-[#090a0d] text-white"
+           data-ps="src/pages/reviews.astro:y5x645">
+            All
+          </button>
+          <button
+            type="button"
+            id="filter-5star-btn"
+            class="px-4 py-2 rounded-full text-sm font-medium cursor-pointer whitespace-nowrap transition-colors text-[#5a5661] hover:text-[#020203]"
+           data-ps="src/pages/reviews.astro:y5x644">
+            5-Star
+          </button>
+        </div>
+      </div>
+
+      <!-- 4-Column Cards Grid -->
+      <div id="reviews-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-5" data-ps="src/pages/reviews.astro:18biku">
+          {reviews.map((item, idx) => (
+            <div
+              class={`review-card group p-5 sm:p-6 rounded-2xl bg-[#FBFAF7] border border-[#eae6de] hover:border-[#cbd5e1] transition-all duration-300 flex flex-col ${idx >= 8 ? 'hidden' : ''}`}
+              data-rating={item.rating}
+              data-index={item.id}
+             data-ps={`src/pages/reviews.astro:6ww4a2-${idx}`}>
+              <!-- Author Row -->
+              <div class="flex items-center justify-between mb-4" data-ps={`src/pages/reviews.astro:6ww4a1-${idx}`}>
+                <div class="flex items-center gap-3" data-ps={`src/pages/reviews.astro:6ww4a0-${idx}`}>
+                  <span class="w-10 h-10 flex items-center justify-center rounded-full bg-[#EC5A00] text-white font-heading font-semibold text-sm shrink-0" data-ps={`src/pages/reviews.astro:z5g4kq-${idx}`}>
+                    {item.initials}
+                  </span>
+                  <div data-ps={`src/pages/reviews.astro:6ww49z-${idx}`}>
+                    <p class="text-sm font-semibold text-[#020203]" data-ps={`src/pages/reviews.astro:nx7zkl-${idx}`}>{item.name}</p>
+                    <p class="text-[11px] text-[#71717a]" data-ps={`src/pages/reviews.astro:nx7zkk-${idx}`}>{item.location}</p>
+                  </div>
+                </div>
+                <!-- 5 Stars -->
+                <span class="inline-flex items-center gap-0.5" aria-label="5 out of 5 stars" data-ps={`src/pages/reviews.astro:z5g4kr-${idx}`}>
+                  {Array.from({ length: 5 }).map(() => (
+                    <svg class="w-3.5 h-3.5 fill-[#f59e0b] text-[#f59e0b]" viewBox="0 0 24 24">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                  ))}
+                </span>
+              </div>
+
+              <!-- Quote Content -->
+              <blockquote class="flex-1">
+                <p class="text-sm text-[#3f3f46] leading-relaxed font-normal" data-ps={`src/pages/reviews.astro:nx7zkj-${idx}`}>{item.quote}</p>
+              </blockquote>
+
+              <!-- Card Footer -->
+              <div class="mt-4 pt-4 border-t border-[#eae6de] flex items-center gap-2" data-ps={`src/pages/reviews.astro:6ww49y-${idx}`}>
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#F5F3ED] border border-[#eae6de] text-[11px] text-[#5a5661]" data-ps={`src/pages/reviews.astro:z5g4ks-${idx}`}>
+                  <svg class="w-3.5 h-3.5 text-emerald-600" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.24 10.285V14.4h6.806c-.275 1.765-2.056 5.174-6.806 5.174-4.095 0-7.439-3.389-7.439-7.574s3.345-7.574 7.439-7.574c2.33 0 3.891.989 4.785 1.849l3.254-3.138C18.189 1.186 15.479 0 12.24 0c-6.635 0-12 5.365-12 12s5.365 12 12 12c6.926 0 11.52-4.869 11.52-11.726 0-.788-.085-1.39-.189-1.989H12.24z"/>
+                  </svg>
+                  {item.source}
+                </span>
+                <span class="text-[11px] text-[#a1a1aa] ml-auto font-mono" data-ps={`src/pages/reviews.astro:z5g4kt-${idx}`}>#{item.id}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <!-- Load More Button -->
+        <div class="mt-10 flex justify-center" data-ps="src/pages/reviews.astro:6ww49x">
+          <button
+            type="button"
+            id="load-more-btn"
+            class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-[#F5F3ED] border border-[#eae6de] text-sm font-medium text-[#020203] hover:border-[#EC5A00] hover:text-[#EC5A00] transition-all cursor-pointer whitespace-nowrap"
+           data-ps="src/pages/reviews.astro:y5x643">
+            Load more reviews
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </button>
+        </div>
+    </section>
+
+    <!-- Ready when you are / Join the locals CTA Section -->
+    <section class="px-4 md:px-8 py-12 sm:py-16 md:py-24 bg-[#FBFAF7]" data-ps="src/pages/reviews.astro:cta-section">
+      <div class="max-w-5xl mx-auto text-center flex flex-col items-center" data-ps="src/pages/reviews.astro:6ww49w">
+        <div class="inline-flex items-center gap-2 mb-5 px-3 py-1 rounded-full bg-[#F5F3ED] border border-[#eae6de] text-[11px] uppercase tracking-[0.18em] text-[#5a5661]" data-ps="src/pages/reviews.astro:6ww49v">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/reviews.astro:z5g4lf"></span>
+          Ready when you are
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-6xl font-heading font-semibold tracking-tight text-[#020203] leading-[1.05] max-w-3xl" data-ps="src/pages/reviews.astro:wgygm">
+          Join the locals who trust<br />
+          <em class="not-italic text-[#EC5A00]">UDG Services.</em>
+        </h2>
+        <p class="mt-4 sm:mt-5 text-sm sm:text-base md:text-lg text-[#5a5661] max-w-xl" data-ps="src/pages/reviews.astro:nx7zki">
+          Book a visit in under a minute — same-day service for emergencies.
+        </p>
+        <div class="mt-6 sm:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto" data-ps="src/pages/reviews.astro:6ww49u">
+          <a
+            class="group inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-full bg-[#090a0d] text-white text-sm font-semibold hover:bg-black transition-all hover:-translate-y-0.5 cursor-pointer whitespace-nowrap shadow-sm no-underline"
+            href="/book"
+           data-ps="src/pages/reviews.astro:gta2vn">
+            Book Service
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+          <a
+            class="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-full bg-transparent text-[#020203] text-sm font-semibold hover:text-[#EC5A00] transition-colors cursor-pointer whitespace-nowrap no-underline"
+            href="/contact"
+           data-ps="src/pages/reviews.astro:gta2vm">
+            Send a message
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile Floating Action Bar -->
+    <div class="lg:hidden fixed bottom-3 left-3 right-3 z-40" data-ps="src/pages/reviews.astro:mobile-bar">
+      <div class="flex items-center gap-2 p-2 rounded-2xl bg-[#090a0d]/95 backdrop-blur-md border border-white/10 shadow-xl" data-ps="src/pages/reviews.astro:6ww49t">
+        <a
+          href="tel:+15093004042"
+          aria-label="Call UDG Services"
+          class="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 text-white hover:bg-white/15 transition-colors cursor-pointer shrink-0 no-underline"
+         data-ps="src/pages/reviews.astro:gta2vl">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/>
+          </svg>
+        </a>
+        <a
+          class="flex-1 h-12 flex items-center justify-center gap-2 rounded-xl bg-[#EC5A00] text-white text-sm font-semibold hover:bg-[#d45100] transition-colors cursor-pointer whitespace-nowrap no-underline shadow-sm"
+          href="/book"
+         data-ps="src/pages/reviews.astro:s1di9t">
+          Book a Repair Now
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    const allCards = document.querySelectorAll('.review-card');
+    const filterAllBtn = document.getElementById('filter-all-btn');
+    const filter5StarBtn = document.getElementById('filter-5star-btn');
+
+    loadMoreBtn?.addEventListener('click', () => {
+      allCards.forEach((card) => {
+        card.classList.remove('hidden');
+      });
+      loadMoreBtn.classList.add('hidden');
+    });
+
+    filterAllBtn?.addEventListener('click', () => {
+      filterAllBtn.className = 'px-4 py-2 rounded-full text-sm font-medium cursor-pointer whitespace-nowrap transition-colors bg-[#090a0d] text-white';
+      if (filter5StarBtn) {
+        filter5StarBtn.className = 'px-4 py-2 rounded-full text-sm font-medium cursor-pointer whitespace-nowrap transition-colors text-[#5a5661] hover:text-[#020203]';
+      }
+    });
+
+    filter5StarBtn?.addEventListener('click', () => {
+      filter5StarBtn.className = 'px-4 py-2 rounded-full text-sm font-medium cursor-pointer whitespace-nowrap transition-colors bg-[#090a0d] text-white';
+      if (filterAllBtn) {
+        filterAllBtn.className = 'px-4 py-2 rounded-full text-sm font-medium cursor-pointer whitespace-nowrap transition-colors text-[#5a5661] hover:text-[#020203]';
+      }
+    });
+  </script>
+</BaseLayout>

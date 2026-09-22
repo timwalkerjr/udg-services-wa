@@ -1,0 +1,71 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Hero from '@/components/home/Hero.astro';
+import CityMarquee from '@/components/home/CityMarquee.astro';
+import ServicesSection from '@/components/home/ServicesSection.astro';
+import AboutSection from '@/components/home/AboutSection.astro';
+import WorkGallery from '@/components/home/WorkGallery.astro';
+import TeamSection from '@/components/home/TeamSection.astro';
+import HowItWorks from '@/components/home/HowItWorks.astro';
+import PricingSection from '@/components/home/PricingSection.astro';
+import TestimonialsSection from '@/components/home/TestimonialsSection.astro';
+import AreasSection from '@/components/home/AreasSection.astro';
+import FaqSection from '@/components/home/FaqSection.astro';
+import CtaSection from '@/components/home/CtaSection.astro';
+import { SITE } from '@/config/site';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'HomeAndConstructionBusiness',
+  name: 'UDG Services',
+  description: SITE.description,
+  url: SITE.url,
+  telephone: '+15093004042',
+  email: 'info@udgservices.com',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Richland',
+    addressRegion: 'WA',
+    addressCountry: 'US',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: '46.2857',
+    longitude: '-119.2844',
+  },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: [
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+      'Saturday',
+      'Sunday',
+    ],
+    opens: '00:00',
+    closes: '23:59',
+  },
+  priceRange: '$$',
+};
+---
+
+<BaseLayout
+  title={SITE.title}
+  description={SITE.description}
+  jsonLd={jsonLd}
+>
+  <Hero />
+  <CityMarquee />
+  <ServicesSection />
+  <AboutSection />
+  <WorkGallery />
+  <TeamSection />
+  <HowItWorks />
+  <PricingSection />
+  <TestimonialsSection />
+  <AreasSection />
+  <FaqSection />
+  <CtaSection />
+</BaseLayout>

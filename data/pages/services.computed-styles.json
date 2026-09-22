@@ -1,0 +1,2855 @@
+{
+  "viewportWidth": 1920,
+  "pageBackground": {
+    "type": "color",
+    "value": "oklch(0.985 0.004 80)"
+  },
+  "fontSmoothing": "antialiased",
+  "isElementor": false,
+  "sectionThemes": [
+    {
+      "background": "oklch(0.985 0.004 80)",
+      "textColor": "oklch(0.985 0.004 80)",
+      "headings": [
+        {
+          "tag": "h1",
+          "fontSize": "72px",
+          "fontWeight": "600",
+          "color": "oklch(0.985 0.004 80)",
+          "text": "Appliance repairfor every room.",
+          "letterSpacing": "-1.8px",
+          "textAlign": "start"
+        },
+        {
+          "tag": "h2",
+          "fontSize": "48px",
+          "fontWeight": "600",
+          "color": "oklch(0.09 0.004 260)",
+          "text": "Residential — homes & properties.",
+          "letterSpacing": "-1.2px",
+          "textAlign": "center"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "color": "oklch(0.09 0.004 260)",
+          "text": "Refrigerator Repair",
+          "letterSpacing": "-0.36px",
+          "textAlign": "start"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "color": "oklch(0.09 0.004 260)",
+          "text": "Washing Machine Repair",
+          "letterSpacing": "-0.36px",
+          "textAlign": "start"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "color": "oklch(0.09 0.004 260)",
+          "text": "Dryer Repair",
+          "letterSpacing": "-0.36px",
+          "textAlign": "start"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "18px",
+        "color": "oklch(0.965 0.006 80)",
+        "lineHeight": "28px",
+        "textAlign": "start"
+      },
+      "buttons": [
+        {
+          "backgroundColor": "oklch(0.65 0.2 45)",
+          "color": "oklch(0.985 0.004 80)",
+          "borderRadius": "9999px",
+          "padding": "16px 24px 16px 24px",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "text": "Book a repair"
+        },
+        {
+          "backgroundColor": "oklch(0.985 0.004 80 / 0.1)",
+          "color": "oklch(0.985 0.004 80)",
+          "borderRadius": "9999px",
+          "border": "1px solid oklch(0.985 0.004 80 / 0.25)",
+          "padding": "16px 24px 16px 24px",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "text": "View pricing"
+        },
+        {
+          "backgroundColor": "oklch(0.11 0.01 260)",
+          "color": "oklch(0.985 0.004 80)",
+          "borderRadius": "9999px",
+          "padding": "10px 20px 10px 20px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "text": "Homes & residential"
+        }
+      ],
+      "links": [
+        {
+          "text": "Book this service",
+          "color": "oklch(0.24 0.03 260)",
+          "fontWeight": "600"
+        },
+        {
+          "text": "Send a message",
+          "color": "oklch(0.2 0.008 260)",
+          "fontWeight": "600"
+        },
+        {
+          "text": "Services",
+          "color": "oklch(0.965 0.006 80)",
+          "fontWeight": "400"
+        }
+      ],
+      "images": [
+        {
+          "displayWidth": 1873,
+          "displayHeight": 520,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 443,
+          "displayHeight": 332,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 443,
+          "displayHeight": 332,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 443,
+          "displayHeight": 332,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 443,
+          "displayHeight": 332,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 443,
+          "displayHeight": 332,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 443,
+          "displayHeight": 332,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 443,
+          "displayHeight": 332,
+          "objectFit": "cover"
+        }
+      ],
+      "layout": {
+        "containerMaxWidth": "100%",
+        "paddingBlock": "4px 4px"
+      },
+      "interactionType": "carousel",
+      "pseudoElements": [
+        {
+          "host": "ri-tools-fill text-base sm:text-lg",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-phone-fill text-base",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-arrow-right-up-line text-base transition-transform group-hover:translate-x-0.",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-menu-3-line text-2xl",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        }
+      ],
+      "contentAlignment": {
+        "container": "body > ",
+        "containerSize": {
+          "width": 1905,
+          "height": 4475
+        },
+        "offsets": {
+          "left": 64,
+          "top": 243,
+          "right": 945,
+          "bottom": 4085
+        },
+        "center": {
+          "x": 0.269,
+          "y": 0.071
+        },
+        "layout": {
+          "display": "block",
+          "direction": "row",
+          "justifyContent": "normal",
+          "alignItems": "normal",
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "item": {
+          "alignSelf": "auto",
+          "margin": "0px",
+          "padding": "0px",
+          "position": "static"
+        }
+      }
+    },
+    {
+      "background": "oklch(0.985 0.004 80 / 0.9)",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "space-between",
+        "childCount": 4
+      },
+      "interactionType": "carousel",
+      "pseudoElements": [
+        {
+          "host": "ri-tools-fill text-base sm:text-lg",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-phone-fill text-base",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-arrow-right-up-line text-base transition-transform group-hover:translate-x-0.",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-menu-3-line text-2xl",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "gradient": "linear-gradient(oklch(0.11 0.01 260 / 0.7), oklch(0.11 0.01 260 / 0.45), oklch(0.11 0.01 260 / 0.8))",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "oklch(0.985 0.004 80)",
+      "textColor": "oklch(0.09 0.004 260)",
+      "headings": [
+        {
+          "tag": "h2",
+          "fontSize": "48px",
+          "fontWeight": "600",
+          "color": "oklch(0.09 0.004 260)",
+          "text": "Residential — homes & properties.",
+          "letterSpacing": "-1.2px",
+          "textAlign": "center"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "color": "oklch(0.09 0.004 260)",
+          "text": "Refrigerator Repair",
+          "letterSpacing": "-0.36px",
+          "textAlign": "start"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "color": "oklch(0.09 0.004 260)",
+          "text": "Washing Machine Repair",
+          "letterSpacing": "-0.36px",
+          "textAlign": "start"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "color": "oklch(0.09 0.004 260)",
+          "text": "Dryer Repair",
+          "letterSpacing": "-0.36px",
+          "textAlign": "start"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "color": "oklch(0.09 0.004 260)",
+          "text": "Dishwasher Repair",
+          "letterSpacing": "-0.36px",
+          "textAlign": "start"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "16px",
+        "color": "oklch(0.36 0.008 260)",
+        "lineHeight": "24px",
+        "textAlign": "center"
+      },
+      "buttons": [
+        {
+          "backgroundColor": "oklch(0.11 0.01 260)",
+          "color": "oklch(0.985 0.004 80)",
+          "borderRadius": "9999px",
+          "padding": "10px 20px 10px 20px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "text": "Homes & residential"
+        },
+        {
+          "color": "oklch(0.28 0.008 260)",
+          "borderRadius": "9999px",
+          "padding": "10px 20px 10px 20px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "text": "Commercial & business"
+        }
+      ],
+      "links": [
+        {
+          "text": "Book this service",
+          "color": "oklch(0.24 0.03 260)",
+          "fontWeight": "600"
+        }
+      ],
+      "images": [
+        {
+          "displayWidth": 443,
+          "displayHeight": 332,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 443,
+          "displayHeight": 332,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 443,
+          "displayHeight": 332,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 443,
+          "displayHeight": 332,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 443,
+          "displayHeight": 332,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 443,
+          "displayHeight": 332,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 443,
+          "displayHeight": 332,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 443,
+          "displayHeight": 332,
+          "objectFit": "cover"
+        }
+      ],
+      "layout": {
+        "containerMaxWidth": "100%",
+        "paddingBlock": "80px 80px"
+      },
+      "interactionType": "carousel",
+      "pseudoElements": [
+        {
+          "host": "ri-fridge-line text-accent-600",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-arrow-right-line transition-transform group-hover/btn:translate-x-0.5",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-arrow-right-up-line",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-t-shirt-line text-accent-600",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-arrow-right-line transition-transform group-hover/btn:translate-x-0.5",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-arrow-right-up-line",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        }
+      ],
+      "contentAlignment": {
+        "container": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(2)",
+        "containerSize": {
+          "width": 1905,
+          "height": 2050
+        },
+        "offsets": {
+          "left": 441,
+          "top": 170,
+          "right": 441,
+          "bottom": 1832
+        },
+        "center": {
+          "x": 0.5,
+          "y": 0.095
+        },
+        "layout": {
+          "display": "block",
+          "direction": "row",
+          "justifyContent": "normal",
+          "alignItems": "normal",
+          "padding": "80px 32px",
+          "gap": "normal"
+        },
+        "item": {
+          "alignSelf": "auto",
+          "margin": "0px",
+          "padding": "0px",
+          "position": "static"
+        }
+      }
+    },
+    {
+      "background": "oklch(0.965 0.006 80)",
+      "textColor": "oklch(0.985 0.004 80)",
+      "headings": [
+        {
+          "tag": "h3",
+          "fontSize": "30px",
+          "fontWeight": "600",
+          "color": "oklch(0.985 0.004 80)",
+          "text": "Appliance emergency right now?",
+          "letterSpacing": "-0.6px",
+          "textAlign": "start"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "30px",
+          "fontWeight": "600",
+          "color": "oklch(0.09 0.004 260)",
+          "text": "Warranty-backed repairs, every time.",
+          "letterSpacing": "-0.6px",
+          "textAlign": "start"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "14px",
+        "color": "oklch(0.935 0.008 80)",
+        "lineHeight": "22.75px",
+        "textAlign": "start"
+      },
+      "buttons": [
+        {
+          "backgroundColor": "oklch(0.65 0.2 45)",
+          "color": "oklch(0.985 0.004 80)",
+          "borderRadius": "9999px",
+          "padding": "12px 20px 12px 20px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "text": "(509) 300-4042"
+        },
+        {
+          "backgroundColor": "oklch(0.11 0.01 260)",
+          "color": "oklch(0.985 0.004 80)",
+          "borderRadius": "9999px",
+          "padding": "12px 20px 12px 20px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "text": "Book a visit"
+        }
+      ],
+      "images": [
+        {
+          "displayWidth": 609,
+          "displayHeight": 609,
+          "objectFit": "cover"
+        }
+      ],
+      "layout": {
+        "paddingBlock": "96px 96px",
+        "display": "grid",
+        "gridTemplateColumns": "600.328px 600.328px 600.328px",
+        "gap": "20px",
+        "childCount": 2
+      },
+      "pseudoElements": [
+        {
+          "host": "ri-phone-fill",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-arrow-right-up-line transition-transform group-hover:translate-x-0.5 group-ho",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        }
+      ],
+      "contentAlignment": {
+        "container": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(3)",
+        "containerSize": {
+          "width": 1905,
+          "height": 803
+        },
+        "offsets": {
+          "left": 72,
+          "top": 324,
+          "right": 1313,
+          "bottom": 444
+        },
+        "center": {
+          "x": 0.174,
+          "y": 0.425
+        },
+        "layout": {
+          "display": "block",
+          "direction": "row",
+          "justifyContent": "normal",
+          "alignItems": "normal",
+          "padding": "96px 32px",
+          "gap": "normal"
+        },
+        "item": {
+          "alignSelf": "auto",
+          "margin": "0px",
+          "padding": "0px",
+          "position": "static"
+        }
+      }
+    },
+    {
+      "background": "oklch(0.985 0.004 80)",
+      "textColor": "oklch(0.09 0.004 260)",
+      "headings": [
+        {
+          "tag": "h2",
+          "fontSize": "60px",
+          "fontWeight": "600",
+          "color": "oklch(0.09 0.004 260)",
+          "text": "Not sure which serviceyou need?",
+          "letterSpacing": "-1.5px",
+          "textAlign": "center"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "18px",
+        "color": "oklch(0.36 0.008 260)",
+        "lineHeight": "28px",
+        "textAlign": "center"
+      },
+      "buttons": [
+        {
+          "backgroundColor": "oklch(0.11 0.01 260)",
+          "color": "oklch(0.985 0.004 80)",
+          "borderRadius": "9999px",
+          "padding": "16px 24px 16px 24px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "text": "Book a visit"
+        }
+      ],
+      "links": [
+        {
+          "text": "Send a message",
+          "color": "oklch(0.2 0.008 260)",
+          "fontWeight": "600"
+        }
+      ],
+      "layout": {
+        "containerMaxWidth": "1024px",
+        "paddingBlock": "96px 96px",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "12px",
+        "childCount": 2
+      },
+      "interactionType": "carousel",
+      "pseudoElements": [
+        {
+          "host": "ri-arrow-right-up-line transition-transform group-hover:translate-x-0.5 group-ho",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-arrow-right-line",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        }
+      ],
+      "contentAlignment": {
+        "container": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(4)",
+        "containerSize": {
+          "width": 1905,
+          "height": 519
+        },
+        "offsets": {
+          "left": 656,
+          "top": 143,
+          "right": 656,
+          "bottom": 256
+        },
+        "center": {
+          "x": 0.5,
+          "y": 0.391
+        },
+        "layout": {
+          "display": "block",
+          "direction": "row",
+          "justifyContent": "normal",
+          "alignItems": "normal",
+          "padding": "96px 32px",
+          "gap": "normal"
+        },
+        "item": {
+          "alignSelf": "auto",
+          "margin": "0px",
+          "padding": "0px",
+          "position": "static"
+        }
+      }
+    },
+    {
+      "background": "oklch(0.11 0.01 260)",
+      "textColor": "oklch(0.895 0.01 80)",
+      "headings": [
+        {
+          "tag": "h4",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "color": "oklch(0.895 0.01 80)",
+          "text": "Explore",
+          "textTransform": "uppercase",
+          "letterSpacing": "2.16px",
+          "textAlign": "start"
+        },
+        {
+          "tag": "h4",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "color": "oklch(0.895 0.01 80)",
+          "text": "Get in touch",
+          "textTransform": "uppercase",
+          "letterSpacing": "2.16px",
+          "textAlign": "start"
+        },
+        {
+          "tag": "h4",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "color": "oklch(0.895 0.01 80)",
+          "text": "Book a repair",
+          "textTransform": "uppercase",
+          "letterSpacing": "2.16px",
+          "textAlign": "start"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "14px",
+        "color": "oklch(0.935 0.008 80)",
+        "lineHeight": "22.75px",
+        "textAlign": "start"
+      },
+      "buttons": [
+        {
+          "backgroundColor": "oklch(0.65 0.2 45)",
+          "color": "oklch(0.985 0.004 80)",
+          "borderRadius": "6px",
+          "padding": "12px 16px 12px 16px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "text": "Book Service"
+        }
+      ],
+      "links": [
+        {
+          "text": "Services",
+          "color": "oklch(0.965 0.006 80)",
+          "fontWeight": "400"
+        },
+        {
+          "text": "Privacy",
+          "color": "oklch(0.895 0.01 80)",
+          "fontWeight": "400"
+        }
+      ],
+      "layout": {
+        "display": "grid",
+        "gridTemplateColumns": "118.75px 118.75px 118.75px 118.75px 118.75px 118.75px 118.75px 118.75px 118.75px 118.75px 118.75px 118.75px",
+        "gap": "32px",
+        "childCount": 4
+      },
+      "pseudoElements": [
+        {
+          "host": "ri-tools-fill text-xl",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "relative w-2.5 h-2.5 rounded-full text-emerald-400 pulse-dot bg-emerald-400",
+          "type": "::after",
+          "width": "10px",
+          "height": "10px",
+          "position": "absolute",
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px",
+          "backgroundColor": "rgb(52, 211, 153)"
+        },
+        {
+          "host": "ri-phone-fill",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        },
+        {
+          "host": "ri-mail-line",
+          "type": "::before",
+          "width": "auto",
+          "height": "auto",
+          "content": ""
+        }
+      ]
+    }
+  ],
+  "globalTypography": {
+    "headingFont": "Bricolage Grotesque",
+    "bodyFont": "Inter",
+    "scale": {
+      "h1": {
+        "fontSize": "72px",
+        "fontWeight": "600",
+        "lineHeight": "73.44px"
+      },
+      "h2": {
+        "fontSize": "60px",
+        "fontWeight": "600",
+        "lineHeight": "60px"
+      },
+      "h3": {
+        "fontSize": "30px",
+        "fontWeight": "600",
+        "lineHeight": "36px"
+      },
+      "h4": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "16px"
+      },
+      "body": {
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "22.75px"
+      }
+    }
+  },
+  "navigation": {
+    "isFullWidth": true,
+    "width": "1905px",
+    "backgroundColor": "oklch(0.985 0.004 80 / 0.9)",
+    "position": "fixed",
+    "hasLogo": false,
+    "links": [
+      {
+        "text": "UDG ServicesTri-Cities · Washi",
+        "fontSize": "16px",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "color": "oklch(0.09 0.004 260)"
+      },
+      {
+        "text": "UDG Services",
+        "fontSize": "16px",
+        "fontFamily": "Bricolage Grotesque",
+        "fontWeight": "600",
+        "color": "oklch(0.09 0.004 260)",
+        "hasDropdown": true
+      },
+      {
+        "text": "Home",
+        "fontSize": "14px",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "color": "oklch(0.28 0.008 260)"
+      },
+      {
+        "text": "Services",
+        "fontSize": "14px",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "color": "oklch(0.09 0.004 260)",
+        "active": true
+      },
+      {
+        "text": "Pricing",
+        "fontSize": "14px",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "color": "oklch(0.28 0.008 260)"
+      },
+      {
+        "text": "About",
+        "fontSize": "14px",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "color": "oklch(0.28 0.008 260)"
+      },
+      {
+        "text": "Team",
+        "fontSize": "14px",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "color": "oklch(0.28 0.008 260)"
+      },
+      {
+        "text": "Reviews",
+        "fontSize": "14px",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "color": "oklch(0.28 0.008 260)"
+      },
+      {
+        "text": "Area",
+        "fontSize": "14px",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "color": "oklch(0.28 0.008 260)"
+      },
+      {
+        "text": "Contact",
+        "fontSize": "14px",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "color": "oklch(0.28 0.008 260)"
+      },
+      {
+        "text": "(509) 300-4042",
+        "fontSize": "14px",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "color": "oklch(0.2 0.008 260)"
+      },
+      {
+        "text": "Book Service",
+        "fontSize": "14px",
+        "fontFamily": "Inter",
+        "fontWeight": "600",
+        "color": "oklch(0.985 0.004 80)",
+        "isButton": true,
+        "buttonStyle": {
+          "backgroundColor": "oklch(0.65 0.2 45)",
+          "borderRadius": "6px"
+        }
+      }
+    ],
+    "linkLayout": {
+      "paddingX": "16px 16px",
+      "pitchPx": 82,
+      "distribution": "right",
+      "verticalAlign": "middle",
+      "containerAlignment": {
+        "container": "[id=\"root\"] > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1)",
+        "containerSize": {
+          "width": 1905,
+          "height": 80
+        },
+        "offsets": {
+          "left": 582,
+          "top": 22,
+          "right": 1252,
+          "bottom": 22
+        },
+        "center": {
+          "x": 0.324,
+          "y": 0.5
+        },
+        "layout": {
+          "display": "flex",
+          "direction": "row",
+          "justifyContent": "space-between",
+          "alignItems": "center",
+          "padding": "0px 32px",
+          "gap": "normal"
+        },
+        "item": {
+          "alignSelf": "auto",
+          "margin": "0px",
+          "padding": "8px 16px",
+          "position": "relative"
+        }
+      }
+    },
+    "pseudoElements": [
+      {
+        "host": "ri-tools-fill text-base sm:text-lg",
+        "type": "::before",
+        "width": "auto",
+        "height": "auto",
+        "content": ""
+      },
+      {
+        "host": "ri-phone-fill text-base",
+        "type": "::before",
+        "width": "auto",
+        "height": "auto",
+        "content": ""
+      },
+      {
+        "host": "ri-arrow-right-up-line text-base transition-transform group-hover:translate-x-0.",
+        "type": "::before",
+        "width": "auto",
+        "height": "auto",
+        "content": ""
+      },
+      {
+        "host": "ri-menu-3-line text-2xl",
+        "type": "::before",
+        "width": "auto",
+        "height": "auto",
+        "content": ""
+      }
+    ]
+  },
+  "sliders": [],
+  "buttons": [
+    {
+      "backgroundColor": "oklch(0.65 0.2 45)",
+      "color": "oklch(0.985 0.004 80)",
+      "borderRadius": "9999px",
+      "padding": "16px 24px 16px 24px",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "text": "Book a repair"
+    },
+    {
+      "backgroundColor": "oklch(0.985 0.004 80 / 0.1)",
+      "color": "oklch(0.985 0.004 80)",
+      "borderRadius": "9999px",
+      "border": "1px solid oklch(0.985 0.004 80 / 0.25)",
+      "padding": "16px 24px 16px 24px",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "text": "View pricing"
+    },
+    {
+      "backgroundColor": "oklch(0.11 0.01 260)",
+      "color": "oklch(0.985 0.004 80)",
+      "borderRadius": "9999px",
+      "padding": "10px 20px 10px 20px",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "text": "Homes & residential"
+    },
+    {
+      "color": "oklch(0.28 0.008 260)",
+      "borderRadius": "9999px",
+      "padding": "10px 20px 10px 20px",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "text": "Commercial & business"
+    }
+  ],
+  "videos": [],
+  "footer": {
+    "background": "oklch(0.985 0.004 80)",
+    "textColor": "oklch(0.09 0.004 260)",
+    "columns": 12,
+    "textAlign": "start",
+    "linkGroups": [
+      {
+        "heading": "Explore",
+        "links": [
+          {
+            "text": "Services",
+            "href": "/services"
+          },
+          {
+            "text": "Pricing",
+            "href": "/pricing"
+          },
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Team",
+            "href": "/team"
+          },
+          {
+            "text": "Reviews",
+            "href": "/reviews"
+          },
+          {
+            "text": "Careers",
+            "href": "/careers"
+          },
+          {
+            "text": "Service Area",
+            "href": "/area"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          }
+        ]
+      },
+      {
+        "heading": "Get in touch",
+        "links": [
+          {
+            "text": "(509) 300-4042",
+            "href": "tel:+15093004042"
+          },
+          {
+            "text": "info@udgservices.com",
+            "href": "mailto:info@udgservices.com"
+          }
+        ]
+      }
+    ]
+  },
+  "socialLinks": null,
+  "hoverStyles": {
+    ".tilt-card > span[aria-hidden=\"true\"]": {
+      "opacity": "1"
+    },
+    ".hover\\:-translate-y-0\\.5": {
+      "transform": "translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))"
+    },
+    ".hover\\:-translate-y-1": {
+      "transform": "translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))"
+    },
+    ".hover\\:border-accent-300": {
+      "borderColor": "oklch(var(--accent-300) / var(--tw-border-opacity,1))"
+    },
+    ".hover\\:border-accent-500": {
+      "borderColor": "oklch(var(--accent-500) / var(--tw-border-opacity,1))"
+    },
+    ".hover\\:border-background-300": {
+      "borderColor": "oklch(var(--background-300) / var(--tw-border-opacity,1))"
+    },
+    ".hover\\:border-primary-300": {
+      "borderColor": "oklch(var(--primary-300) / var(--tw-border-opacity,1))"
+    },
+    ".hover\\:border-primary-400": {
+      "borderColor": "oklch(var(--primary-400) / var(--tw-border-opacity,1))"
+    },
+    ".hover\\:bg-accent-500": {
+      "backgroundColor": "oklch(var(--accent-500) / var(--tw-bg-opacity,1))"
+    },
+    ".hover\\:bg-accent-600": {
+      "backgroundColor": "oklch(var(--accent-600) / var(--tw-bg-opacity,1))"
+    },
+    ".hover\\:bg-background-100": {
+      "backgroundColor": "oklch(var(--background-100) / var(--tw-bg-opacity,1))"
+    },
+    ".hover\\:bg-background-200": {
+      "backgroundColor": "oklch(var(--background-200) / var(--tw-bg-opacity,1))"
+    },
+    ".hover\\:bg-background-400": {
+      "backgroundColor": "oklch(var(--background-400) / var(--tw-bg-opacity,1))"
+    },
+    ".hover\\:bg-background-50": {
+      "backgroundColor": "oklch(var(--background-50) / var(--tw-bg-opacity,1))"
+    },
+    ".hover\\:bg-background-50\\/10": {
+      "backgroundColor": "oklch(var(--background-50) / .1)"
+    },
+    ".hover\\:bg-background-50\\/15": {
+      "backgroundColor": "oklch(var(--background-50) / .15)"
+    },
+    ".hover\\:bg-background-50\\/20": {
+      "backgroundColor": "oklch(var(--background-50) / .2)"
+    },
+    ".hover\\:bg-primary-900": {
+      "backgroundColor": "oklch(var(--primary-900) / var(--tw-bg-opacity,1))"
+    },
+    ".hover\\:text-accent-300": {
+      "color": "oklch(var(--accent-300) / var(--tw-text-opacity,1))"
+    },
+    ".hover\\:text-accent-400": {
+      "color": "oklch(var(--accent-400) / var(--tw-text-opacity,1))"
+    },
+    ".hover\\:text-accent-700": {
+      "color": "oklch(var(--accent-700) / var(--tw-text-opacity,1))"
+    },
+    ".hover\\:text-background-50": {
+      "color": "oklch(var(--background-50) / var(--tw-text-opacity,1))"
+    },
+    ".hover\\:text-foreground-950": {
+      "color": "oklch(var(--foreground-950) / var(--tw-text-opacity,1))"
+    },
+    ".hover\\:text-primary-700": {
+      "color": "oklch(var(--primary-700) / var(--tw-text-opacity,1))"
+    },
+    ".hover\\:text-primary-950": {
+      "color": "oklch(var(--primary-950) / var(--tw-text-opacity,1))"
+    },
+    ".group\\/btn .group-hover\\/btn\\:translate-x-0\\.5": {
+      "transform": "translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))"
+    },
+    ".group .group-hover\\:-translate-y-0\\.5": {
+      "transform": "translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))"
+    },
+    ".group .group-hover\\:translate-x-0\\.5": {
+      "transform": "translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))"
+    },
+    ".group .group-hover\\:translate-x-1": {
+      "transform": "translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))"
+    },
+    ".group .group-hover\\:translate-y-0": {
+      "transform": "translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))"
+    },
+    ".group .group-hover\\:-rotate-6": {
+      "transform": "translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))"
+    },
+    ".group .group-hover\\:scale-100": {
+      "transform": "translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))"
+    },
+    ".group .group-hover\\:scale-105": {
+      "transform": "translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))"
+    },
+    ".group .group-hover\\:bg-accent-500": {
+      "backgroundColor": "oklch(var(--accent-500) / var(--tw-bg-opacity,1))"
+    },
+    ".group .group-hover\\:bg-background-200": {
+      "backgroundColor": "oklch(var(--background-200) / var(--tw-bg-opacity,1))"
+    },
+    ".group .group-hover\\:bg-primary-950\\/25": {
+      "backgroundColor": "oklch(var(--primary-950) / .25)"
+    },
+    ".group .group-hover\\:bg-primary-950\\/30": {
+      "backgroundColor": "oklch(var(--primary-950) / .3)"
+    },
+    ".group .group-hover\\:text-background-50": {
+      "color": "oklch(var(--background-50) / var(--tw-text-opacity,1))"
+    },
+    ".group\\/nav .group-hover\\/nav\\:opacity-70": {
+      "opacity": "0.7"
+    },
+    ".group .group-hover\\:opacity-100": {
+      "opacity": "1"
+    }
+  },
+  "cssVariables": {
+    "--font-heading": "\"Bricolage Grotesque\", ui-sans-serif, system-ui, sans-serif",
+    "--font-body": "\"Inter\", ui-sans-serif, system-ui, sans-serif",
+    "--font-label": "\"Inter\", ui-sans-serif, system-ui, sans-serif"
+  },
+  "externalFonts": [
+    "https://fonts.googleapis.com/",
+    "https://fonts.gstatic.com/",
+    "https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+  ],
+  "portSectionStyles": [
+    {
+      "index": 0,
+      "heading": "Site header / navigation (port into Navigation.astro)",
+      "background": "oklch(0.985 0.004 80 / 0.9)",
+      "elements": [
+        {
+          "tag": "a",
+          "cls": "flex",
+          "text": "UDG ServicesTri-Cities · Washington",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "span",
+          "cls": "w-8",
+          "color": "oklch(0.985 0.004 80)",
+          "backgroundColor": "oklch(0.65 0.2 45)",
+          "borderRadius": "6px",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "span",
+          "cls": "text-sm",
+          "text": "UDG Services",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "24px",
+          "tracking": "-0.4px"
+        },
+        {
+          "tag": "span",
+          "cls": "text-[9px]",
+          "text": "Tri-Cities · Washington",
+          "color": "oklch(0.46 0.008 260)",
+          "fontSize": "10px",
+          "ownText": true,
+          "leading": "12.5px",
+          "tracking": "1.8px",
+          "textTransform": "uppercase"
+        },
+        {
+          "tag": "a",
+          "cls": "relative",
+          "text": "Home",
+          "color": "oklch(0.28 0.008 260)",
+          "borderRadius": "6px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "span",
+          "cls": "absolute",
+          "color": "oklch(0.28 0.008 260)",
+          "backgroundColor": "oklch(0.65 0.2 45)",
+          "borderRadius": "9999px",
+          "fontSize": "14px",
+          "fontWeight": "500"
+        },
+        {
+          "tag": "a",
+          "cls": "relative",
+          "text": "Services",
+          "color": "oklch(0.09 0.004 260)",
+          "borderRadius": "6px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "span",
+          "cls": "absolute",
+          "color": "oklch(0.09 0.004 260)",
+          "backgroundColor": "oklch(0.65 0.2 45)",
+          "borderRadius": "9999px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineWidth": 20,
+          "lineHeight": 3
+        },
+        {
+          "tag": "a",
+          "cls": "relative",
+          "text": "Pricing",
+          "color": "oklch(0.28 0.008 260)",
+          "borderRadius": "6px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "relative",
+          "text": "About",
+          "color": "oklch(0.28 0.008 260)",
+          "borderRadius": "6px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "relative",
+          "text": "Team",
+          "color": "oklch(0.28 0.008 260)",
+          "borderRadius": "6px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "relative",
+          "text": "Reviews",
+          "color": "oklch(0.28 0.008 260)",
+          "borderRadius": "6px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "relative",
+          "text": "Area",
+          "color": "oklch(0.28 0.008 260)",
+          "borderRadius": "6px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "relative",
+          "text": "Contact",
+          "color": "oklch(0.28 0.008 260)",
+          "borderRadius": "6px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "hidden",
+          "text": "(509) 300-4042",
+          "color": "oklch(0.2 0.008 260)",
+          "borderRadius": "6px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "group",
+          "text": "Book Service",
+          "color": "oklch(0.985 0.004 80)",
+          "backgroundColor": "oklch(0.65 0.2 45)",
+          "borderRadius": "6px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "px-3",
+          "text": "Home",
+          "color": "oklch(0.2 0.008 260)",
+          "borderRadius": "6px",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "ownText": true,
+          "leading": "24px"
+        },
+        {
+          "tag": "a",
+          "cls": "px-3",
+          "text": "Services",
+          "color": "oklch(0.09 0.004 260)",
+          "backgroundColor": "oklch(0.965 0.006 80)",
+          "borderRadius": "6px",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "ownText": true,
+          "leading": "24px"
+        },
+        {
+          "tag": "a",
+          "cls": "px-3",
+          "text": "Pricing",
+          "color": "oklch(0.2 0.008 260)",
+          "borderRadius": "6px",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "ownText": true,
+          "leading": "24px"
+        },
+        {
+          "tag": "a",
+          "cls": "px-3",
+          "text": "About",
+          "color": "oklch(0.2 0.008 260)",
+          "borderRadius": "6px",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "ownText": true,
+          "leading": "24px"
+        },
+        {
+          "tag": "a",
+          "cls": "px-3",
+          "text": "Team",
+          "color": "oklch(0.2 0.008 260)",
+          "borderRadius": "6px",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "ownText": true,
+          "leading": "24px"
+        },
+        {
+          "tag": "a",
+          "cls": "px-3",
+          "text": "Reviews",
+          "color": "oklch(0.2 0.008 260)",
+          "borderRadius": "6px",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "ownText": true,
+          "leading": "24px"
+        },
+        {
+          "tag": "a",
+          "cls": "px-3",
+          "text": "Area",
+          "color": "oklch(0.2 0.008 260)",
+          "borderRadius": "6px",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "ownText": true,
+          "leading": "24px"
+        },
+        {
+          "tag": "a",
+          "cls": "px-3",
+          "text": "Contact",
+          "color": "oklch(0.2 0.008 260)",
+          "borderRadius": "6px",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "ownText": true,
+          "leading": "24px"
+        },
+        {
+          "tag": "a",
+          "cls": "flex",
+          "text": "Call",
+          "color": "oklch(0.2 0.008 260)",
+          "border": "1px solid oklch(0.895 0.01 80)",
+          "borderRadius": "6px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "flex",
+          "text": "Book",
+          "color": "oklch(0.985 0.004 80)",
+          "backgroundColor": "oklch(0.65 0.2 45)",
+          "borderRadius": "6px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "20px"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "heading": "Appliance repairfor every room.",
+      "background": "oklch(0.985 0.004 80)",
+      "elements": [
+        {
+          "tag": "img",
+          "cls": "absolute",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "div",
+          "cls": "inline-flex",
+          "text": "What We Do",
+          "color": "oklch(0.985 0.004 80)",
+          "backgroundColor": "oklch(0.985 0.004 80 / 0.1)",
+          "border": "1px solid oklch(0.985 0.004 80 / 0.25)",
+          "borderRadius": "9999px",
+          "fontSize": "12px",
+          "ownText": true,
+          "leading": "16px",
+          "tracking": "1.92px",
+          "textTransform": "uppercase"
+        },
+        {
+          "tag": "span",
+          "cls": "w-1.5",
+          "color": "oklch(0.985 0.004 80)",
+          "backgroundColor": "oklch(0.72 0.16 50)",
+          "borderRadius": "9999px",
+          "fontSize": "12px"
+        },
+        {
+          "tag": "h1",
+          "cls": "font-heading",
+          "text": "Appliance repairfor every room.",
+          "color": "oklch(0.985 0.004 80)",
+          "fontSize": "72px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "73.44px",
+          "tracking": "-1.8px"
+        },
+        {
+          "tag": "p",
+          "cls": "mt-3",
+          "text": "Every major brand, homes and businesses across the Tri-Cities — no confusing jar",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "18px",
+          "ownText": true,
+          "leading": "28px"
+        },
+        {
+          "tag": "a",
+          "cls": "group",
+          "text": "Book a repair",
+          "color": "oklch(0.985 0.004 80)",
+          "backgroundColor": "oklch(0.65 0.2 45)",
+          "borderRadius": "9999px",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "24px"
+        },
+        {
+          "tag": "a",
+          "cls": "inline-flex",
+          "text": "View pricing",
+          "color": "oklch(0.985 0.004 80)",
+          "backgroundColor": "oklch(0.985 0.004 80 / 0.1)",
+          "border": "1px solid oklch(0.985 0.004 80 / 0.25)",
+          "borderRadius": "9999px",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "24px"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "heading": "Residential — homes & properties.",
+      "background": "oklch(0.985 0.004 80)",
+      "elements": [
+        {
+          "tag": "div",
+          "cls": "inline-flex",
+          "text": "Homes & residentialCommercial & business",
+          "color": "oklch(0.09 0.004 260)",
+          "backgroundColor": "oklch(0.965 0.006 80)",
+          "border": "1px solid oklch(0.935 0.008 80)",
+          "borderRadius": "9999px",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "button",
+          "cls": "px-3",
+          "text": "Homes & residential",
+          "color": "oklch(0.985 0.004 80)",
+          "backgroundColor": "oklch(0.11 0.01 260)",
+          "borderRadius": "9999px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "button",
+          "cls": "px-3",
+          "text": "Commercial & business",
+          "color": "oklch(0.28 0.008 260)",
+          "borderRadius": "9999px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "h2",
+          "cls": "text-2xl",
+          "text": "Residential — homes & properties.",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "48px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "48px",
+          "tracking": "-1.2px"
+        },
+        {
+          "tag": "p",
+          "cls": "mt-4",
+          "text": "From a fridge that won't cool to a washer that won't spin — quick, clean, and cl",
+          "color": "oklch(0.36 0.008 260)",
+          "fontSize": "16px",
+          "ownText": true,
+          "leading": "24px"
+        },
+        {
+          "tag": "article",
+          "cls": "group",
+          "text": "HomeUpfront pricingRefrigerator RepairNot cooling, leaking, or making odd noises",
+          "color": "oklch(0.09 0.004 260)",
+          "backgroundColor": "oklch(0.985 0.004 80)",
+          "border": "1px solid oklch(0.935 0.008 80)",
+          "borderRadius": "16px",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "div",
+          "cls": "relative",
+          "text": "HomeUpfront pricing",
+          "color": "oklch(0.09 0.004 260)",
+          "backgroundColor": "oklch(0.935 0.008 80)",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "img",
+          "cls": "w-full",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "div",
+          "cls": "absolute",
+          "text": "Home",
+          "color": "oklch(0.2 0.008 260)",
+          "backgroundColor": "oklch(0.985 0.004 80 / 0.9)",
+          "borderRadius": "9999px",
+          "fontSize": "11px",
+          "ownText": true,
+          "leading": "16.5px",
+          "tracking": "1.54px",
+          "textTransform": "uppercase"
+        },
+        {
+          "tag": "div",
+          "cls": "absolute",
+          "text": "Upfront pricing",
+          "color": "oklch(0.985 0.004 80)",
+          "backgroundColor": "oklch(0.11 0.01 260)",
+          "borderRadius": "9999px",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "16px"
+        },
+        {
+          "tag": "h3",
+          "cls": "text-lg",
+          "text": "Refrigerator Repair",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "28px",
+          "tracking": "-0.36px"
+        },
+        {
+          "tag": "p",
+          "cls": "mt-2",
+          "text": "Not cooling, leaking, or making odd noises? We repair all refrigerator types — F",
+          "color": "oklch(0.36 0.008 260)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "22.75px"
+        },
+        {
+          "tag": "a",
+          "cls": "group/btn",
+          "text": "Book this service",
+          "color": "oklch(0.24 0.03 260)",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "w-8",
+          "color": "oklch(0.2 0.008 260)",
+          "backgroundColor": "oklch(0.935 0.008 80)",
+          "borderRadius": "9999px",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "article",
+          "cls": "group",
+          "text": "HomeUpfront pricingWashing Machine RepairWon't drain, won't spin, or leaking wat",
+          "color": "oklch(0.09 0.004 260)",
+          "backgroundColor": "oklch(0.985 0.004 80)",
+          "border": "1px solid oklch(0.935 0.008 80)",
+          "borderRadius": "16px",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "h3",
+          "cls": "text-lg",
+          "text": "Washing Machine Repair",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "28px",
+          "tracking": "-0.36px"
+        },
+        {
+          "tag": "p",
+          "cls": "mt-2",
+          "text": "Won't drain, won't spin, or leaking water? We fix front-load and top-load washer",
+          "color": "oklch(0.36 0.008 260)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "22.75px"
+        },
+        {
+          "tag": "article",
+          "cls": "group",
+          "text": "HomeUpfront pricingDryer RepairNo heat, long dry times, or a drum that won't tur",
+          "color": "oklch(0.09 0.004 260)",
+          "backgroundColor": "oklch(0.985 0.004 80)",
+          "border": "1px solid oklch(0.935 0.008 80)",
+          "borderRadius": "16px",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "h3",
+          "cls": "text-lg",
+          "text": "Dryer Repair",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "28px",
+          "tracking": "-0.36px"
+        },
+        {
+          "tag": "p",
+          "cls": "mt-2",
+          "text": "No heat, long dry times, or a drum that won't turn? Our technicians repair both ",
+          "color": "oklch(0.36 0.008 260)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "22.75px"
+        },
+        {
+          "tag": "article",
+          "cls": "group",
+          "text": "HomeUpfront pricingDishwasher RepairNot cleaning, not draining, or leaking? We s",
+          "color": "oklch(0.09 0.004 260)",
+          "backgroundColor": "oklch(0.985 0.004 80)",
+          "border": "1px solid oklch(0.935 0.008 80)",
+          "borderRadius": "16px",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "h3",
+          "cls": "text-lg",
+          "text": "Dishwasher Repair",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "28px",
+          "tracking": "-0.36px"
+        },
+        {
+          "tag": "p",
+          "cls": "mt-2",
+          "text": "Not cleaning, not draining, or leaking? We service every major dishwasher brand ",
+          "color": "oklch(0.36 0.008 260)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "22.75px"
+        },
+        {
+          "tag": "article",
+          "cls": "group",
+          "text": "HomeUpfront pricingOven & Range RepairOven not heating, burners not lighting, or",
+          "color": "oklch(0.09 0.004 260)",
+          "backgroundColor": "oklch(0.985 0.004 80)",
+          "border": "1px solid oklch(0.935 0.008 80)",
+          "borderRadius": "16px",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "h3",
+          "cls": "text-lg",
+          "text": "Oven & Range Repair",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "28px",
+          "tracking": "-0.36px"
+        },
+        {
+          "tag": "p",
+          "cls": "mt-2",
+          "text": "Oven not heating, burners not lighting, or temperature off? We repair gas and el",
+          "color": "oklch(0.36 0.008 260)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "22.75px"
+        },
+        {
+          "tag": "article",
+          "cls": "group",
+          "text": "HomeUpfront pricingFreezer RepairFood at risk? A freezer failure is urgent. We p",
+          "color": "oklch(0.09 0.004 260)",
+          "backgroundColor": "oklch(0.985 0.004 80)",
+          "border": "1px solid oklch(0.935 0.008 80)",
+          "borderRadius": "16px",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "h3",
+          "cls": "text-lg",
+          "text": "Freezer Repair",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "28px",
+          "tracking": "-0.36px"
+        },
+        {
+          "tag": "p",
+          "cls": "mt-2",
+          "text": "Food at risk? A freezer failure is urgent. We prioritize freezer emergencies wit",
+          "color": "oklch(0.36 0.008 260)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "22.75px"
+        },
+        {
+          "tag": "article",
+          "cls": "group",
+          "text": "HomeUpfront pricingMicrowave RepairNot heating, sparking, or the turntable stopp",
+          "color": "oklch(0.09 0.004 260)",
+          "backgroundColor": "oklch(0.985 0.004 80)",
+          "border": "1px solid oklch(0.935 0.008 80)",
+          "borderRadius": "16px",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "h3",
+          "cls": "text-lg",
+          "text": "Microwave Repair",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "28px",
+          "tracking": "-0.36px"
+        },
+        {
+          "tag": "p",
+          "cls": "mt-2",
+          "text": "Not heating, sparking, or the turntable stopped? We repair over-the-range, built",
+          "color": "oklch(0.36 0.008 260)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "22.75px"
+        },
+        {
+          "tag": "article",
+          "cls": "group",
+          "text": "HomeUpfront pricingGarbage Disposal RepairJammed, leaking, or humming without gr",
+          "color": "oklch(0.09 0.004 260)",
+          "backgroundColor": "oklch(0.985 0.004 80)",
+          "border": "1px solid oklch(0.935 0.008 80)",
+          "borderRadius": "16px",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "h3",
+          "cls": "text-lg",
+          "text": "Garbage Disposal Repair",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "28px",
+          "tracking": "-0.36px"
+        },
+        {
+          "tag": "p",
+          "cls": "mt-2",
+          "text": "Jammed, leaking, or humming without grinding? We repair and replace all disposal",
+          "color": "oklch(0.36 0.008 260)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "22.75px"
+        },
+        {
+          "tag": "article",
+          "cls": "group",
+          "text": "HomeUpfront pricingIce Maker RepairNo ice or leaking water lines? We diagnose an",
+          "color": "oklch(0.09 0.004 260)",
+          "backgroundColor": "oklch(0.985 0.004 80)",
+          "border": "1px solid oklch(0.935 0.008 80)",
+          "borderRadius": "16px",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "h3",
+          "cls": "text-lg",
+          "text": "Ice Maker Repair",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "28px",
+          "tracking": "-0.36px"
+        },
+        {
+          "tag": "p",
+          "cls": "mt-2",
+          "text": "No ice or leaking water lines? We diagnose and repair built-in and freestanding ",
+          "color": "oklch(0.36 0.008 260)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "22.75px"
+        },
+        {
+          "tag": "article",
+          "cls": "group",
+          "text": "HomeUpfront pricingGrill & BBQ RepairGrill not lighting or heating unevenly? We ",
+          "color": "oklch(0.09 0.004 260)",
+          "backgroundColor": "oklch(0.985 0.004 80)",
+          "border": "1px solid oklch(0.935 0.008 80)",
+          "borderRadius": "16px",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "h3",
+          "cls": "text-lg",
+          "text": "Grill & BBQ Repair",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "28px",
+          "tracking": "-0.36px"
+        },
+        {
+          "tag": "p",
+          "cls": "mt-2",
+          "text": "Grill not lighting or heating unevenly? We repair gas grills, infrared systems a",
+          "color": "oklch(0.36 0.008 260)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "22.75px"
+        },
+        {
+          "tag": "article",
+          "cls": "group",
+          "text": "HomeUpfront pricingAppliance MaintenanceAn ounce of prevention is worth a pound ",
+          "color": "oklch(0.09 0.004 260)",
+          "backgroundColor": "oklch(0.985 0.004 80)",
+          "border": "1px solid oklch(0.935 0.008 80)",
+          "borderRadius": "16px",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "h3",
+          "cls": "text-lg",
+          "text": "Appliance Maintenance",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "28px",
+          "tracking": "-0.36px"
+        },
+        {
+          "tag": "p",
+          "cls": "mt-2",
+          "text": "An ounce of prevention is worth a pound of cure. Our maintenance plans inspect, ",
+          "color": "oklch(0.36 0.008 260)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "22.75px"
+        },
+        {
+          "tag": "article",
+          "cls": "group",
+          "text": "HomeUpfront pricingEmergency Appliance RepairSame-day emergency service for refr",
+          "color": "oklch(0.09 0.004 260)",
+          "backgroundColor": "oklch(0.985 0.004 80)",
+          "border": "1px solid oklch(0.935 0.008 80)",
+          "borderRadius": "16px",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "h3",
+          "cls": "text-lg",
+          "text": "Emergency Appliance Repair",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "28px",
+          "tracking": "-0.36px"
+        },
+        {
+          "tag": "p",
+          "cls": "mt-2",
+          "text": "Same-day emergency service for refrigerators, freezers, ovens and freezers. 90%+",
+          "color": "oklch(0.36 0.008 260)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "22.75px"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "heading": "Appliance emergency right now?",
+      "background": "oklch(0.965 0.006 80)",
+      "elements": [
+        {
+          "tag": "div",
+          "cls": "lg:col-span-1",
+          "text": "EmergencyAppliance emergency right now?If your fridge or freezer has stopped coo",
+          "color": "oklch(0.985 0.004 80)",
+          "backgroundColor": "oklch(0.11 0.01 260)",
+          "borderRadius": "16px",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "span",
+          "cls": "text-xs",
+          "text": "Emergency",
+          "color": "oklch(0.72 0.16 50)",
+          "fontSize": "12px",
+          "ownText": true,
+          "leading": "16px",
+          "tracking": "2.16px",
+          "textTransform": "uppercase"
+        },
+        {
+          "tag": "h3",
+          "cls": "text-xl",
+          "text": "Appliance emergency right now?",
+          "color": "oklch(0.985 0.004 80)",
+          "fontSize": "30px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "36px",
+          "tracking": "-0.6px"
+        },
+        {
+          "tag": "p",
+          "cls": "mt-3",
+          "text": "If your fridge or freezer has stopped cooling, or your oven quit before a big me",
+          "color": "oklch(0.935 0.008 80)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "22.75px"
+        },
+        {
+          "tag": "a",
+          "cls": "mt-6",
+          "text": "(509) 300-4042",
+          "color": "oklch(0.985 0.004 80)",
+          "backgroundColor": "oklch(0.65 0.2 45)",
+          "borderRadius": "9999px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "div",
+          "cls": "lg:col-span-2",
+          "text": "Warranty & maintenanceWarranty-backed repairs, every time.Every repair is backed",
+          "color": "oklch(0.09 0.004 260)",
+          "backgroundColor": "oklch(0.985 0.004 80)",
+          "border": "1px solid oklch(0.935 0.008 80)",
+          "borderRadius": "16px",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "img",
+          "cls": "w-full",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "span",
+          "cls": "text-xs",
+          "text": "Warranty & maintenance",
+          "color": "oklch(0.36 0.008 260)",
+          "fontSize": "12px",
+          "ownText": true,
+          "leading": "16px",
+          "tracking": "2.16px",
+          "textTransform": "uppercase"
+        },
+        {
+          "tag": "h3",
+          "cls": "text-xl",
+          "text": "Warranty-backed repairs, every time.",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "30px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "36px",
+          "tracking": "-0.6px"
+        },
+        {
+          "tag": "p",
+          "cls": "mt-3",
+          "text": "Every repair is backed by our warranty on parts and labor. Our maintenance plans",
+          "color": "oklch(0.36 0.008 260)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "22.75px"
+        },
+        {
+          "tag": "a",
+          "cls": "group",
+          "text": "Book a visit",
+          "color": "oklch(0.985 0.004 80)",
+          "backgroundColor": "oklch(0.11 0.01 260)",
+          "borderRadius": "9999px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "20px"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "heading": "Not sure which serviceyou need?",
+      "background": "oklch(0.985 0.004 80)",
+      "elements": [
+        {
+          "tag": "div",
+          "cls": "inline-flex",
+          "text": "Ready when you are",
+          "color": "oklch(0.28 0.008 260)",
+          "backgroundColor": "oklch(0.965 0.006 80)",
+          "border": "1px solid oklch(0.935 0.008 80)",
+          "borderRadius": "9999px",
+          "fontSize": "11px",
+          "ownText": true,
+          "leading": "16.5px",
+          "tracking": "1.98px",
+          "textTransform": "uppercase"
+        },
+        {
+          "tag": "span",
+          "cls": "w-1.5",
+          "color": "oklch(0.28 0.008 260)",
+          "backgroundColor": "oklch(0.65 0.2 45)",
+          "borderRadius": "9999px",
+          "fontSize": "11px"
+        },
+        {
+          "tag": "h2",
+          "cls": "text-3xl",
+          "text": "Not sure which serviceyou need?",
+          "color": "oklch(0.09 0.004 260)",
+          "fontSize": "60px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "60px",
+          "tracking": "-1.5px"
+        },
+        {
+          "tag": "p",
+          "cls": "mt-4",
+          "text": "Send a few details and we'll point you in the right direction — no pressure.",
+          "color": "oklch(0.36 0.008 260)",
+          "fontSize": "18px",
+          "ownText": true,
+          "leading": "28px"
+        },
+        {
+          "tag": "a",
+          "cls": "group",
+          "text": "Book a visit",
+          "color": "oklch(0.985 0.004 80)",
+          "backgroundColor": "oklch(0.11 0.01 260)",
+          "borderRadius": "9999px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "inline-flex",
+          "text": "Send a message",
+          "color": "oklch(0.2 0.008 260)",
+          "borderRadius": "9999px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "20px"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "heading": "Site footer (port into Footer.astro)",
+      "background": "oklch(0.985 0.004 80)",
+      "elements": [
+        {
+          "tag": "div",
+          "cls": "rounded-2xl",
+          "text": "UDG ServicesTri-Cities · WashingtonVeteran-owned appliance repair for homes and ",
+          "color": "oklch(0.965 0.006 80)",
+          "backgroundColor": "oklch(0.11 0.01 260)",
+          "borderRadius": "16px",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "span",
+          "cls": "w-10",
+          "color": "oklch(0.985 0.004 80)",
+          "backgroundColor": "oklch(0.65 0.2 45)",
+          "borderRadius": "6px",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "span",
+          "cls": "text-lg",
+          "text": "UDG Services",
+          "color": "oklch(0.985 0.004 80)",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "28px"
+        },
+        {
+          "tag": "span",
+          "cls": "text-[10px]",
+          "text": "Tri-Cities · Washington",
+          "color": "oklch(0.895 0.01 80)",
+          "fontSize": "10px",
+          "ownText": true,
+          "leading": "12.5px",
+          "tracking": "1.8px",
+          "textTransform": "uppercase"
+        },
+        {
+          "tag": "p",
+          "cls": "text-sm",
+          "text": "Veteran-owned appliance repair for homes and businesses across the Tri-Cities. A",
+          "color": "oklch(0.935 0.008 80)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "22.75px"
+        },
+        {
+          "tag": "span",
+          "cls": "relative",
+          "color": "rgb(52, 211, 153)",
+          "backgroundColor": "rgb(52, 211, 153)",
+          "borderRadius": "9999px",
+          "fontSize": "16px"
+        },
+        {
+          "tag": "span",
+          "cls": "text-sm",
+          "text": "Same-day & emergency service",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "h4",
+          "cls": "text-xs",
+          "text": "Explore",
+          "color": "oklch(0.895 0.01 80)",
+          "fontSize": "12px",
+          "ownText": true,
+          "leading": "16px",
+          "tracking": "2.16px",
+          "textTransform": "uppercase"
+        },
+        {
+          "tag": "li",
+          "text": "Services",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": false,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "hover:text-accent-400",
+          "text": "Services",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "li",
+          "text": "Pricing",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": false,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "hover:text-accent-400",
+          "text": "Pricing",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "li",
+          "text": "About",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": false,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "hover:text-accent-400",
+          "text": "About",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "li",
+          "text": "Team",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": false,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "hover:text-accent-400",
+          "text": "Team",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "li",
+          "text": "Reviews",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": false,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "hover:text-accent-400",
+          "text": "Reviews",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "li",
+          "text": "Careers",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": false,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "hover:text-accent-400",
+          "text": "Careers",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "li",
+          "text": "Service Area",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": false,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "hover:text-accent-400",
+          "text": "Service Area",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "li",
+          "text": "Contact",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": false,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "hover:text-accent-400",
+          "text": "Contact",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "h4",
+          "cls": "text-xs",
+          "text": "Get in touch",
+          "color": "oklch(0.895 0.01 80)",
+          "fontSize": "12px",
+          "ownText": true,
+          "leading": "16px",
+          "tracking": "2.16px",
+          "textTransform": "uppercase"
+        },
+        {
+          "tag": "li",
+          "text": "(509) 300-4042",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": false,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "flex",
+          "text": "(509) 300-4042",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "li",
+          "text": "info@udgservices.com",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": false,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "flex",
+          "text": "info@udgservices.com",
+          "color": "oklch(0.965 0.006 80)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "li",
+          "cls": "flex",
+          "text": "Serving Richland, Pasco & Kennewick, WA",
+          "color": "oklch(0.935 0.008 80)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "h4",
+          "cls": "text-xs",
+          "text": "Book a repair",
+          "color": "oklch(0.895 0.01 80)",
+          "fontSize": "12px",
+          "ownText": true,
+          "leading": "16px",
+          "tracking": "2.16px",
+          "textTransform": "uppercase"
+        },
+        {
+          "tag": "p",
+          "cls": "text-sm",
+          "text": "Upfront pricing before work begins. Same-day service for emergencies.",
+          "color": "oklch(0.935 0.008 80)",
+          "fontSize": "14px",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "a",
+          "cls": "group",
+          "text": "Book Service",
+          "color": "oklch(0.985 0.004 80)",
+          "backgroundColor": "oklch(0.65 0.2 45)",
+          "borderRadius": "6px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "ownText": true,
+          "leading": "20px"
+        },
+        {
+          "tag": "span",
+          "cls": "inline-flex",
+          "text": "WA License UDGSES*15704",
+          "color": "oklch(0.895 0.01 80)",
+          "fontSize": "12px",
+          "ownText": true,
+          "leading": "16px"
+        },
+        {
+          "tag": "span",
+          "cls": "inline-flex",
+          "text": "Insured",
+          "color": "oklch(0.895 0.01 80)",
+          "fontSize": "12px",
+          "ownText": true,
+          "leading": "16px"
+        },
+        {
+          "tag": "div",
+          "cls": "relative",
+          "text": "UDG Services© 2026 UDG Services LLC · Veteran-Owned · Serving the Tri-Cities, WA",
+          "color": "oklch(0.965 0.006 80)",
+          "border": "1px solid oklch(0.985 0.004 80 / 0.1)",
+          "fontSize": "16px",
+          "ownText": false,
+          "leading": "24px"
+        },
+        {
+          "tag": "p",
+          "text": "© 2026 UDG Services LLC · Veteran-Owned · Serving the Tri-Cities, WA",
+          "color": "oklch(0.895 0.01 80)",
+          "fontSize": "12px",
+          "ownText": true,
+          "leading": "16px"
+        },
+        {
+          "tag": "a",
+          "cls": "hover:text-accent-400",
+          "text": "Privacy",
+          "color": "oklch(0.895 0.01 80)",
+          "fontSize": "12px",
+          "ownText": true,
+          "leading": "16px"
+        },
+        {
+          "tag": "a",
+          "cls": "hover:text-accent-400",
+          "text": "Terms",
+          "color": "oklch(0.895 0.01 80)",
+          "fontSize": "12px",
+          "ownText": true,
+          "leading": "16px"
+        },
+        {
+          "tag": "a",
+          "cls": "hover:text-accent-400",
+          "text": "Insurance",
+          "color": "oklch(0.895 0.01 80)",
+          "fontSize": "12px",
+          "ownText": true,
+          "leading": "16px"
+        }
+      ]
+    }
+  ],
+  "imageTreatments": [],
+  "fontFaceRules": [],
+  "renderedSurfaces": [
+    {
+      "selector": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(1) > img:nth-of-type(1)",
+      "mediaKind": "img",
+      "image": "https://public.readdy.ai/ai/img_res/edited_f6b3bd27f23e0f98faf0cc5c9884dd46_a74b9826.jpg",
+      "baseColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "none",
+      "backgroundSize": "auto",
+      "backgroundPosition": "0% 0%",
+      "layers": [
+        {
+          "target": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1)",
+          "relation": "positioned-child",
+          "bounds": {
+            "left": 0,
+            "top": 0,
+            "width": 1,
+            "height": 1
+          },
+          "paint": {
+            "color": "rgba(0, 0, 0, 0)",
+            "image": "linear-gradient(oklch(0.11 0.01 260 / 0.7), oklch(0.11 0.01 260 / 0.45), oklch(0.11 0.01 260 / 0.8))",
+            "opacity": 1,
+            "blendMode": "normal",
+            "zIndex": "auto",
+            "box": {
+              "width": "1873px",
+              "height": "520px",
+              "top": "0px",
+              "right": "0px",
+              "bottom": "0px",
+              "left": "0px",
+              "position": "absolute",
+              "transform": "none"
+            }
+          }
+        }
+      ],
+      "observation": "paint-layers-observed"
+    },
+    {
+      "selector": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(3) > article:nth-of-type(1) > div:nth-of-type(1) > img:nth-of-type(1)",
+      "mediaKind": "img",
+      "image": "https://public.readdy.ai/ai/img_res/edited_385936e84d932591c8aa593ecd7b7e10_c8d2122b.jpg",
+      "baseColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "none",
+      "backgroundSize": "auto",
+      "backgroundPosition": "0% 0%",
+      "layers": [],
+      "observation": "no-additional-layer-observed"
+    },
+    {
+      "selector": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(3) > article:nth-of-type(2) > div:nth-of-type(1) > img:nth-of-type(1)",
+      "mediaKind": "img",
+      "image": "https://public.readdy.ai/ai/img_res/edited_71cab708c0b62f00a147178e52a1100f_353cc2c0.jpg",
+      "baseColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "none",
+      "backgroundSize": "auto",
+      "backgroundPosition": "0% 0%",
+      "layers": [],
+      "observation": "no-additional-layer-observed"
+    },
+    {
+      "selector": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(3) > article:nth-of-type(3) > div:nth-of-type(1) > img:nth-of-type(1)",
+      "mediaKind": "img",
+      "image": "https://public.readdy.ai/ai/img_res/edited_716ff553a05b0285809b25976ad5b3b6_eace0517.jpg",
+      "baseColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "none",
+      "backgroundSize": "auto",
+      "backgroundPosition": "0% 0%",
+      "layers": [],
+      "observation": "no-additional-layer-observed"
+    },
+    {
+      "selector": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(3) > article:nth-of-type(4) > div:nth-of-type(1) > img:nth-of-type(1)",
+      "mediaKind": "img",
+      "image": "https://public.readdy.ai/ai/img_res/edited_11a0a3ac65001e70382c5a2b0fd1f192_1db7a44d.jpg",
+      "baseColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "none",
+      "backgroundSize": "auto",
+      "backgroundPosition": "0% 0%",
+      "layers": [],
+      "observation": "no-additional-layer-observed"
+    },
+    {
+      "selector": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(3) > article:nth-of-type(5) > div:nth-of-type(1) > img:nth-of-type(1)",
+      "mediaKind": "img",
+      "image": "https://public.readdy.ai/ai/img_res/edited_7ba145b9fbc4ab97cdbeadad49592c44_00b3ef17.jpg",
+      "baseColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "none",
+      "backgroundSize": "auto",
+      "backgroundPosition": "0% 0%",
+      "layers": [],
+      "observation": "no-additional-layer-observed"
+    },
+    {
+      "selector": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(3) > article:nth-of-type(6) > div:nth-of-type(1) > img:nth-of-type(1)",
+      "mediaKind": "img",
+      "image": "https://public.readdy.ai/ai/img_res/edited_111b0210779a1edab38e97dda744a454_def42300.jpg",
+      "baseColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "none",
+      "backgroundSize": "auto",
+      "backgroundPosition": "0% 0%",
+      "layers": [],
+      "observation": "no-additional-layer-observed"
+    },
+    {
+      "selector": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(3) > article:nth-of-type(7) > div:nth-of-type(1) > img:nth-of-type(1)",
+      "mediaKind": "img",
+      "image": "https://public.readdy.ai/ai/img_res/edited_c26aa81334f0b97ce8812b4ecc394e88_1aae6299.jpg",
+      "baseColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "none",
+      "backgroundSize": "auto",
+      "backgroundPosition": "0% 0%",
+      "layers": [],
+      "observation": "no-additional-layer-observed"
+    },
+    {
+      "selector": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(3) > article:nth-of-type(8) > div:nth-of-type(1) > img:nth-of-type(1)",
+      "mediaKind": "img",
+      "image": "https://public.readdy.ai/ai/img_res/edited_8412afa070350eb0e0efcefafdc2c6bd_c14ee467.jpg",
+      "baseColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "none",
+      "backgroundSize": "auto",
+      "backgroundPosition": "0% 0%",
+      "layers": [],
+      "observation": "no-additional-layer-observed"
+    },
+    {
+      "selector": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(3) > article:nth-of-type(9) > div:nth-of-type(1) > img:nth-of-type(1)",
+      "mediaKind": "img",
+      "image": "https://public.readdy.ai/ai/img_res/edited_65e45019c945f4a36e910d544601eddb_6ce52ca3.jpg",
+      "baseColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "none",
+      "backgroundSize": "auto",
+      "backgroundPosition": "0% 0%",
+      "layers": [],
+      "observation": "no-additional-layer-observed"
+    },
+    {
+      "selector": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(3) > article:nth-of-type(10) > div:nth-of-type(1) > img:nth-of-type(1)",
+      "mediaKind": "img",
+      "image": "https://public.readdy.ai/ai/img_res/edited_1deb67900f8fb397ac3a03ec251a280e_b3fbef0d.jpg",
+      "baseColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "none",
+      "backgroundSize": "auto",
+      "backgroundPosition": "0% 0%",
+      "layers": [],
+      "observation": "no-additional-layer-observed"
+    },
+    {
+      "selector": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(3) > article:nth-of-type(11) > div:nth-of-type(1) > img:nth-of-type(1)",
+      "mediaKind": "img",
+      "image": "https://public.readdy.ai/ai/img_res/edited_24d29355a96821540d685ff1ec7bd59c_35c41c15.jpg",
+      "baseColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "none",
+      "backgroundSize": "auto",
+      "backgroundPosition": "0% 0%",
+      "layers": [],
+      "observation": "no-additional-layer-observed"
+    },
+    {
+      "selector": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(3) > article:nth-of-type(12) > div:nth-of-type(1) > img:nth-of-type(1)",
+      "mediaKind": "img",
+      "image": "https://public.readdy.ai/ai/img_res/edited_4842ac3566ef055345de2ceaec1b5a0e_ec4dcfad.jpg",
+      "baseColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "none",
+      "backgroundSize": "auto",
+      "backgroundPosition": "0% 0%",
+      "layers": [],
+      "observation": "no-additional-layer-observed"
+    },
+    {
+      "selector": "[id=\"root\"] > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > img:nth-of-type(1)",
+      "mediaKind": "img",
+      "image": "https://public.readdy.ai/ai/img_res/edited_d52d8607c47473582932d7bbbf9a6a4c_508a8695.jpg",
+      "baseColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "none",
+      "backgroundSize": "auto",
+      "backgroundPosition": "0% 0%",
+      "layers": [],
+      "observation": "no-additional-layer-observed"
+    }
+  ],
+  "floatingOverlays": [],
+  "positionedOverlays": [],
+  "captureViewport": 1920,
+  "hiddenImages": [],
+  "elementorStylesheets": []
+}

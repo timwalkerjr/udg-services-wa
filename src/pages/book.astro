@@ -1,0 +1,769 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/config/site';
+
+export const prerender = true;
+
+const title = "Book a Service Visit | Online Appliance Repair Booking | UDG Services";
+const description = "Book an appliance repair service visit across Richland, Pasco, Kennewick, and the Tri-Cities. Same-day emergency service available.";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Book Appliance Repair Service | UDG Services",
+  "image": "https://public.readdy.ai/ai/img_res/fca5f491f55ac01816dd784e81032f29.webp",
+  "description": description,
+  "url": `${SITE.url}/book/`,
+};
+
+const serviceTypes = [
+  { value: "Refrigerator or freezer", icon: "fridge" },
+  { value: "Washing machine", icon: "washer" },
+  { value: "Dryer", icon: "dryer" },
+  { value: "Dishwasher", icon: "dishwasher" },
+  { value: "Oven or range", icon: "oven" },
+  { value: "Microwave", icon: "microwave" },
+  { value: "Garbage disposal", icon: "disposal" },
+  { value: "Ice maker", icon: "icemaker" },
+  { value: "Grill or BBQ", icon: "grill" },
+  { value: "Not sure yet", icon: "help" },
+];
+
+const propertyTypes = [
+  { value: "Single-family home", icon: "home", checked: true },
+  { value: "Apartment / Condo", icon: "building" },
+  { value: "Small business", icon: "store" },
+  { value: "Restaurant", icon: "restaurant" },
+  { value: "Office", icon: "briefcase" },
+  { value: "Rental property", icon: "key" },
+  { value: "Other", icon: "dots" },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  headerVariant="solid"
+  jsonLd={jsonLd}
+>
+  <div class="min-h-screen bg-[#FBFAF7] text-[#020203] font-sans" data-ps="src/pages/book.astro:rrr9bm">
+    <!-- Hero Banner Section -->
+    <section class="px-3 md:px-4 pt-3 md:pt-4" data-ps="src/pages/book.astro:6z4xis">
+      <div class="relative w-full min-h-[380px] sm:min-h-[420px] md:min-h-[520px] rounded-2xl md:rounded-3xl overflow-hidden shadow-sm" data-ps="src/pages/book.astro:rrr9bl">
+        <img
+          alt="West Michigan service van"
+          loading="eager"
+          decoding="async"
+          class="absolute inset-0 w-full h-full object-cover object-top"
+          src="https://pagesmith-cdn.com/9cf36851/images/83ba72eaa39f34970382465edf09f7ac-db1f77-1536.webp" data-ps="src/pages/book.astro:ua0dn6" />
+        <div class="absolute inset-0 bg-gradient-to-b from-[#090a0d]/70 via-[#090a0d]/45 to-[#090a0d]/80 pointer-events-none" data-ps="src/pages/book.astro:rrr9az"></div>
+        <div class="relative z-10 flex flex-col justify-end h-full min-h-[380px] sm:min-h-[420px] md:min-h-[520px] max-w-7xl mx-auto w-full px-6 sm:px-8 py-8 sm:py-10 md:py-14" data-ps="src/pages/book.astro:rrr9ay">
+          <div class="inline-flex self-start items-center gap-2 mb-4 sm:mb-5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/25 text-white text-[10px] sm:text-xs uppercase tracking-[0.16em]" data-ps="src/pages/book.astro:rrr9ax">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/book.astro:idxp1f"></span>
+            Book online
+          </div>
+          <h1 class="font-heading font-semibold text-white text-[32px] sm:text-[40px] md:text-[56px] lg:text-[72px] leading-[1.02] tracking-tight max-w-4xl" data-ps="src/pages/book.astro:hfy0xr">
+            Book a local<br />
+            <em class="not-italic text-[#EC5A00]">service visit.</em>
+          </h1>
+          <p class="mt-3 sm:mt-4 md:mt-6 max-w-xl text-sm sm:text-base md:text-lg text-white/90 leading-relaxed" data-ps="src/pages/book.astro:axjpd7">
+            Takes about a minute. Add a photo if you can — it makes pricing faster.
+          </p>
+          <div class="mt-5 sm:mt-6 md:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3" data-ps="src/pages/book.astro:rrr9aw">
+            <a
+              href="#booking-form"
+              class="group inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-full bg-[#EC5A00] text-white text-sm md:text-base font-semibold hover:bg-[#d45100] transition-all hover:-translate-y-0.5 cursor-pointer whitespace-nowrap shadow-sm no-underline"
+             data-ps="src/pages/book.astro:8yqc7x">
+              Start booking
+              <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <a
+              href="/pricing"
+              class="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-full bg-white/10 border border-white/25 text-white text-sm md:text-base font-semibold hover:bg-white/20 transition-all cursor-pointer whitespace-nowrap no-underline"
+             data-ps="src/pages/book.astro:8yqc7w">
+              View pricing
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="booking-form" class="px-4 md:px-8 py-12 sm:py-16 md:py-24 bg-[#FBFAF7]" data-ps="src/pages/book.astro:6z4xit">
+      <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8" data-ps="src/pages/book.astro:rrr9av">
+        <!-- Sidebar / Aside -->
+        <aside class="lg:col-span-1 space-y-4 order-2 lg:order-1" data-ps="src/pages/book.astro:cpqamx">
+          <!-- Booking Progress Card -->
+          <div class="p-4 sm:p-5 rounded-2xl bg-[#F5F3ED] border border-[#eae6de] lg:sticky lg:top-24" data-ps="src/pages/book.astro:rrr9au">
+            <p class="text-[11px] uppercase tracking-[0.18em] text-[#5a5661] font-semibold" data-ps="src/pages/book.astro:axjpd8">Booking progress</p>
+            <div class="mt-4 flex lg:flex-col gap-3 lg:gap-3 overflow-x-auto scroll-clean" data-ps="src/pages/book.astro:rrr9at">
+              <div class="flex items-center gap-2 sm:gap-3 shrink-0" data-ps="src/pages/book.astro:rrr9as">
+                <span id="step-badge-1" class="w-8 h-8 flex items-center justify-center rounded-full text-xs font-semibold transition-colors shrink-0 bg-[#090a0d] text-white" data-ps="src/pages/book.astro:idxp1g">01</span>
+                <span class="text-sm font-medium whitespace-nowrap text-[#020203]" data-ps="src/pages/book.astro:idxp1h">Choose service</span>
+              </div>
+              <div class="flex items-center gap-2 sm:gap-3 shrink-0" data-ps="src/pages/book.astro:rrr9ar">
+                <span id="step-badge-2" class="w-8 h-8 flex items-center justify-center rounded-full text-xs font-semibold transition-colors shrink-0 bg-[#FBFAF7] text-[#71717a] border border-[#eae6de]" data-ps="src/pages/book.astro:idxp1i">02</span>
+                <span class="text-sm font-medium whitespace-nowrap text-[#5a5661]" data-ps="src/pages/book.astro:idxp1j">Pick a time</span>
+              </div>
+              <div class="flex items-center gap-2 sm:gap-3 shrink-0" data-ps="src/pages/book.astro:rrr9aq">
+                <span id="step-badge-3" class="w-8 h-8 flex items-center justify-center rounded-full text-xs font-semibold transition-colors shrink-0 bg-[#FBFAF7] text-[#71717a] border border-[#eae6de]" data-ps="src/pages/book.astro:idxp1k">03</span>
+                <span class="text-sm font-medium whitespace-nowrap text-[#5a5661]" data-ps="src/pages/book.astro:idxp1l">Your details</span>
+              </div>
+            </div>
+
+            <div class="hidden lg:block mt-6 pt-6 border-t border-[#eae6de] space-y-3" data-ps="src/pages/book.astro:rrr9a4">
+              <p class="text-xs uppercase tracking-[0.18em] text-[#5a5661] font-semibold" data-ps="src/pages/book.astro:axjpd9">Quick tips</p>
+              <div class="flex items-start gap-2.5 text-xs text-[#3f3f46] leading-relaxed" data-ps="src/pages/book.astro:rrr9a3">
+                <svg class="w-4 h-4 text-[#EC5A00] shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                  <circle cx="12" cy="13" r="4"></circle>
+                </svg>
+                <span data-ps="src/pages/book.astro:idxp1m">A photo of the issue or access point helps a lot.</span>
+              </div>
+              <div class="flex items-start gap-2.5 text-xs text-[#3f3f46] leading-relaxed" data-ps="src/pages/book.astro:rrr9a2">
+                <svg class="w-4 h-4 text-[#EC5A00] shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span data-ps="src/pages/book.astro:idxp1n">City name is enough — no need to share the full address now.</span>
+              </div>
+              <div class="flex items-start gap-2.5 text-xs text-[#3f3f46] leading-relaxed" data-ps="src/pages/book.astro:rrr9a1">
+                <svg class="w-4 h-4 text-[#EC5A00] shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span data-ps="src/pages/book.astro:idxp1o">We'll message you back within a few hours to confirm.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Emergency Service Card -->
+          <div class="p-4 sm:p-5 rounded-2xl bg-[#090a0d] text-white shadow-sm" data-ps="src/pages/book.astro:rrr9a0">
+            <p class="text-xs uppercase tracking-[0.18em] text-[#EC5A00] font-semibold mb-2" data-ps="src/pages/book.astro:axjpda">Emergency?</p>
+            <p class="text-sm leading-relaxed text-[#d4d4d8]" data-ps="src/pages/book.astro:axjpdw">
+              If your fridge or freezer has stopped cooling, or your oven has quit before a big meal, call us immediately. We offer same-day emergency service across the Tri-Cities.
+            </p>
+            <a
+              href="tel:+15093004042"
+              class="mt-4 inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#EC5A00] text-white text-sm font-semibold hover:bg-[#d45100] transition-colors cursor-pointer whitespace-nowrap no-underline shadow-sm"
+             data-ps="src/pages/book.astro:8yqc7v">
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/>
+              </svg>
+              (509) 300-4042
+            </a>
+          </div>
+        </aside>
+
+        <!-- Main Booking Form -->
+        <form
+          id="booking-form-element"
+          class="lg:col-span-2 order-1 lg:order-2 rounded-2xl bg-[#FBFAF7] border border-[#eae6de] p-5 sm:p-6 md:p-10 space-y-8 sm:space-y-10 shadow-sm"
+        >
+          <input type="hidden" name="_formId" value="booking" />
+
+          <!-- Form Status Notification -->
+          <div id="form-status" class="hidden px-4 py-3 rounded-xl text-sm font-medium" data-ps="src/pages/book.astro:rrr99z"></div>
+
+          <!-- Section 01: Service Type -->
+          <fieldset class="space-y-4">
+            <div class="flex items-center justify-between gap-4" data-ps="src/pages/book.astro:rrr99y">
+              <div class="flex items-center gap-2.5" data-ps="src/pages/book.astro:rrr99x">
+                <span class="w-7 h-7 flex items-center justify-center rounded-full bg-[#090a0d] text-white text-xs font-semibold" data-ps="src/pages/book.astro:udougz">01</span>
+                <legend class="text-sm font-heading font-semibold text-[#020203]">What do you need help with?</legend>
+              </div>
+              <span class="text-[11px] uppercase tracking-wider text-[#71717a] font-medium" data-ps="src/pages/book.astro:udouh0">Tap one</span>
+            </div>
+            <p class="mt-1 text-sm text-[#5a5661]" data-ps="src/pages/book.astro:axjpdx">Not sure? Pick the closest — you can add detail below.</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-4" data-ps="src/pages/book.astro:rrr99w">
+              {serviceTypes.map((item, __psIdx) => (
+                <label class="group flex items-center gap-3 p-3.5 rounded-xl border cursor-pointer transition-all border-[#eae6de] bg-[#FBFAF7] hover:border-[#090a0d]/40 hover:bg-[#F5F3ED] has-[:checked]:border-[#090a0d] has-[:checked]:bg-[#F5F3ED] has-[:checked]:ring-1 has-[:checked]:ring-[#090a0d]" data-ps={`src/pages/book.astro:pnllds-${__psIdx}`}>
+                  <input type="radio" name="service_type" value={item.value} required class="sr-only" />
+                  <span class="w-9 h-9 flex items-center justify-center rounded-lg text-lg transition-colors shrink-0 bg-[#F5F3ED] text-[#27272a] group-hover:bg-[#eae6de] group-has-[:checked]:bg-[#090a0d] group-has-[:checked]:text-white" data-ps={`src/pages/book.astro:udouh1-${__psIdx}`}>
+                    {item.icon === 'fridge' && (
+                      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="4" y1="10" x2="20" y2="10"></line><line x1="9" y1="6" x2="9" y2="7"></line><line x1="9" y1="14" x2="9" y2="16"></line></svg>
+                    )}
+                    {item.icon === 'washer' && (
+                      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><circle cx="12" cy="13" r="4"></circle><line x1="7" y1="6" x2="7.01" y2="6"></line><line x1="11" y1="6" x2="13" y2="6"></line></svg>
+                    )}
+                    {item.icon === 'dryer' && (
+                      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path></svg>
+                    )}
+                    {item.icon === 'dishwasher' && (
+                      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><path d="M8 14h.01M12 14h.01M16 14h.01"></path></svg>
+                    )}
+                    {item.icon === 'oven' && (
+                      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+                    )}
+                    {item.icon === 'microwave' && (
+                      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                    )}
+                    {item.icon === 'disposal' && (
+                      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 19 3 15 7 11"></polyline><path d="M21 15a4 4 0 0 0-4-4H3"></path><polyline points="17 5 21 9 17 13"></polyline><path d="M3 9a4 4 0 0 0 4 4h14"></path></svg>
+                    )}
+                    {item.icon === 'icemaker' && (
+                      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="2" y1="12" x2="22" y2="12"></line><line x1="12" y1="2" x2="12" y2="22"></line><path d="m20 16-4-4 4-4M4 8l4 4-4 4M16 4l-4 4-4-4M8 20l4-4 4 4"></path></svg>
+                    )}
+                    {item.icon === 'grill' && (
+                      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2M8.5 3.5l1.4 1.4M15.5 3.5l-1.4 1.4M4 10h16M5 10a7 7 0 0 0 14 0M6 18l-2 4M18 18l2 4"></path></svg>
+                    )}
+                    {item.icon === 'help' && (
+                      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    )}
+                  </span>
+                  <span class="text-sm text-[#020203] font-medium flex-1" data-ps={`src/pages/book.astro:udouh2-${__psIdx}`}>{item.value}</span>
+                </label>
+              ))}
+            </div>
+          </fieldset>
+
+          <!-- Section 02: Urgency & Scheduling -->
+          <fieldset class="space-y-4">
+            <div class="flex items-center justify-between gap-4" data-ps="src/pages/book.astro:rrr99v">
+              <div class="flex items-center gap-2.5" data-ps="src/pages/book.astro:rrr999">
+                <span class="w-7 h-7 flex items-center justify-center rounded-full bg-[#090a0d] text-white text-xs font-semibold" data-ps="src/pages/book.astro:udouh3">02</span>
+                <legend class="text-sm font-heading font-semibold text-[#020203]">When works for you?</legend>
+              </div>
+              <span class="text-[11px] uppercase tracking-wider text-[#71717a] font-medium" data-ps="src/pages/book.astro:udouh4">Urgency</span>
+            </div>
+
+            <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-2" data-ps="src/pages/book.astro:rrr998">
+              <!-- Flexible -->
+              <label class="group flex items-center gap-3 p-3.5 rounded-xl border cursor-pointer transition-all border-[#eae6de] bg-[#FBFAF7] hover:border-[#090a0d]/40 hover:bg-[#F5F3ED] has-[:checked]:border-[#090a0d] has-[:checked]:bg-[#F5F3ED] has-[:checked]:ring-2 has-[:checked]:ring-[#090a0d]/10" data-ps="src/pages/book.astro:pnlldt">
+                <input type="radio" name="urgency" value="Flexible" required class="sr-only" />
+                <span class="w-10 h-10 flex items-center justify-center rounded-lg shrink-0 bg-[#F5F3ED] text-[#27272a] group-has-[:checked]:bg-[#EC5A00] group-has-[:checked]:text-white transition-colors" data-ps="src/pages/book.astro:udouh5">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </span>
+                <span class="flex flex-col" data-ps="src/pages/book.astro:udouh6">
+                  <span class="text-sm font-semibold text-[#020203]" data-ps="src/pages/book.astro:udouh7">Flexible</span>
+                  <span class="text-[11px] text-[#71717a]" data-ps="src/pages/book.astro:udouh8">Anytime soon</span>
+                </span>
+              </label>
+
+              <!-- This week (Checked by default) -->
+              <label class="group flex items-center gap-3 p-3.5 rounded-xl border cursor-pointer transition-all border-[#090a0d] bg-[#F5F3ED] ring-2 ring-[#090a0d]/10 has-[:checked]:border-[#090a0d] has-[:checked]:bg-[#F5F3ED] has-[:checked]:ring-2 has-[:checked]:ring-[#090a0d]/10" data-ps="src/pages/book.astro:pnllef">
+                <input type="radio" name="urgency" value="This week" checked required class="sr-only" />
+                <span class="w-10 h-10 flex items-center justify-center rounded-lg shrink-0 bg-[#EC5A00] text-white transition-colors" data-ps="src/pages/book.astro:udouhu">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                </span>
+                <span class="flex flex-col" data-ps="src/pages/book.astro:udouhv">
+                  <span class="text-sm font-semibold text-[#020203]" data-ps="src/pages/book.astro:udouhw">This week</span>
+                  <span class="text-[11px] text-[#71717a]" data-ps="src/pages/book.astro:udouhx">Within 5 days</span>
+                </span>
+              </label>
+
+              <!-- As soon as possible -->
+              <label class="group flex items-center gap-3 p-3.5 rounded-xl border cursor-pointer transition-all border-[#eae6de] bg-[#FBFAF7] hover:border-[#090a0d]/40 hover:bg-[#F5F3ED] has-[:checked]:border-[#090a0d] has-[:checked]:bg-[#F5F3ED] has-[:checked]:ring-2 has-[:checked]:ring-[#090a0d]/10" data-ps="src/pages/book.astro:pnlleg">
+                <input type="radio" name="urgency" value="As soon as possible" required class="sr-only" />
+                <span class="w-10 h-10 flex items-center justify-center rounded-lg shrink-0 bg-[#F5F3ED] text-[#27272a] group-has-[:checked]:bg-[#EC5A00] group-has-[:checked]:text-white transition-colors" data-ps="src/pages/book.astro:udouhy">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                    <line x1="12" y1="9" x2="12" y2="13"></line>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                  </svg>
+                </span>
+                <span class="flex flex-col" data-ps="src/pages/book.astro:udouhz">
+                  <span class="text-sm font-semibold text-[#020203]" data-ps="src/pages/book.astro:udoui0">As soon as possible</span>
+                  <span class="text-[11px] text-[#71717a]" data-ps="src/pages/book.astro:udoui1">Today / tomorrow</span>
+                </span>
+              </label>
+            </div>
+
+            <!-- Date & Time Row -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2" data-ps="src/pages/book.astro:rrr997">
+              <label class="flex flex-col gap-2" data-ps="src/pages/book.astro:pnlleh">
+                <span class="text-xs uppercase tracking-[0.14em] text-[#5a5661] font-semibold flex items-center gap-1.5" data-ps="src/pages/book.astro:udoui2">
+                  <svg class="w-4 h-4 text-[#71717a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  Preferred date
+                </span>
+                <input
+                  type="date"
+                  name="preferred_date"
+                  required
+                  class="w-full px-4 py-3 rounded-xl bg-[#FBFAF7] border border-[#eae6de] text-sm text-[#020203] focus:outline-none focus:border-[#090a0d] focus:ring-2 focus:ring-[#090a0d]/10 transition-all font-sans"
+                />
+              </label>
+
+              <div class="flex flex-col gap-2" data-ps="src/pages/book.astro:rrr996">
+                <span class="text-xs uppercase tracking-[0.14em] text-[#5a5661] font-semibold flex items-center gap-1.5" data-ps="src/pages/book.astro:udoui3">
+                  <svg class="w-4 h-4 text-[#71717a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  Preferred time
+                </span>
+                <div class="grid grid-cols-3 gap-2" data-ps="src/pages/book.astro:rrr995">
+                  <label class="group flex flex-col items-center justify-center gap-0.5 p-2.5 rounded-xl border cursor-pointer transition-all border-[#eae6de] bg-[#FBFAF7] text-[#27272a] hover:border-[#090a0d]/30 has-[:checked]:bg-[#090a0d] has-[:checked]:text-white has-[:checked]:border-[#090a0d]" data-ps="src/pages/book.astro:pnllei">
+                    <input type="radio" name="preferred_time" value="Morning (8–12)" required class="sr-only" />
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="5"></circle>
+                      <line x1="12" y1="1" x2="12" y2="3"></line>
+                      <line x1="12" y1="21" x2="12" y2="23"></line>
+                      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                      <line x1="1" y1="12" x2="3" y2="12"></line>
+                      <line x1="21" y1="12" x2="23" y2="12"></line>
+                    </svg>
+                    <span class="text-xs font-semibold leading-none mt-1" data-ps="src/pages/book.astro:udouip">Morning</span>
+                    <span class="text-[10px] leading-none text-[#71717a] group-has-[:checked]:text-white/80 mt-0.5" data-ps="src/pages/book.astro:udouiq">8–12</span>
+                  </label>
+
+                  <label class="group flex flex-col items-center justify-center gap-0.5 p-2.5 rounded-xl border cursor-pointer transition-all border-[#eae6de] bg-[#FBFAF7] text-[#27272a] hover:border-[#090a0d]/30 has-[:checked]:bg-[#090a0d] has-[:checked]:text-white has-[:checked]:border-[#090a0d]" data-ps="src/pages/book.astro:pnllej">
+                    <input type="radio" name="preferred_time" value="Afternoon (12–5)" required class="sr-only" />
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="5"></circle>
+                      <line x1="12" y1="1" x2="12" y2="3"></line>
+                      <line x1="1" y1="12" x2="3" y2="12"></line>
+                    </svg>
+                    <span class="text-xs font-semibold leading-none mt-1" data-ps="src/pages/book.astro:udouir">Afternoon</span>
+                    <span class="text-[10px] leading-none text-[#71717a] group-has-[:checked]:text-white/80 mt-0.5" data-ps="src/pages/book.astro:udouis">12–5</span>
+                  </label>
+
+                  <label class="group flex flex-col items-center justify-center gap-0.5 p-2.5 rounded-xl border cursor-pointer transition-all border-[#eae6de] bg-[#FBFAF7] text-[#27272a] hover:border-[#090a0d]/30 has-[:checked]:bg-[#090a0d] has-[:checked]:text-white has-[:checked]:border-[#090a0d]" data-ps="src/pages/book.astro:pnllek">
+                    <input type="radio" name="preferred_time" value="Evening (5–7)" required class="sr-only" />
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <span class="text-xs font-semibold leading-none mt-1" data-ps="src/pages/book.astro:udouit">Evening</span>
+                    <span class="text-[10px] leading-none text-[#71717a] group-has-[:checked]:text-white/80 mt-0.5" data-ps="src/pages/book.astro:udouiu">5–7</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Section 03: Location & Details -->
+          <fieldset class="space-y-5">
+            <div class="flex items-center justify-between gap-4" data-ps="src/pages/book.astro:rrr994">
+              <div class="flex items-center gap-2.5" data-ps="src/pages/book.astro:rrr993">
+                <span class="w-7 h-7 flex items-center justify-center rounded-full bg-[#090a0d] text-white text-xs font-semibold" data-ps="src/pages/book.astro:udouiv">03</span>
+                <legend class="text-sm font-heading font-semibold text-[#020203]">Where should we visit?</legend>
+              </div>
+              <span class="text-[11px] uppercase tracking-wider text-[#71717a] font-medium" data-ps="src/pages/book.astro:udouiw">Almost done</span>
+            </div>
+
+            <!-- Property Category Tabs: Home / Business -->
+            <div data-ps="src/pages/book.astro:rrr992">
+              <span class="text-xs uppercase tracking-[0.14em] text-[#5a5661] font-semibold mb-2 block" data-ps="src/pages/book.astro:udouix">This is a</span>
+              <div class="grid grid-cols-2 gap-2 p-1 bg-[#F5F3ED] rounded-xl" data-ps="src/pages/book.astro:rrr991">
+                <label class="flex items-center justify-center gap-2 py-3 rounded-lg cursor-pointer text-sm font-semibold transition-all has-[:checked]:bg-[#090a0d] has-[:checked]:text-white text-[#5a5661] hover:bg-[#eae6de]/60" data-ps="src/pages/book.astro:pnllel">
+                  <input type="radio" name="property_category" value="Home" checked required class="sr-only" />
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                  </svg>
+                  Home
+                </label>
+                <label class="flex items-center justify-center gap-2 py-3 rounded-lg cursor-pointer text-sm font-semibold transition-all has-[:checked]:bg-[#090a0d] has-[:checked]:text-white text-[#5a5661] hover:bg-[#eae6de]/60" data-ps="src/pages/book.astro:pnllem">
+                  <input type="radio" name="property_category" value="Business" required class="sr-only" />
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                  Business
+                </label>
+              </div>
+            </div>
+
+            <!-- Property Type Pills -->
+            <div data-ps="src/pages/book.astro:rrr990">
+              <span class="text-xs uppercase tracking-[0.14em] text-[#5a5661] font-semibold mb-2 block" data-ps="src/pages/book.astro:udouiy">Property type</span>
+              <div class="flex flex-wrap gap-2" data-ps="src/pages/book.astro:jq4xy4">
+                {propertyTypes.map((item, __psIdx) => (
+                  <label class="inline-flex items-center gap-2 px-3.5 py-2 rounded-full border cursor-pointer text-sm transition-all border-[#eae6de] bg-[#FBFAF7] text-[#27272a] font-medium hover:border-[#090a0d]/40 has-[:checked]:border-[#090a0d] has-[:checked]:bg-[#090a0d] has-[:checked]:text-white" data-ps={`src/pages/book.astro:pnllen-${__psIdx}`}>
+                    <input type="radio" name="property_type" value={item.value} checked={item.checked} required class="sr-only" />
+                    {item.icon === 'home' && (
+                      <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                    )}
+                    {item.icon === 'building' && (
+                      <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="9" y1="22" x2="9" y2="18"></line><line x1="15" y1="22" x2="15" y2="18"></line></svg>
+                    )}
+                    {item.icon === 'store' && (
+                      <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                    )}
+                    {item.icon === 'restaurant' && (
+                      <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2v20M2 12h8M6 2v10M14 6h6M14 10h6"></path></svg>
+                    )}
+                    {item.icon === 'briefcase' && (
+                      <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    )}
+                    {item.icon === 'key' && (
+                      <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-1.5 1.5L10 13l-4 4-2-2 4-4 7.5-7.5z"></path><circle cx="7.5" cy="16.5" r="3.5"></circle></svg>
+                    )}
+                    {item.icon === 'dots' && (
+                      <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                    )}
+                    {item.value}
+                  </label>
+                ))}
+              </div>
+            </div>
+
+            <!-- Customer Details Input Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2" data-ps="src/pages/book.astro:jq4xy5">
+              <!-- Name -->
+              <label class="flex flex-col gap-2" data-ps="src/pages/book.astro:pnlleo">
+                <span class="text-xs uppercase tracking-[0.14em] text-[#5a5661] font-semibold flex items-center gap-1.5" data-ps="src/pages/book.astro:udoujk">
+                  <svg class="w-3.5 h-3.5 text-[#71717a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                  Name
+                </span>
+                <div class="relative" data-ps="src/pages/book.astro:jq4xy6">
+                  <svg class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-[#a1a1aa] pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    maxlength="80"
+                    autocomplete="name"
+                    placeholder="Your name"
+                    class="w-full pl-10 pr-4 py-3 rounded-xl bg-[#FBFAF7] border border-[#eae6de] text-sm text-[#020203] placeholder-[#a1a1aa] focus:outline-none focus:border-[#090a0d] focus:ring-2 focus:ring-[#090a0d]/10 transition-all font-sans"
+                  />
+                </div>
+              </label>
+
+              <!-- Phone -->
+              <label class="flex flex-col gap-2" data-ps="src/pages/book.astro:pnllfa">
+                <span class="text-xs uppercase tracking-[0.14em] text-[#5a5661] font-semibold flex items-center gap-1.5" data-ps="src/pages/book.astro:udoujl">
+                  <svg class="w-3.5 h-3.5 text-[#71717a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  Phone
+                </span>
+                <div class="relative" data-ps="src/pages/book.astro:jq4xy7">
+                  <svg class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-[#a1a1aa] pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  <input
+                    type="tel"
+                    name="phone"
+                    required
+                    maxlength="30"
+                    autocomplete="tel"
+                    placeholder="(231) ..."
+                    class="w-full pl-10 pr-4 py-3 rounded-xl bg-[#FBFAF7] border border-[#eae6de] text-sm text-[#020203] placeholder-[#a1a1aa] focus:outline-none focus:border-[#090a0d] focus:ring-2 focus:ring-[#090a0d]/10 transition-all font-sans"
+                  />
+                </div>
+              </label>
+
+              <!-- Email -->
+              <label class="flex flex-col gap-2" data-ps="src/pages/book.astro:pnllfb">
+                <span class="text-xs uppercase tracking-[0.14em] text-[#5a5661] font-semibold flex items-center gap-1.5" data-ps="src/pages/book.astro:udoujm">
+                  <svg class="w-3.5 h-3.5 text-[#71717a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2-2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  Email
+                </span>
+                <div class="relative" data-ps="src/pages/book.astro:jq4xy8">
+                  <svg class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-[#a1a1aa] pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2-2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    maxlength="120"
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                    class="w-full pl-10 pr-4 py-3 rounded-xl bg-[#FBFAF7] border border-[#eae6de] text-sm text-[#020203] placeholder-[#a1a1aa] focus:outline-none focus:border-[#090a0d] focus:ring-2 focus:ring-[#090a0d]/10 transition-all font-sans"
+                  />
+                </div>
+              </label>
+
+              <!-- City -->
+              <label class="flex flex-col gap-2" data-ps="src/pages/book.astro:pnllfc">
+                <span class="text-xs uppercase tracking-[0.14em] text-[#5a5661] font-semibold flex items-center gap-1.5" data-ps="src/pages/book.astro:udoujn">
+                  <svg class="w-3.5 h-3.5 text-[#71717a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  City
+                </span>
+                <div class="relative" data-ps="src/pages/book.astro:jq4xy9">
+                  <svg class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-[#a1a1aa] pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <input
+                    type="text"
+                    name="city"
+                    required
+                    maxlength="40"
+                    autocomplete="address-level2"
+                    placeholder="Muskegon"
+                    class="w-full pl-10 pr-4 py-3 rounded-xl bg-[#FBFAF7] border border-[#eae6de] text-sm text-[#020203] placeholder-[#a1a1aa] focus:outline-none focus:border-[#090a0d] focus:ring-2 focus:ring-[#090a0d]/10 transition-all font-sans"
+                  />
+                </div>
+              </label>
+
+              <!-- Address (Full Span) -->
+              <label class="flex flex-col gap-2 sm:col-span-2" data-ps="src/pages/book.astro:pnllfd">
+                <span class="text-xs uppercase tracking-[0.14em] text-[#5a5661] font-semibold flex items-center gap-1.5" data-ps="src/pages/book.astro:udoujo">
+                  <svg class="w-3.5 h-3.5 text-[#71717a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  </svg>
+                  Address<span class="text-[#71717a] font-normal normal-case tracking-normal" data-ps="src/pages/book.astro:udoujp">— optional</span>
+                </span>
+                <div class="relative" data-ps="src/pages/book.astro:jq4xya">
+                  <svg class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-[#a1a1aa] pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  </svg>
+                  <input
+                    type="text"
+                    name="address"
+                    maxlength="200"
+                    autocomplete="street-address"
+                    placeholder="Street and building"
+                    class="w-full pl-10 pr-4 py-3 rounded-xl bg-[#FBFAF7] border border-[#eae6de] text-sm text-[#020203] placeholder-[#a1a1aa] focus:outline-none focus:border-[#090a0d] focus:ring-2 focus:ring-[#090a0d]/10 transition-all font-sans"
+                  />
+                </div>
+              </label>
+
+              <!-- Job Description (Full Span) -->
+              <label class="flex flex-col gap-2 sm:col-span-2" data-ps="src/pages/book.astro:pnllfe">
+                <div class="flex items-center justify-between" data-ps="src/pages/book.astro:jq4xyb">
+                  <span class="text-xs uppercase tracking-[0.14em] text-[#5a5661] font-semibold flex items-center gap-1.5" data-ps="src/pages/book.astro:udoujq">
+                    <svg class="w-3.5 h-3.5 text-[#71717a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                      <polyline points="14 2 14 8 20 8"></polyline>
+                      <line x1="16" y1="13" x2="8" y2="13"></line>
+                      <line x1="16" y1="17" x2="8" y2="17"></line>
+                      <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    Job description
+                  </span>
+                  <span id="char-counter" class="normal-case tracking-normal text-[11px] text-[#71717a]" data-ps="src/pages/book.astro:udoujr">0 / 500</span>
+                </div>
+                <textarea
+                  id="job-desc-input"
+                  name="job_description"
+                  required
+                  maxlength="500"
+                  rows="4"
+                  placeholder="Tell us a bit about the job — access, what's not working, anything we should bring."
+                  class="w-full px-4 py-3 rounded-xl bg-[#FBFAF7] border border-[#eae6de] text-sm text-[#020203] placeholder-[#a1a1aa] focus:outline-none focus:border-[#090a0d] focus:ring-2 focus:ring-[#090a0d]/10 transition-all resize-none font-sans"
+                ></textarea>
+              </label>
+
+              <!-- Add a photo (Full Span) -->
+              <div class="sm:col-span-2" data-ps="src/pages/book.astro:jq4xyc">
+                <span class="text-xs uppercase tracking-[0.14em] text-[#5a5661] font-semibold flex items-center gap-1.5 mb-2" data-ps="src/pages/book.astro:udoujs">
+                  <svg class="w-3.5 h-3.5 text-[#71717a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                    <circle cx="12" cy="13" r="4"></circle>
+                  </svg>
+                  Add a photo<span class="text-[#71717a] font-normal normal-case tracking-normal" data-ps="src/pages/book.astro:udoujt">— optional but helpful</span>
+                </span>
+                <button
+                  type="button"
+                  id="photo-upload-btn"
+                  class="w-full flex items-center gap-3 p-4 rounded-xl border-2 border-dashed text-left transition-all cursor-pointer border-[#eae6de] bg-[#F5F3ED] hover:border-[#090a0d]/40 hover:bg-[#FBFAF7]"
+                 data-ps="src/pages/book.astro:csitp2">
+                  <span class="w-11 h-11 flex items-center justify-center rounded-lg shrink-0 bg-[#FBFAF7] text-[#27272a] shadow-sm" data-ps="src/pages/book.astro:udoukf">
+                    <svg class="w-6 h-6 text-[#5a5661]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                      <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                      <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>
+                  </span>
+                  <span class="flex-1 min-w-0" data-ps="src/pages/book.astro:udoukg">
+                    <span id="photo-file-label" class="block text-sm font-semibold text-[#020203] truncate" data-ps="src/pages/book.astro:udoukh">Tap to add a photo</span>
+                    <span class="block text-xs text-[#5a5661] mt-0.5" data-ps="src/pages/book.astro:udouki">JPG or PNG · from camera or gallery</span>
+                  </span>
+                </button>
+                <input id="photo-file-input" type="file" name="photo" accept="image/*" class="hidden" />
+              </div>
+            </div>
+
+            <!-- Marketing Consent Checkbox -->
+            <label class="mt-6 flex items-start gap-3 p-4 rounded-xl bg-[#F5F3ED] border border-[#eae6de] cursor-pointer" data-ps="src/pages/book.astro:pnllff">
+              <input
+                type="checkbox"
+                name="consent"
+                value="agreed"
+                required
+                class="mt-0.5 w-4 h-4 rounded border-[#eae6de] accent-[#090a0d] cursor-pointer shrink-0"
+              />
+              <span class="text-xs text-[#3f3f46] leading-relaxed" data-ps="src/pages/book.astro:udoukj">
+                I'm happy for UDG Services to contact me about this booking. My details won't be used for marketing.
+              </span>
+            </label>
+          </fieldset>
+
+          <!-- Altcha Widget (Platform Captcha) -->
+          <altcha-widget
+            challenge="/psapi-internal-v1/altcha/challenge"
+            display="invisible"
+            auto="onfocus"
+          ></altcha-widget>
+
+          <!-- Form Footer Row with Submit Button -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 pt-2 border-t border-[#eae6de]/60" data-ps="src/pages/book.astro:jq4xyd">
+            <p class="text-xs text-[#71717a] max-w-sm flex items-center gap-1.5 m-0" data-ps="src/pages/book.astro:axjpdy">
+              <svg class="w-4 h-4 text-[#EC5A00] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+              You'll get a confirmation once your slot is checked. Usually within a few hours.
+            </p>
+            <button
+              type="submit"
+              id="submit-btn"
+              class="group inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-full bg-[#EC5A00] text-white text-sm font-semibold hover:bg-[#d45100] transition-all hover:-translate-y-0.5 cursor-pointer whitespace-nowrap disabled:opacity-60 disabled:cursor-not-allowed shadow-sm"
+             data-ps="src/pages/book.astro:kdxbnx">
+              <span id="submit-btn-text" data-ps="src/pages/book.astro:udoukk">Book My Appointment</span>
+              <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    import 'altcha';
+
+    // Interactive Photo Upload
+    const photoBtn = document.getElementById('photo-upload-btn');
+    const photoInput = document.getElementById('photo-file-input') as HTMLInputElement;
+    const photoLabel = document.getElementById('photo-file-label');
+
+    photoBtn?.addEventListener('click', () => {
+      photoInput?.click();
+    });
+
+    photoInput?.addEventListener('change', () => {
+      if (photoInput.files && photoInput.files.length > 0) {
+        const file = photoInput.files[0];
+        if (photoLabel) {
+          photoLabel.textContent = `${file.name} (${(file.size / 1024).toFixed(0)} KB)`;
+        }
+      }
+    });
+
+    // Character Counter for Job Description
+    const jobDescInput = document.getElementById('job-desc-input') as HTMLTextAreaElement;
+    const charCounter = document.getElementById('char-counter');
+
+    jobDescInput?.addEventListener('input', () => {
+      if (charCounter) {
+        charCounter.textContent = `${jobDescInput.value.length} / 500`;
+      }
+    });
+
+    // Step Progress Highlight
+    const stepBadge2 = document.getElementById('step-badge-2');
+    const stepBadge3 = document.getElementById('step-badge-3');
+
+    const form = document.getElementById('booking-form-element') as HTMLFormElement;
+    const formStatus = document.getElementById('form-status') as HTMLDivElement;
+    const submitBtn = document.getElementById('submit-btn') as HTMLButtonElement;
+    const submitBtnText = document.getElementById('submit-btn-text');
+
+    function updateSteps() {
+      const serviceChecked = !!form.querySelector('input[name="service_type"]:checked');
+      const dateVal = (form.querySelector('input[name="preferred_date"]') as HTMLInputElement)?.value;
+      const timeChecked = !!form.querySelector('input[name="preferred_time"]:checked');
+
+      if (serviceChecked) {
+        stepBadge2?.classList.remove('bg-[#FBFAF7]', 'text-[#71717a]');
+        stepBadge2?.classList.add('bg-[#090a0d]', 'text-white');
+      }
+      if (dateVal && timeChecked) {
+        stepBadge3?.classList.remove('bg-[#FBFAF7]', 'text-[#71717a]');
+        stepBadge3?.classList.add('bg-[#090a0d]', 'text-white');
+      }
+    }
+
+    form?.addEventListener('change', updateSteps);
+    form?.addEventListener('input', updateSteps);
+
+    // Form Submission
+    form?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      if (submitBtn) submitBtn.disabled = true;
+      if (submitBtnText) submitBtnText.textContent = 'Booking appointment...';
+
+      const formData = new FormData(form);
+
+      const payload = {
+        _formId: formData.get('_formId') || 'booking',
+        name: formData.get('name'),
+        email: formData.get('email'),
+        phone: formData.get('phone'),
+        city: formData.get('city'),
+        address: formData.get('address') || '',
+        service_type: formData.get('service_type'),
+        urgency: formData.get('urgency'),
+        preferred_date: formData.get('preferred_date'),
+        preferred_time: formData.get('preferred_time'),
+        property_category: formData.get('property_category'),
+        property_type: formData.get('property_type'),
+        job_description: formData.get('job_description'),
+        consent: formData.get('consent'),
+        altcha: formData.get('altcha'),
+      };
+
+      try {
+        const response = await fetch('/psapi-internal-v1/forms/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(payload),
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+          formStatus.className = 'px-4 py-3 rounded-xl text-sm font-medium bg-emerald-50 border border-emerald-200 text-emerald-800';
+          formStatus.innerHTML = `<strong>Appointment Requested!</strong> Thank you ${payload.name || ''}, we have received your booking request and will contact you shortly to confirm.`;
+          form.reset();
+          if (charCounter) charCounter.textContent = '0 / 500';
+          if (photoLabel) photoLabel.textContent = 'Tap to add a photo';
+        } else {
+          throw new Error(result.error || 'Failed to submit booking. Please try again.');
+        }
+      } catch (err: any) {
+        formStatus.className = 'px-4 py-3 rounded-xl text-sm font-medium bg-red-50 border border-red-200 text-red-800';
+        formStatus.textContent = err?.message || 'There was an issue submitting your booking. Please give us a call at (509) 300-4042.';
+      } finally {
+        formStatus.classList.remove('hidden');
+        if (submitBtn) submitBtn.disabled = false;
+        if (submitBtnText) submitBtnText.textContent = 'Book My Appointment';
+        formStatus.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+  </script>
+</BaseLayout>

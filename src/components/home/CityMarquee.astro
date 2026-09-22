@@ -1,0 +1,33 @@
+---
+// City Marquee ticker component matching original design
+const cities = [
+  "Richland, WA", "Kennewick, WA", "Pasco, WA", "West Richland, WA", "Burbank, WA",
+  "Riverview, WA", "West Pasco, WA", "Columbia Center, WA", "Canyon Lakes, WA",
+  "Southridge, WA", "Badger Mountain, WA", "Meadow Springs, WA", "Queensgate, WA",
+  "Highland, WA", "Kennewick Highlands, WA", "Richland Village, WA",
+  "George Washington Way", "Road 68, Pasco", "Road 100, Pasco", "Finley, WA"
+];
+---
+
+<section id="locations-ticker" class="bg-[#F5F3ED] border-y border-[#eae6de] overflow-hidden py-7 relative" data-ps="src/components/home/CityMarquee.astro:4nzd6j">
+  <div class="flex select-none" data-ps="src/components/home/CityMarquee.astro:rtre1e">
+    <div class="animate-marquee flex items-center" data-ps="src/components/home/CityMarquee.astro:rtre1d">
+      {cities.map((city, __psIdx) => (
+        <span class="flex items-center" data-ps={`src/components/home/CityMarquee.astro:emvljj-${__psIdx}`}>
+          <span class="font-heading font-semibold text-[26px] sm:text-[34px] text-[#2c2825] tracking-tight whitespace-nowrap px-4 sm:px-6" data-ps={`src/components/home/CityMarquee.astro:emvljk-${__psIdx}`}>
+            {city}
+          </span>
+          <span class="text-[#EC5A00] text-xl font-bold" data-ps={`src/components/home/CityMarquee.astro:emvljl-${__psIdx}`}>•</span>
+        </span>
+      ))}
+      {cities.map((city, __psIdx) => (
+        <span class="flex items-center" data-ps={`src/components/home/CityMarquee.astro:emvljm-${__psIdx}`}>
+          <span class="font-heading font-semibold text-[26px] sm:text-[34px] text-[#2c2825] tracking-tight whitespace-nowrap px-4 sm:px-6" data-ps={`src/components/home/CityMarquee.astro:emvljn-${__psIdx}`}>
+            {city}
+          </span>
+          <span class="text-[#EC5A00] text-xl font-bold" data-ps={`src/components/home/CityMarquee.astro:emvljo-${__psIdx}`}>•</span>
+        </span>
+      ))}
+    </div>
+  </div>
+</section>

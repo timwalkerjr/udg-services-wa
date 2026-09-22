@@ -1,0 +1,465 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/config/site';
+
+const title = "Contact Us | UDG Services Tri-Cities Appliance Repair";
+const description = "Get in touch with UDG Services for appliance repair in Richland, Pasco, Kennewick, and the Tri-Cities, WA. Call (509) 300-4042 or send a message.";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact UDG Services",
+  "image": "https://pagesmith-cdn.com/9cf36851/images/cff6b15990550249e4a749126e75cc9a-a7cb2c-1536.webp",
+  "description": description,
+  "url": `${SITE.url}/contact/`,
+};
+
+const paymentMethods = [
+  { name: "American Express", icon: "card" },
+  { name: "Cash", icon: "cash" },
+  { name: "Check", icon: "check" },
+  { name: "Discover", icon: "card" },
+  { name: "MasterCard", icon: "mastercard" },
+  { name: "Visa", icon: "card" },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  headerVariant="solid"
+  jsonLd={jsonLd}
+>
+  <div class="pt-20 md:pt-24 pb-24 lg:pb-0 font-sans" data-ps="src/pages/contact.astro:uoopdg">
+    <!-- Hero Banner Section -->
+    <section class="px-3 md:px-4 pt-3 md:pt-4" data-ps="src/pages/contact.astro:76y6my">
+      <div class="relative w-full min-h-[380px] sm:min-h-[420px] md:min-h-[520px] rounded-2xl md:rounded-3xl overflow-hidden shadow-sm" data-ps="src/pages/contact.astro:uoopdh">
+        <img
+          alt="UDG Services office"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+          class="absolute inset-0 w-full h-full object-cover object-top"
+          src="https://pagesmith-cdn.com/9cf36851/images/cff6b15990550249e4a749126e75cc9a-a7cb2c-1536.webp" data-ps="src/pages/contact.astro:s6fl1x" />
+        <div class="absolute inset-0 bg-gradient-to-b from-[#090a0d]/70 via-[#090a0d]/45 to-[#090a0d]/80 pointer-events-none" data-ps="src/pages/contact.astro:uoopdi"></div>
+        <div class="relative z-10 flex flex-col justify-end h-full min-h-[380px] sm:min-h-[420px] md:min-h-[520px] max-w-7xl mx-auto w-full px-6 sm:px-8 py-8 sm:py-10 md:py-14" data-ps="src/pages/contact.astro:uoopdj">
+          <div class="inline-flex self-start items-center gap-2 mb-4 sm:mb-5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/25 text-white text-[10px] sm:text-xs uppercase tracking-[0.16em] font-medium" data-ps="src/pages/contact.astro:uoopdk">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/contact.astro:lvpf6z"></span>
+            Contact
+          </div>
+          <h1 class="font-heading font-semibold text-white text-[32px] sm:text-[40px] md:text-[56px] lg:text-[72px] leading-[1.02] tracking-tight max-w-4xl" data-ps="src/pages/contact.astro:xwwezs">
+            Get in touch,<br />
+            <em class="not-italic text-[#EC5A00]">it's easy.</em>
+          </h1>
+          <p class="mt-3 sm:mt-4 md:mt-6 max-w-xl text-sm sm:text-base md:text-lg text-white/90 leading-relaxed font-normal" data-ps="src/pages/contact.astro:wmga2x">
+            Need appliance repair or maintenance? Send a message with a few details and we'll get back to you as soon as possible.
+          </p>
+          <div class="mt-5 sm:mt-6 md:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3" data-ps="src/pages/contact.astro:uoope6">
+            <a
+              href="#contact-form"
+              class="group inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-full bg-[#EC5A00] text-white text-sm md:text-base font-semibold hover:bg-[#d45100] transition-all hover:-translate-y-0.5 cursor-pointer whitespace-nowrap shadow-sm no-underline"
+             data-ps="src/pages/contact.astro:piidev">
+              Send a message
+              <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <a
+              href="/book"
+              class="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-full bg-white/10 border border-white/25 text-white text-sm md:text-base font-semibold hover:bg-white/20 transition-all cursor-pointer whitespace-nowrap no-underline"
+             data-ps="src/pages/contact.astro:piideu">
+              Book Service
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Grid (Direct Contact & Form) -->
+    <section class="px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-24 bg-[#FBFAF7]" data-ps="src/pages/contact.astro:76y6mz">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 md:gap-10" data-ps="src/pages/contact.astro:uoope7">
+        
+        <!-- Left Column: Direct Contact & Info Cards -->
+        <div class="lg:col-span-5 space-y-4 order-2 lg:order-1" data-ps="src/pages/contact.astro:uoope8">
+          <!-- Direct contact card -->
+          <div class="p-5 sm:p-6 md:p-7 rounded-2xl bg-[#F5F3ED] border border-[#eae6de]" data-ps="src/pages/contact.astro:uoope9">
+            <p class="text-[11px] uppercase tracking-[0.18em] text-[#5a5661] font-semibold m-0" data-ps="src/pages/contact.astro:wmga2w">Direct contact</p>
+            <div class="mt-5 space-y-4" data-ps="src/pages/contact.astro:uoopea">
+              <!-- Main Phone -->
+              <a
+                href="tel:+15093004042"
+                class="group flex items-center gap-4 p-4 rounded-xl bg-[#FBFAF7] border border-[#eae6de] hover:border-[#EC5A00] transition-colors cursor-pointer no-underline text-inherit"
+               data-ps="src/pages/contact.astro:piidet">
+                <span class="w-11 h-11 flex items-center justify-center rounded-lg bg-[#090a0d] text-white group-hover:bg-[#EC5A00] group-hover:text-white transition-colors shrink-0" data-ps="src/pages/contact.astro:lvpf70">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/>
+                  </svg>
+                </span>
+                <div data-ps="src/pages/contact.astro:uoopeb">
+                  <p class="text-xs text-[#5a5661] m-0" data-ps="src/pages/contact.astro:wmga2a">Main Phone</p>
+                  <p class="text-base font-semibold text-[#020203] font-heading m-0 mt-0.5" data-ps="src/pages/contact.astro:wmga29">(509) 300-4042</p>
+                </div>
+                <svg class="w-4 h-4 ml-auto text-[#71717a] group-hover:text-[#EC5A00] transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+
+              <!-- Mobile / Alternate -->
+              <a
+                href="tel:+15093004042"
+                class="group flex items-center gap-4 p-4 rounded-xl bg-[#FBFAF7] border border-[#eae6de] hover:border-[#EC5A00] transition-colors cursor-pointer no-underline text-inherit"
+               data-ps="src/pages/contact.astro:piides">
+                <span class="w-11 h-11 flex items-center justify-center rounded-lg bg-[#090a0d] text-white group-hover:bg-[#EC5A00] group-hover:text-white transition-colors shrink-0" data-ps="src/pages/contact.astro:lvpf71">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                  </svg>
+                </span>
+                <div data-ps="src/pages/contact.astro:uoopec">
+                  <p class="text-xs text-[#5a5661] m-0" data-ps="src/pages/contact.astro:wmga28">Mobile / Alternate</p>
+                  <p class="text-base font-semibold text-[#020203] font-heading m-0 mt-0.5" data-ps="src/pages/contact.astro:wmga27">(509) 300-4042</p>
+                </div>
+                <svg class="w-4 h-4 ml-auto text-[#71717a] group-hover:text-[#EC5A00] transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+
+              <!-- Email -->
+              <a
+                href="mailto:info@udgservices.com"
+                class="group flex items-center gap-4 p-4 rounded-xl bg-[#FBFAF7] border border-[#eae6de] hover:border-[#EC5A00] transition-colors cursor-pointer no-underline text-inherit"
+               data-ps="src/pages/contact.astro:piide6">
+                <span class="w-11 h-11 flex items-center justify-center rounded-lg bg-[#090a0d] text-white group-hover:bg-[#EC5A00] group-hover:text-white transition-colors shrink-0" data-ps="src/pages/contact.astro:lvpf72">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2-2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </span>
+                <div data-ps="src/pages/contact.astro:uooped">
+                  <p class="text-xs text-[#5a5661] m-0" data-ps="src/pages/contact.astro:wmga26">Email</p>
+                  <p class="text-base font-semibold text-[#020203] font-heading m-0 mt-0.5" data-ps="src/pages/contact.astro:wmga25">info@udgservices.com</p>
+                </div>
+                <svg class="w-4 h-4 ml-auto text-[#71717a] group-hover:text-[#EC5A00] transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Working hours card -->
+          <div class="p-5 sm:p-6 rounded-2xl bg-[#F5F3ED] border border-[#eae6de]" data-ps="src/pages/contact.astro:uoopee">
+            <p class="text-[11px] uppercase tracking-[0.18em] text-[#5a5661] font-semibold mb-3" data-ps="src/pages/contact.astro:wmga24">Working hours</p>
+            <ul class="text-sm space-y-2 text-[#27272a] list-none p-0 m-0">
+              <li class="flex justify-between items-center" data-ps="src/pages/contact.astro:jzge7i">
+                <span data-ps="src/pages/contact.astro:lvpf73">Mon–Sun</span>
+                <span class="font-medium" data-ps="src/pages/contact.astro:lvpf74">24-Hour Emergency Service</span>
+              </li>
+            </ul>
+            <div class="mt-4 p-3 rounded-lg bg-[#090a0d] text-[#e4e4e7] text-xs leading-relaxed" data-ps="src/pages/contact.astro:uoopef">
+              Emergency? Call us anytime at (509) 300-4042 or (509) 300-4042.
+            </div>
+          </div>
+
+          <!-- Payment methods card -->
+          <div class="p-5 sm:p-6 rounded-2xl bg-[#F5F3ED] border border-[#eae6de]" data-ps="src/pages/contact.astro:lx8n1r">
+            <p class="text-[11px] uppercase tracking-[0.18em] text-[#5a5661] font-semibold mb-3" data-ps="src/pages/contact.astro:wmga23">Payment methods</p>
+            <ul class="grid grid-cols-2 gap-2 text-sm text-[#27272a] list-none p-0 m-0">
+              {paymentMethods.map((pm, __psIdx) => (
+                <li class="flex items-center gap-2" data-ps={`src/pages/contact.astro:jzge7j-${__psIdx}`}>
+                  {pm.icon === 'card' && (
+                    <svg class="w-4 h-4 text-[#EC5A00] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                      <line x1="2" y1="10" x2="22" y2="10"></line>
+                    </svg>
+                  )}
+                  {pm.icon === 'cash' && (
+                    <svg class="w-4 h-4 text-[#EC5A00] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                      <circle cx="12" cy="12" r="2"></circle>
+                      <path d="M6 12h.01M18 12h.01"></path>
+                    </svg>
+                  )}
+                  {pm.icon === 'check' && (
+                    <svg class="w-4 h-4 text-[#EC5A00] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                      <polyline points="14 2 14 8 20 8"></polyline>
+                      <line x1="16" y1="13" x2="8" y2="13"></line>
+                      <line x1="16" y1="17" x2="8" y2="17"></line>
+                      <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                  )}
+                  {pm.icon === 'mastercard' && (
+                    <svg class="w-4 h-4 text-[#EC5A00] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="9" cy="12" r="5"></circle>
+                      <circle cx="15" cy="12" r="5"></circle>
+                    </svg>
+                  )}
+                  <span data-ps={`src/pages/contact.astro:lvpf75-${__psIdx}`}>{pm.name}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <!-- Google Maps Embed -->
+          <div class="rounded-2xl overflow-hidden border border-[#eae6de] shadow-xs" data-ps="src/pages/contact.astro:lx8n1q">
+            <iframe
+              title="West Michigan Septic Sewer and Drain location"
+              src="https://www.google.com/maps?q=Richland%2C+WA&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="260"
+              loading="lazy"
+              style="border: 0px;"
+              class="w-full h-[260px] block"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Right Column: Contact Form -->
+        <div id="contact-form" class="lg:col-span-7 order-1 lg:order-2" data-ps="src/pages/contact.astro:lx8n1p">
+          <form
+            id="contact-form-element"
+            class="rounded-2xl bg-[#FBFAF7] border border-[#eae6de] p-5 sm:p-6 md:p-10 space-y-6 shadow-sm"
+          >
+            <input type="hidden" name="_formId" value="contact" />
+
+            <!-- Status Banner -->
+            <div id="contact-status" class="hidden px-4 py-3 rounded-xl text-sm font-medium" data-ps="src/pages/contact.astro:lx8n1o"></div>
+
+            <div data-ps="src/pages/contact.astro:lx8n1n">
+              <h2 class="text-xl sm:text-2xl md:text-4xl font-heading font-semibold text-[#020203] tracking-tight leading-tight m-0" data-ps="src/pages/contact.astro:j8hhs7">
+                Send a message
+              </h2>
+              <p class="mt-2 text-sm text-[#5a5661] m-0" data-ps="src/pages/contact.astro:wmga22">
+                A few short details help us get back to you quickly.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" data-ps="src/pages/contact.astro:lx8n1m">
+              <!-- Name -->
+              <label class="flex flex-col gap-2" data-ps="src/pages/contact.astro:zcrc2o">
+                <span class="text-xs uppercase tracking-[0.14em] text-[#5a5661] font-semibold" data-ps="src/pages/contact.astro:lvpf76">Name</span>
+                <input
+                  required
+                  maxlength="80"
+                  class="px-4 py-3 rounded-xl bg-[#FBFAF7] border border-[#eae6de] text-sm text-[#020203] focus:outline-none focus:border-[#090a0d] focus:ring-2 focus:ring-[#090a0d]/10 transition-all font-sans"
+                  type="text"
+                  name="name"
+                />
+              </label>
+
+              <!-- Phone -->
+              <label class="flex flex-col gap-2" data-ps="src/pages/contact.astro:zcrc2n">
+                <span class="text-xs uppercase tracking-[0.14em] text-[#5a5661] font-semibold" data-ps="src/pages/contact.astro:lvpf77">Phone</span>
+                <input
+                  required
+                  maxlength="30"
+                  placeholder="(509) ..."
+                  class="px-4 py-3 rounded-xl bg-[#FBFAF7] border border-[#eae6de] text-sm text-[#020203] placeholder-[#a1a1aa] focus:outline-none focus:border-[#090a0d] focus:ring-2 focus:ring-[#090a0d]/10 transition-all font-sans"
+                  type="tel"
+                  name="phone"
+                />
+              </label>
+
+              <!-- Email -->
+              <label class="flex flex-col gap-2" data-ps="src/pages/contact.astro:zcrc2m">
+                <span class="text-xs uppercase tracking-[0.14em] text-[#5a5661] font-semibold" data-ps="src/pages/contact.astro:lvpf7t">Email</span>
+                <input
+                  required
+                  maxlength="120"
+                  placeholder="you@example.com"
+                  class="px-4 py-3 rounded-xl bg-[#FBFAF7] border border-[#eae6de] text-sm text-[#020203] placeholder-[#a1a1aa] focus:outline-none focus:border-[#090a0d] focus:ring-2 focus:ring-[#090a0d]/10 transition-all font-sans"
+                  type="email"
+                  name="email"
+                />
+              </label>
+
+              <!-- City -->
+              <label class="flex flex-col gap-2" data-ps="src/pages/contact.astro:zcrc2l">
+                <span class="text-xs uppercase tracking-[0.14em] text-[#5a5661] font-semibold" data-ps="src/pages/contact.astro:lvpf7u">City</span>
+                <input
+                  required
+                  maxlength="40"
+                  placeholder="Richland"
+                  class="px-4 py-3 rounded-xl bg-[#FBFAF7] border border-[#eae6de] text-sm text-[#020203] placeholder-[#a1a1aa] focus:outline-none focus:border-[#090a0d] focus:ring-2 focus:ring-[#090a0d]/10 transition-all font-sans"
+                  type="text"
+                  name="city"
+                />
+              </label>
+
+              <!-- Preferred contact method -->
+              <label class="flex flex-col gap-2 sm:col-span-2" data-ps="src/pages/contact.astro:zcrc1z">
+                <span class="text-xs uppercase tracking-[0.14em] text-[#5a5661] font-semibold" data-ps="src/pages/contact.astro:lvpf7v">Preferred contact method</span>
+                <select
+                  name="preferred_contact"
+                  required
+                  class="px-4 py-3 rounded-xl bg-[#FBFAF7] border border-[#eae6de] text-sm text-[#020203] focus:outline-none focus:border-[#090a0d] focus:ring-2 focus:ring-[#090a0d]/10 transition-all font-sans"
+                >
+                  <option value="Phone call" selected>Phone call</option>
+                  <option value="Email">Email</option>
+                  <option value="Text message">Text message</option>
+                </select>
+              </label>
+
+              <!-- Message -->
+              <label class="flex flex-col gap-2 sm:col-span-2" data-ps="src/pages/contact.astro:zcrc1y">
+                <span class="text-xs uppercase tracking-[0.14em] text-[#5a5661] font-semibold" data-ps="src/pages/contact.astro:lvpf7w">Message</span>
+                <textarea
+                  id="message-input"
+                  name="message"
+                  required
+                  maxlength="500"
+                  rows="5"
+                  placeholder="What do you need help with?"
+                  class="px-4 py-3 rounded-xl bg-[#FBFAF7] border border-[#eae6de] text-sm text-[#020203] placeholder-[#a1a1aa] focus:outline-none focus:border-[#090a0d] focus:ring-2 focus:ring-[#090a0d]/10 transition-all resize-none font-sans"
+                ></textarea>
+                <span id="char-counter" class="text-[11px] text-[#71717a] text-right block" data-ps="src/pages/contact.astro:lvpf7x">Up to 500 characters</span>
+              </label>
+
+              <!-- Upload photo (optional) -->
+              <label class="flex flex-col gap-2 sm:col-span-2" data-ps="src/pages/contact.astro:zcrc1x">
+                <span class="text-xs uppercase tracking-[0.14em] text-[#5a5661] font-semibold" data-ps="src/pages/contact.astro:lvpf7y">Upload photo (optional)</span>
+                <div class="flex items-center gap-3 p-3 rounded-xl bg-[#F5F3ED] border border-dashed border-[#eae6de]" data-ps="src/pages/contact.astro:lx8n1l">
+                  <span class="w-10 h-10 flex items-center justify-center rounded-lg bg-[#FBFAF7] text-[#EC5A00] shrink-0 shadow-2xs" data-ps="src/pages/contact.astro:lvpf7z">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                      <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                      <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>
+                  </span>
+                  <input
+                    id="photo-input"
+                    accept="image/*"
+                    class="flex-1 text-sm text-[#27272a] file:mr-4 file:py-2 file:px-3.5 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-[#090a0d] file:text-white hover:file:bg-black file:cursor-pointer cursor-pointer"
+                    type="file"
+                    name="photo"
+                  />
+                </div>
+              </label>
+            </div>
+
+            <!-- Platform ALTCHA Captcha -->
+            <altcha-widget
+              challenge="/psapi-internal-v1/altcha/challenge"
+              display="invisible"
+              auto="onfocus"
+            ></altcha-widget>
+
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pt-2" data-ps="src/pages/contact.astro:lx8n1k">
+              <p class="text-xs text-[#71717a] m-0" data-ps="src/pages/contact.astro:wmga21">Your details won't be used for marketing.</p>
+              <button
+                type="submit"
+                id="contact-submit-btn"
+                class="group inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-full bg-[#090a0d] text-white text-sm font-semibold hover:bg-black transition-all hover:-translate-y-0.5 cursor-pointer whitespace-nowrap shadow-sm disabled:opacity-60 disabled:cursor-not-allowed"
+               data-ps="src/pages/contact.astro:qxoi8g">
+                <span id="contact-submit-text" data-ps="src/pages/contact.astro:lvpf80">Send Message</span>
+                <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile Floating Action Bar -->
+    <div class="lg:hidden fixed bottom-3 left-3 right-3 z-40" data-ps="src/pages/contact.astro:lx8n1j">
+      <div class="flex items-center gap-2 p-2 rounded-2xl bg-[#090a0d]/95 backdrop-blur-md border border-white/10 shadow-xl" data-ps="src/pages/contact.astro:lx8n1i">
+        <a
+          href="tel:+15093004042"
+          aria-label="Call UDG Services"
+          class="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 text-white hover:bg-white/15 transition-colors shrink-0 no-underline"
+         data-ps="src/pages/contact.astro:5elr9j">
+          <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/>
+          </svg>
+        </a>
+        <a
+          href="/book"
+          class="flex-1 h-12 flex items-center justify-center gap-2 rounded-xl bg-[#EC5A00] text-white text-sm font-semibold hover:bg-[#d45100] transition-colors no-underline shadow-sm"
+         data-ps="src/pages/contact.astro:5elr9i">
+          Book a Repair Now
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    import 'altcha';
+
+    const form = document.getElementById('contact-form-element') as HTMLFormElement;
+    const formStatus = document.getElementById('contact-status') as HTMLDivElement;
+    const submitBtn = document.getElementById('contact-submit-btn') as HTMLButtonElement;
+    const submitBtnText = document.getElementById('contact-submit-text');
+    const messageInput = document.getElementById('message-input') as HTMLTextAreaElement;
+    const charCounter = document.getElementById('char-counter');
+
+    messageInput?.addEventListener('input', () => {
+      if (charCounter) {
+        charCounter.textContent = `${messageInput.value.length} / 500 characters`;
+      }
+    });
+
+    form?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      if (submitBtn) submitBtn.disabled = true;
+      if (submitBtnText) submitBtnText.textContent = 'Sending message...';
+
+      const formData = new FormData(form);
+
+      const payload = {
+        _formId: formData.get('_formId') || 'contact',
+        name: formData.get('name'),
+        email: formData.get('email'),
+        phone: formData.get('phone'),
+        city: formData.get('city'),
+        preferred_contact: formData.get('preferred_contact'),
+        message: formData.get('message'),
+        altcha: formData.get('altcha'),
+      };
+
+      try {
+        const response = await fetch('/psapi-internal-v1/forms/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(payload),
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+          formStatus.className = 'px-4 py-3 rounded-xl text-sm font-medium bg-emerald-50 border border-emerald-200 text-emerald-800';
+          formStatus.innerHTML = `<strong>Message sent!</strong> Thank you ${payload.name || ''}, we have received your message and will get back to you shortly.`;
+          form.reset();
+          if (charCounter) charCounter.textContent = 'Up to 500 characters';
+        } else {
+          throw new Error(result.error || 'Failed to send message. Please try again.');
+        }
+      } catch (err: any) {
+        formStatus.className = 'px-4 py-3 rounded-xl text-sm font-medium bg-red-50 border border-red-200 text-red-800';
+        formStatus.textContent = err?.message || 'There was an issue sending your message. Please give us a call at (509) 300-4042.';
+      } finally {
+        formStatus.classList.remove('hidden');
+        if (submitBtn) submitBtn.disabled = false;
+        if (submitBtnText) submitBtnText.textContent = 'Send Message';
+        formStatus.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+  </script>
+</BaseLayout>

@@ -1,0 +1,116 @@
+---
+// Hero component matching the exact layout, copy, badges, buttons and 3 bottom cards
+---
+
+<section id="hero" class="relative min-h-[920px] w-full flex flex-col justify-between overflow-hidden pt-28 pb-12 bg-dark text-white" data-ps="src/components/home/Hero.astro:ah8lbe">
+  <!-- Background Full-Bleed Image -->
+  <img
+    src="https://pagesmith-cdn.com/9cf36851/images/edited_0ecdb9b10fed21b734c6418c01adf37c_aabcefed-a87446-1024.webp"
+    alt="UDG Services appliance repair van in the Tri-Cities, Washington"
+    class="absolute inset-0 w-full h-full object-cover object-center z-0"
+    loading="eager"
+    fetchpriority="high" data-ps="src/components/home/Hero.astro:gfvoyt" />
+
+  <!-- Dark Atmospheric Gradient Overlay as measured in capture -->
+  <div class="absolute inset-0 bg-gradient-to-b from-[#090a0d]/75 via-[#090a0d]/50 to-[#090a0d]/85 z-0 pointer-events-none" data-ps="src/components/home/Hero.astro:iy4tab"></div>
+
+  <!-- Content Container -->
+  <div class="max-w-7xl mx-auto px-6 sm:px-8 relative z-10 w-full flex-1 flex flex-col justify-between" data-ps="src/components/home/Hero.astro:iy4tac">
+    <!-- Top Row of Badges -->
+    <div class="flex flex-wrap items-center justify-between gap-4 pt-4 w-full" data-ps="src/components/home/Hero.astro:iy4tad">
+      <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-3.5 py-1.5 text-xs text-white" data-ps="src/components/home/Hero.astro:iy4tae">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" data-ps="src/components/home/Hero.astro:z1i1yc"></span>
+        <span data-ps="src/components/home/Hero.astro:z1i1yb">Same-day & Emergency Service · Tri-Cities, WA</span>
+      </div>
+      <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-3.5 py-1.5 text-xs text-white/90" data-ps="src/components/home/Hero.astro:iy4taf">
+        <svg class="w-3.5 h-3.5 text-[#EC5A00]" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+        </svg>
+        <span data-ps="src/components/home/Hero.astro:z1i1ya">Veteran-owned · Licensed & insured</span>
+      </div>
+    </div>
+
+    <!-- Center Hero Copy -->
+    <div class="max-w-3xl my-auto py-12" data-ps="src/components/home/Hero.astro:iy4tag">
+      <h1 class="font-heading font-semibold text-[44px] sm:text-[68px] lg:text-[84px] leading-[0.98] tracking-[-1.5px] text-white" data-ps="src/components/home/Hero.astro:307k1k">
+        Appliance Repair,<br />
+        done <span class="text-[#EC5A00]" data-ps="src/components/home/Hero.astro:z1i1y9">right</span><br />
+        across the <span class="italic font-medium" data-ps="src/components/home/Hero.astro:z1i1y8">Tri-Cities, WA.</span>
+      </h1>
+      <p class="text-[16px] sm:text-[18px] text-white/90 mt-6 leading-relaxed max-w-2xl font-normal" data-ps="src/components/home/Hero.astro:6uykny">
+        Veteran-owned. All major brands. 90%+ of repairs completed on the first visit — with upfront pricing and same-day emergency service across Richland, Pasco, and Kennewick.
+      </p>
+
+      <!-- CTA Buttons Row -->
+      <div class="mt-8 flex flex-wrap items-center gap-4" data-ps="src/components/home/Hero.astro:iy4tah">
+        <a
+          href="/book"
+          class="bg-[#EC5A00] text-white font-semibold px-7 py-3.5 rounded-full text-[15px] sm:text-[16px] inline-flex items-center gap-2 hover:bg-[#d45100] transition shadow-lg no-underline"
+         data-ps="src/components/home/Hero.astro:8zc0y">
+          Book a Repair
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+        <a
+          href="tel:+15093004042"
+          class="bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/25 text-white font-semibold px-7 py-3.5 rounded-full text-[15px] sm:text-[16px] inline-flex items-center gap-2 transition no-underline"
+         data-ps="src/components/home/Hero.astro:8zc0z">
+          <svg class="w-4 h-4 text-[#EC5A00]" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/>
+          </svg>
+          (509) 300-4042
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom 3 Feature Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4" data-ps="src/components/home/Hero.astro:ecxgf3">
+      <div class="bg-black/35 backdrop-blur-md border border-white/20 rounded-2xl p-5 text-left text-white flex flex-col justify-between" data-ps="src/components/home/Hero.astro:ecxgf4">
+        <div data-ps="src/components/home/Hero.astro:ecxgf5">
+          <div class="flex items-center justify-between mb-3" data-ps="src/components/home/Hero.astro:ecxgf6">
+            <span class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-white" data-ps="src/components/home/Hero.astro:z1i1y7">
+              <svg class="w-4 h-4 text-[#EC5A00]" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7 2h10a2 2 0 012 2v16a2 2 0 01-2 2H7a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v7h10V4H7zm0 9v7h10v-7H7zm1 2h2v3H8v-3zm0-8h2v3H8V7z"/>
+              </svg>
+            </span>
+            <span class="text-[10px] uppercase tracking-wider font-semibold bg-white/10 px-2.5 py-1 rounded-full text-white/90" data-ps="src/components/home/Hero.astro:z1i1y6">Same-day service</span>
+          </div>
+          <h3 class="font-heading font-semibold text-[oklch(0.9850.00480)] text-[20px]" data-ps="src/components/home/Hero.astro:qcmae8">Fridge or freezer not cooling?</h3>
+          <p class="text-xs text-white/80 mt-1.5 leading-relaxed" data-ps="src/components/home/Hero.astro:6uyknx">Food at risk? We prioritize cooling failures with same-day emergency service.</p>
+        </div>
+      </div>
+
+      <div class="bg-black/35 backdrop-blur-md border border-white/20 rounded-2xl p-5 text-left text-white flex flex-col justify-between" data-ps="src/components/home/Hero.astro:ecxgf7">
+        <div data-ps="src/components/home/Hero.astro:ecxgf8">
+          <div class="flex items-center justify-between mb-3" data-ps="src/components/home/Hero.astro:ecxgf9">
+            <span class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-white" data-ps="src/components/home/Hero.astro:z1i1y5">
+              <svg class="w-4 h-4 text-[#EC5A00]" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6 2h12a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm6 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zM8 5a1 1 0 100 2 1 1 0 000-2zm4 0a1 1 0 100 2 1 1 0 000-2z"/>
+              </svg>
+            </span>
+            <span class="text-[10px] uppercase tracking-wider font-semibold bg-white/10 px-2.5 py-1 rounded-full text-white/90" data-ps="src/components/home/Hero.astro:z1i1xj">90%+ first-visit</span>
+          </div>
+          <h3 class="font-heading font-semibold text-[oklch(0.9850.00480)] text-[20px]" data-ps="src/components/home/Hero.astro:qcmae7">Washer or dryer acting up?</h3>
+          <p class="text-xs text-white/80 mt-1.5 leading-relaxed" data-ps="src/components/home/Hero.astro:6uyknw">Won't drain, won't spin, or no heat? We fix it right, usually on the first visit.</p>
+        </div>
+      </div>
+
+      <div class="bg-black/35 backdrop-blur-md border border-white/20 rounded-2xl p-5 text-left text-white flex flex-col justify-between" data-ps="src/components/home/Hero.astro:ecxgfa">
+        <div data-ps="src/components/home/Hero.astro:ecxgfb">
+          <div class="flex items-center justify-between mb-3" data-ps="src/components/home/Hero.astro:ecxgfc">
+            <span class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-white" data-ps="src/components/home/Hero.astro:z1i1xi">
+              <svg class="w-4 h-4 text-[#EC5A00]" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/>
+              </svg>
+            </span>
+            <span class="text-[10px] uppercase tracking-wider font-semibold bg-white/10 px-2.5 py-1 rounded-full text-white/90" data-ps="src/components/home/Hero.astro:z1i1xh">Upfront pricing</span>
+          </div>
+          <h3 class="font-heading font-semibold text-[oklch(0.9850.00480)] text-[20px]" data-ps="src/components/home/Hero.astro:qcmae6">Oven, range or dishwasher down?</h3>
+          <p class="text-xs text-white/80 mt-1.5 leading-relaxed" data-ps="src/components/home/Hero.astro:6uyknv">Cooking and cleaning back on track fast, with upfront pricing before we start.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

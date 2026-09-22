@@ -1,0 +1,411 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/config/site';
+
+const neighborhoods = [
+  'Richland, WA',
+  'Kennewick, WA',
+  'Pasco, WA',
+  'West Richland, WA',
+  'Burbank, WA',
+  'Riverview, WA',
+  'West Pasco, WA',
+  'Columbia Center, WA',
+  'Canyon Lakes, WA',
+  'Southridge, WA',
+  'Badger Mountain, WA',
+  'Meadow Springs, WA',
+  'Queensgate, WA',
+  'Highland, WA',
+  'Kennewick Highlands, WA',
+  'Richland Village, WA',
+  'George Washington Way',
+  'Road 68, Pasco',
+  'Road 100, Pasco',
+  'Finley, WA',
+];
+
+const coverageTypes = [
+  {
+    title: 'Single-family homes',
+    icon: 'home',
+  },
+  {
+    title: 'Apartments & condos',
+    icon: 'building',
+  },
+  {
+    title: 'Small businesses',
+    icon: 'store',
+  },
+  {
+    title: 'Restaurants',
+    icon: 'restaurant',
+  },
+  {
+    title: 'Offices & hotels',
+    icon: 'briefcase',
+  },
+  {
+    title: 'Rental properties',
+    icon: 'key',
+  },
+];
+---
+
+<BaseLayout
+  headerVariant="solid"
+  title={SITE.title}
+  description={SITE.description}
+>
+  <div class="pt-20 md:pt-24 pb-20 lg:pb-0" data-ps="src/pages/area.astro:ofcbta">
+    <!-- Hero Banner Section -->
+    <section class="px-3 md:px-4 pt-3 md:pt-4" data-ps="src/pages/area.astro:huo46i">
+      <div class="relative w-full min-h-[380px] sm:min-h-[420px] md:min-h-[520px] rounded-2xl md:rounded-3xl overflow-hidden shadow-sm" data-ps="src/pages/area.astro:ofcbt9">
+        <img
+          src="https://pagesmith-cdn.com/9cf36851/images/96af40f573029d19915fe360e03a4b92-3e3407-1024.webp"
+          alt="Tri-Cities Washington scenic landscape"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+          class="absolute inset-0 w-full h-full object-cover object-top" data-ps="src/pages/area.astro:qxlg5k" />
+        <!-- Dark Atmospheric Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#090a0d]/70 via-[#090a0d]/45 to-[#090a0d]/80 pointer-events-none" data-ps="src/pages/area.astro:ofcbsn"></div>
+
+        <!-- Banner Content -->
+        <div class="relative z-10 flex flex-col justify-end h-full min-h-[380px] sm:min-h-[420px] md:min-h-[520px] max-w-7xl mx-auto w-full px-6 sm:px-8 py-8 sm:py-12 md:py-16" data-ps="src/pages/area.astro:ofcbsm">
+          <div class="inline-flex self-start items-center gap-2 mb-4 sm:mb-5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/25 text-white text-[10px] sm:text-xs uppercase tracking-[0.16em] font-medium" data-ps="src/pages/area.astro:ofcbsl">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/area.astro:mmx5y3"></span>
+            Service area
+          </div>
+          <h1 class="font-heading font-semibold text-white text-[32px] sm:text-[44px] md:text-[60px] lg:text-[72px] leading-[1.02] tracking-tight max-w-4xl" data-ps="src/pages/area.astro:fdm3t7">
+            The Tri-Cities,<br />
+            <em class="not-italic text-[#EC5A00]">Washington.</em>
+          </h1>
+          <p class="mt-3 sm:mt-4 md:mt-6 max-w-xl text-sm sm:text-base md:text-lg text-[#FBFAF7]/90 leading-relaxed font-normal" data-ps="src/pages/area.astro:b9f4tn">
+            Based in Richland and serving homes and businesses across Richland, Pasco, Kennewick and the wider Tri-Cities.
+          </p>
+          <div class="mt-5 sm:mt-6 md:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3" data-ps="src/pages/area.astro:ofcbsk">
+            <a
+              href="/book"
+              class="group inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-4 rounded-full bg-[#EC5A00] text-white text-sm md:text-base font-semibold hover:bg-[#d45100] transition-all hover:-translate-y-0.5 no-underline shadow-md"
+             data-ps="src/pages/area.astro:idd1ht">
+              Check my area
+              <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <a
+              href="/services"
+              class="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-4 rounded-full bg-white/10 border border-white/25 text-white text-sm md:text-base font-semibold hover:bg-white/20 transition-all no-underline backdrop-blur-sm"
+             data-ps="src/pages/area.astro:idd1hu">
+              See services
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Where We Work & Map + 4 Cities Section -->
+    <section class="px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-24 bg-[#FBFAF7]" data-ps="src/pages/area.astro:huo46h">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-10 items-start" data-ps="src/pages/area.astro:ofcbsj">
+        <!-- Left Column: Copy & Map Embed -->
+        <div class="lg:col-span-5" data-ps="src/pages/area.astro:ofcbsi">
+          <div class="inline-flex items-center gap-2 mb-4 px-3.5 py-1 rounded-full bg-[#F5F3ED] border border-[#eae6de] text-[11px] uppercase tracking-[0.18em] text-[#5a5661] font-medium" data-ps="src/pages/area.astro:ofcbsh">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/area.astro:mmx5y2"></span>
+            Where we work
+          </div>
+          <h2 class="text-2xl sm:text-3xl md:text-5xl font-heading font-semibold tracking-tight text-[#020203] leading-[1.05]" data-ps="src/pages/area.astro:p76lj">
+            The Tri-Cities<br />
+            <em class="not-italic text-[#EC5A00]">done properly.</em>
+          </h2>
+          <p class="mt-4 text-[#5a5661] max-w-md text-sm sm:text-base leading-relaxed" data-ps="src/pages/area.astro:b9f4to">
+            We work throughout the Tri-Cities so we can get to repairs quickly and know the area. If you're a little outside our zone, drop us a message and we'll let you know if we can help.
+          </p>
+          <div class="mt-8 rounded-2xl overflow-hidden border border-[#eae6de] shadow-xs" data-ps="src/pages/area.astro:ofcbsg">
+            <iframe
+              title="UDG Services location — Tri-Cities, WA"
+              src="https://www.google.com/maps?q=Richland%2C+WA&t=&z=12&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="360"
+              loading="lazy"
+              style="border: 0px;"
+              class="w-full h-[360px] block"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Right Column: 4 City Cards Grid -->
+        <div class="lg:col-span-7" data-ps="src/pages/area.astro:ofcbsf">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" data-ps="src/pages/area.astro:ofcbse">
+            <!-- Richland Card -->
+            <div class="group relative rounded-2xl overflow-hidden bg-[#FBFAF7] border border-[#eae6de] transition duration-300 hover:shadow-md flex flex-col justify-between" data-ps="src/pages/area.astro:ofcbrs">
+              <div class="relative aspect-[3/4] overflow-hidden bg-[#F5F3ED]" data-ps="src/pages/area.astro:ofcbrr">
+                <img
+                  src="https://pagesmith-cdn.com/9cf36851/images/869ce6b4272332e8205cc2272d19d881-868f79-320.webp"
+                  alt="Richland area"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" data-ps="src/pages/area.astro:qxlg4y" />
+              </div>
+              <div class="p-4 sm:p-5 bg-[#FBFAF7]" data-ps="src/pages/area.astro:ofcbrq">
+                <div class="flex items-center justify-between" data-ps="src/pages/area.astro:ofcbrp">
+                  <h3 class="font-heading text-lg sm:text-xl font-semibold text-[#020203]" data-ps="src/pages/area.astro:dz7qm5">Richland</h3>
+                  <span class="text-[11px] uppercase tracking-[0.14em] text-[#5a5661] bg-[#F5F3ED] px-2 py-0.5 rounded font-medium" data-ps="src/pages/area.astro:mmx5y1">WA 99352</span>
+                </div>
+                <p class="mt-1 text-xs sm:text-sm text-[#5a5661]" data-ps="src/pages/area.astro:b9f4tp">
+                  Home base — same-day service available.
+                </p>
+              </div>
+            </div>
+
+            <!-- Kennewick Card -->
+            <div class="group relative rounded-2xl overflow-hidden bg-[#FBFAF7] border border-[#eae6de] transition duration-300 hover:shadow-md flex flex-col justify-between" data-ps="src/pages/area.astro:ofcbro">
+              <div class="relative aspect-[3/4] overflow-hidden bg-[#F5F3ED]" data-ps="src/pages/area.astro:ofcbrn">
+                <img
+                  src="https://pagesmith-cdn.com/9cf36851/images/d503b3c8040f0452c8bfef1691bab5e4-91d99b-320.webp"
+                  alt="Kennewick area"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" data-ps="src/pages/area.astro:qxlg4x" />
+              </div>
+              <div class="p-4 sm:p-5 bg-[#FBFAF7]" data-ps="src/pages/area.astro:ofcbrm">
+                <div class="flex items-center justify-between" data-ps="src/pages/area.astro:ofcbrl">
+                  <h3 class="font-heading text-lg sm:text-xl font-semibold text-[#020203]" data-ps="src/pages/area.astro:dz7qm4">Kennewick</h3>
+                  <span class="text-[11px] uppercase tracking-[0.14em] text-[#5a5661] bg-[#F5F3ED] px-2 py-0.5 rounded font-medium" data-ps="src/pages/area.astro:mmx5y0">WA 99336</span>
+                </div>
+                <p class="mt-1 text-xs sm:text-sm text-[#5a5661]" data-ps="src/pages/area.astro:b9f4tq">
+                  Residential neighbourhoods and businesses.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pasco Card -->
+            <div class="group relative rounded-2xl overflow-hidden bg-[#FBFAF7] border border-[#eae6de] transition duration-300 hover:shadow-md flex flex-col justify-between" data-ps="src/pages/area.astro:ofcbrk">
+              <div class="relative aspect-[3/4] overflow-hidden bg-[#F5F3ED]" data-ps="src/pages/area.astro:ofcbrj">
+                <img
+                  src="https://pagesmith-cdn.com/9cf36851/images/8c9251cf573c7bf66597622b9e6454eb-c9585a-320.webp"
+                  alt="Pasco area"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" data-ps="src/pages/area.astro:qxlg4w" />
+              </div>
+              <div class="p-4 sm:p-5 bg-[#FBFAF7]" data-ps="src/pages/area.astro:ofcbqx">
+                <div class="flex items-center justify-between" data-ps="src/pages/area.astro:ofcbqw">
+                  <h3 class="font-heading text-lg sm:text-xl font-semibold text-[#020203]" data-ps="src/pages/area.astro:dz7qm3">Pasco</h3>
+                  <span class="text-[11px] uppercase tracking-[0.14em] text-[#5a5661] bg-[#F5F3ED] px-2 py-0.5 rounded font-medium" data-ps="src/pages/area.astro:mmx5xz">WA 99301</span>
+                </div>
+                <p class="mt-1 text-xs sm:text-sm text-[#5a5661]" data-ps="src/pages/area.astro:b9f4tr">
+                  Fast-growing city, new developments covered.
+                </p>
+              </div>
+            </div>
+
+            <!-- Burbank Card -->
+            <div class="group relative rounded-2xl overflow-hidden bg-[#FBFAF7] border border-[#eae6de] transition duration-300 hover:shadow-md flex flex-col justify-between" data-ps="src/pages/area.astro:ofcbqv">
+              <div class="relative aspect-[3/4] overflow-hidden bg-[#F5F3ED]" data-ps="src/pages/area.astro:ofcbqu">
+                <img
+                  src="https://pagesmith-cdn.com/9cf36851/images/db24afb9529759b291c5884dee2c742b-000c08-320.webp"
+                  alt="Burbank area"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" data-ps="src/pages/area.astro:qxlg4v" />
+              </div>
+              <div class="p-4 sm:p-5 bg-[#FBFAF7]" data-ps="src/pages/area.astro:ofcbqt">
+                <div class="flex items-center justify-between" data-ps="src/pages/area.astro:ofcbqs">
+                  <h3 class="font-heading text-lg sm:text-xl font-semibold text-[#020203]" data-ps="src/pages/area.astro:dz7qm2">Burbank</h3>
+                  <span class="text-[11px] uppercase tracking-[0.14em] text-[#5a5661] bg-[#F5F3ED] px-2 py-0.5 rounded font-medium" data-ps="src/pages/area.astro:mmx5xy">WA 99323</span>
+                </div>
+                <p class="mt-1 text-xs sm:text-sm text-[#5a5661]" data-ps="src/pages/area.astro:b9f4ts">
+                  Snake River community — no rural surcharge.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Communities We Know & What We Cover Section -->
+    <section class="px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-24 bg-[#F5F3ED] border-y border-[#eae6de]" data-ps="src/pages/area.astro:huo46g">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-12 items-start" data-ps="src/pages/area.astro:ofcbqr">
+        <!-- Left Column: Nearby Neighbourhoods -->
+        <div class="lg:col-span-6" data-ps="src/pages/area.astro:ofcbqq">
+          <div class="inline-flex items-center gap-2 mb-4 px-3.5 py-1 rounded-full bg-[#FBFAF7] border border-[#eae6de] text-[11px] uppercase tracking-[0.18em] text-[#5a5661] font-medium" data-ps="src/pages/area.astro:ofcbqp">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/area.astro:mmx5xx"></span>
+            Nearby neighbourhoods
+          </div>
+          <h2 class="text-2xl sm:text-3xl md:text-5xl font-heading font-semibold tracking-tight text-[#020203] leading-[1.05]" data-ps="src/pages/area.astro:p76lk">
+            Communities we know<br />
+            <em class="not-italic text-[#EC5A00]">very well.</em>
+          </h2>
+          <p class="mt-4 text-[#5a5661] max-w-md text-sm sm:text-base leading-relaxed" data-ps="src/pages/area.astro:b9f4tt">
+            Not sure if you're in our zone? Send us your address — most of the neighbourhoods below and everything nearby are covered.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-2" data-ps="src/pages/area.astro:ofcbqo">
+            {neighborhoods.map((item, __psIdx) => (
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FBFAF7] border border-[#eae6de] text-xs text-[#020203] shadow-2xs font-medium" data-ps={`src/pages/area.astro:mmx5xw-${__psIdx}`}>
+                <svg class="w-3.5 h-3.5 text-[#EC5A00] shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <!-- Right Column: What We Cover -->
+        <div class="lg:col-span-6" data-ps="src/pages/area.astro:sa7ruw">
+          <div class="inline-flex items-center gap-2 mb-4 px-3.5 py-1 rounded-full bg-[#FBFAF7] border border-[#eae6de] text-[11px] uppercase tracking-[0.18em] text-[#5a5661] font-medium" data-ps="src/pages/area.astro:sa7ruv">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/area.astro:mmx5xv"></span>
+            What we cover
+          </div>
+          <h2 class="text-2xl sm:text-3xl md:text-5xl font-heading font-semibold tracking-tight text-[#020203] leading-[1.05]" data-ps="src/pages/area.astro:p76ll">
+            Homes, rentals,<br />
+            <em class="not-italic text-[#EC5A00]">and businesses.</em>
+          </h2>
+          <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3" data-ps="src/pages/area.astro:sa7ruu">
+            {coverageTypes.map((item, __psIdx) => (
+              <div class="flex items-center gap-3.5 p-4 rounded-xl bg-[#FBFAF7] border border-[#eae6de] hover:border-[#EC5A00] transition-colors shadow-2xs" data-ps={`src/pages/area.astro:sa7rut-${__psIdx}`}>
+                <span class="w-10 h-10 flex items-center justify-center rounded-lg bg-[#F5F3ED] text-[#EC5A00] shrink-0" data-ps={`src/pages/area.astro:mmx5xu-${__psIdx}`}>
+                  {item.icon === 'home' && (
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                      <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                  )}
+                  {item.icon === 'building' && (
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                      <line x1="9" y1="22" x2="9" y2="22.01"></line>
+                      <line x1="15" y1="22" x2="15" y2="22.01"></line>
+                      <line x1="9" y1="18" x2="9" y2="18.01"></line>
+                      <line x1="15" y1="18" x2="15" y2="18.01"></line>
+                      <line x1="9" y1="14" x2="9" y2="14.01"></line>
+                      <line x1="15" y1="14" x2="15" y2="14.01"></line>
+                      <line x1="9" y1="10" x2="9" y2="10.01"></line>
+                      <line x1="15" y1="10" x2="15" y2="10.01"></line>
+                      <line x1="9" y1="6" x2="9" y2="6.01"></line>
+                      <line x1="15" y1="6" x2="15" y2="6.01"></line>
+                    </svg>
+                  )}
+                  {item.icon === 'store' && (
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M3 3h18l-1 7H4L3 3z"></path>
+                      <path d="M4 10v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V10"></path>
+                      <line x1="10" y1="21" x2="10" y2="15"></line>
+                      <line x1="14" y1="21" x2="14" y2="15"></line>
+                    </svg>
+                  )}
+                  {item.icon === 'restaurant' && (
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 2v6a3 3 0 0 1-3 3 3 3 0 0 1-3-3V2"></path>
+                      <line x1="15" y1="2" x2="15" y2="22"></line>
+                      <line x1="6" y1="2" x2="6" y2="7"></line>
+                      <path d="M6 7a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2V2"></path>
+                      <line x1="8" y1="9" x2="8" y2="22"></line>
+                    </svg>
+                  )}
+                  {item.icon === 'briefcase' && (
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                  )}
+                  {item.icon === 'key' && (
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 2l-2 2m-1.5 1.5L14 9l-1.5-1.5-2 2 1.5 1.5-3.5 3.5a6 6 0 1 1-2.5-2.5l3.5-3.5 1.5 1.5 2-2L14 6.5l3.5-3.5 2 2z"></path>
+                      <circle cx="7.5" cy="16.5" r="1.5"></circle>
+                    </svg>
+                  )}
+                </span>
+                <p class="text-sm font-semibold text-[#020203]" data-ps={`src/pages/area.astro:b9f4tu-${__psIdx}`}>{item.title}</p>
+              </div>
+            ))}
+          </div>
+          <div class="mt-8" data-ps="src/pages/area.astro:sa7rus">
+            <a
+              href="/book"
+              class="group inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[#090a0d] text-white text-sm font-semibold hover:bg-[#1f2128] transition-all hover:-translate-y-0.5 no-underline shadow-sm"
+             data-ps="src/pages/area.astro:idd1hv">
+              Book a local visit
+              <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Local Only CTA Section -->
+    <section class="px-4 sm:px-6 md:px-8 py-16 sm:py-20 md:py-28 bg-[#FBFAF7]" data-ps="src/pages/area.astro:huo46f">
+      <div class="max-w-5xl mx-auto text-center flex flex-col items-center" data-ps="src/pages/area.astro:sa7rur">
+        <div class="inline-flex items-center gap-2 mb-5 px-3.5 py-1 rounded-full bg-[#F5F3ED] border border-[#eae6de] text-[11px] uppercase tracking-[0.18em] text-[#5a5661] font-medium" data-ps="src/pages/area.astro:sa7ruq">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/area.astro:mmx5x8"></span>
+          Local only
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-6xl font-heading font-semibold tracking-tight text-[#020203] leading-[1.05] max-w-3xl" data-ps="src/pages/area.astro:p76lm">
+          Not sure if we cover<br />
+          <em class="not-italic text-[#EC5A00]">your area?</em>
+        </h2>
+        <p class="mt-4 sm:mt-5 text-sm sm:text-base md:text-lg text-[#5a5661] max-w-xl leading-relaxed" data-ps="src/pages/area.astro:b9f4tv">
+          Send it over and we'll get back to you as soon as we can.
+        </p>
+        <div class="mt-6 sm:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto justify-center" data-ps="src/pages/area.astro:sa7rup">
+          <a
+            href="/book"
+            class="group inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 sm:py-4 rounded-full bg-[#090a0d] text-white text-sm font-semibold hover:bg-[#1f2128] transition-all hover:-translate-y-0.5 no-underline shadow-sm"
+           data-ps="src/pages/area.astro:idd1hw">
+            Check availability
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+          <a
+            href="/contact"
+            class="inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 sm:py-4 rounded-full bg-transparent text-[#020203] text-sm font-semibold hover:text-[#EC5A00] transition-colors no-underline"
+           data-ps="src/pages/area.astro:idd1hx">
+            Send a message
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile Floating Action Bar -->
+    <div class="lg:hidden fixed bottom-3 left-3 right-3 z-40" data-ps="src/pages/area.astro:sa7ruo">
+      <div class="flex items-center gap-2 p-2 rounded-2xl bg-[#090a0d]/95 backdrop-blur-md border border-white/10 shadow-xl" data-ps="src/pages/area.astro:sa7run">
+        <a
+          href="tel:+15093004042"
+          aria-label="Call UDG Services"
+          class="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 text-white hover:bg-white/15 transition-colors shrink-0 no-underline"
+         data-ps="src/pages/area.astro:idd1hy">
+          <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/>
+          </svg>
+        </a>
+        <a
+          href="/book"
+          class="flex-1 h-12 flex items-center justify-center gap-2 rounded-xl bg-[#EC5A00] text-white text-sm font-semibold hover:bg-[#d45100] transition-colors no-underline shadow-sm"
+         data-ps="src/pages/area.astro:idd1hz">
+          Book a Repair Now
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

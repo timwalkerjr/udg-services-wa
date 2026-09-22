@@ -1,0 +1,573 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/config/site';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: 'Our Team & Fleet | UDG Services',
+  description: "Real vans. Real jobs. Real results. UDG Services is a veteran-owned, family-run appliance repair team trusted across the Tri-Cities and Washington's Columbia Basin.",
+  url: `${SITE.url}/team/`,
+};
+
+const galleryImages = [
+  {
+    src: 'https://pagesmith-cdn.com/9cf36851/images/edited_0ecdb9b10fed21b734c6418c01adf37c_aabcefed-a87446-1024.webp',
+    alt: 'UDG Services appliance repair van parked in front of a suburban Washington home',
+    category: 'fleet',
+  },
+  {
+    src: 'https://pagesmith-cdn.com/9cf36851/images/edited_ef4725fdbd0b7442b2c254b377634693_7f0c8625-b22d03-1024.webp',
+    alt: 'Two UDG Services appliance repair vans parked side by side with an open garage in a Washington neighbourhood',
+    category: 'fleet',
+  },
+  {
+    src: 'https://pagesmith-cdn.com/9cf36851/images/edited_729d65fc14d2984952030944adea0fe5_cc2a6e75-d8cede-1024.webp',
+    alt: 'UDG Services service vans and open garage in a suburban Washington setting',
+    category: 'fleet',
+  },
+  {
+    src: 'https://pagesmith-cdn.com/9cf36851/images/edited_bfac6f062abfff94440bf01b90863d42_528639fe-ed38ce-768.webp',
+    alt: 'UDG Services appliance repair van parked in a tree-lined Washington neighbourhood',
+    category: 'fleet',
+  },
+  {
+    src: 'https://pagesmith-cdn.com/9cf36851/images/edited_22433d633075574f85873ceb52ec10c2_64102400-6a114a-768.webp',
+    alt: 'UDG Services appliance repair van in a suburban Tri-Cities Washington neighbourhood',
+    category: 'fleet',
+  },
+  {
+    src: 'https://pagesmith-cdn.com/9cf36851/images/edited_bba61f648c62e2a08b391e2eea5c0530_09d496cc-f9afa9-1024.webp',
+    alt: 'UDG Services service van parked on a tree-lined suburban street in the Tri-Cities Washington',
+    category: 'fleet',
+  },
+  {
+    src: 'https://pagesmith-cdn.com/9cf36851/images/edited_f6b3bd27f23e0f98faf0cc5c9884dd46_a74b9826-a162e8-1024.webp',
+    alt: 'Modern kitchen full of stainless steel appliances with tools organized on the counter after a service call',
+    category: 'job',
+  },
+  {
+    src: 'https://pagesmith-cdn.com/9cf36851/images/edited_3d4cb750ae4dca616602d99717199f52_fb196666-7c03bd-1024.webp',
+    alt: 'Residential refrigerator with the back open and a new compressor, tools and parts laid out on a clean floor',
+    category: 'job',
+  },
+  {
+    src: 'https://pagesmith-cdn.com/9cf36851/images/edited_d52c0cb057202bd3cdccce92215f54bc_d2b89a67-66aea3-1024.webp',
+    alt: 'Front-load washing machine with the drum and belt exposed during a repair in a bright laundry room',
+    category: 'job',
+  },
+  {
+    src: 'https://pagesmith-cdn.com/9cf36851/images/edited_d2988ec50fa3bd105db9a324ee9d3749_626318d0-3814e8-1024.webp',
+    alt: 'Electric oven range with the heating element exposed and a multimeter nearby during testing',
+    category: 'job',
+  },
+  {
+    src: 'https://pagesmith-cdn.com/9cf36851/images/edited_dbdf42e469a172eea0db251dc3b5b277_0d5bdec2-9602c0-1024.webp',
+    alt: 'Open dishwasher with spray arm and drain pump visible during a repair in a clean kitchen',
+    category: 'job',
+  },
+  {
+    src: 'https://pagesmith-cdn.com/9cf36851/images/edited_99e0d24be5b06ad446eeb114205e78f7_fa5f7ff4-983f99-1024.webp',
+    alt: 'Clothes dryer with the vent and lint trap exposed during servicing in a utility room',
+    category: 'job',
+  },
+];
+
+const jobOpenings = [
+  {
+    title: 'Appliance Repair Technician',
+    badge: 'Hiring now',
+    location: 'Full-time · Tri-Cities, WA',
+    description: "Diagnose and repair refrigerators, washers, dryers, dishwashers and ranges in customers' homes. Experience with major brands preferred — we'll train the right person.",
+    icon: 'wrench',
+  },
+  {
+    title: 'Refrigeration Technician',
+    badge: 'Hiring now',
+    location: 'Full-time · Richland, WA',
+    description: 'Service residential fridges, freezers and commercial refrigeration. EPA certification and strong diagnostic skills a plus.',
+    icon: 'fridge',
+  },
+  {
+    title: 'Service Dispatcher / Customer Care',
+    badge: 'Hiring now',
+    location: 'Full-time · Tri-Cities, WA',
+    description: 'Be the friendly voice customers reach first. Schedule visits, keep technicians on route and follow up on every job. Organized, calm and customer-focused.',
+    icon: 'headset',
+  },
+  {
+    title: 'Apprentice Technician',
+    badge: 'Hiring now',
+    location: 'Full-time · Tri-Cities, WA',
+    description: 'Learn appliance repair from experienced techs. Assist with installs, diagnostics and service calls. No experience required — just a strong work ethic.',
+    icon: 'academic',
+  },
+];
+
+const benefits = [
+  {
+    text: 'Competitive pay with overtime opportunities',
+    icon: 'money',
+  },
+  {
+    text: 'Health insurance & retirement plan',
+    icon: 'health',
+  },
+  {
+    text: 'Paid time off & paid holidays',
+    icon: 'calendar',
+  },
+  {
+    text: 'Company van, tools & equipment provided',
+    icon: 'van',
+  },
+  {
+    text: 'Ongoing training & certification support',
+    icon: 'training',
+  },
+  {
+    text: "Veteran-owned — you're a teammate, not a number",
+    icon: 'veteran',
+  },
+];
+---
+
+<BaseLayout
+  title="Our Team & Fleet | Veteran-Owned Appliance Repair | UDG Services"
+  description="Real vans. Real jobs. Real results. UDG Services is a veteran-owned, family-run appliance repair team trusted across the Tri-Cities and Washington's Columbia Basin."
+  headerVariant="solid"
+  jsonLd={jsonLd}
+>
+  <div class="pt-20 md:pt-20 pb-24 lg:pb-0" data-ps="src/pages/team.astro:tm-root">
+    <!-- Hero Banner Section -->
+    <section class="px-3 md:px-4 pt-3 md:pt-4" data-ps="src/pages/team.astro:tm-hero-sec">
+      <div class="relative w-full min-h-[380px] sm:min-h-[420px] md:min-h-[520px] rounded-2xl md:rounded-3xl overflow-hidden shadow-sm" data-ps="src/pages/team.astro:tm-hero-wrap">
+        <img
+          alt="Two UDG Services appliance repair vans parked side by side in a suburban Washington neighbourhood"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+          class="absolute inset-0 w-full h-full object-cover object-top"
+          src="https://pagesmith-cdn.com/9cf36851/images/edited_ef4725fdbd0b7442b2c254b377634693_7f0c8625-b22d03-1024.webp"
+          data-ps="src/pages/team.astro:tm-hero-img"
+        />
+        <!-- Dark Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#090a0d]/70 via-[#090a0d]/45 to-[#090a0d]/80 pointer-events-none" data-ps="src/pages/team.astro:tm-hero-overlay"></div>
+
+        <!-- Hero Content Overlay -->
+        <div class="relative z-10 flex flex-col justify-end h-full min-h-[380px] sm:min-h-[420px] md:min-h-[520px] max-w-7xl mx-auto w-full px-6 sm:px-8 py-8 sm:py-10 md:py-14" data-ps="src/pages/team.astro:tm-hero-content">
+          <div class="inline-flex self-start items-center gap-2 mb-4 sm:mb-5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/25 text-white text-[10px] sm:text-xs uppercase tracking-[0.16em] font-medium" data-ps="src/pages/team.astro:tm-hero-badge">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/team.astro:tm-hero-dot"></span>
+            Our Team
+          </div>
+          <h1 class="font-heading font-semibold text-white text-[32px] sm:text-[40px] md:text-[56px] lg:text-[72px] leading-[1.02] tracking-tight max-w-4xl" data-ps="src/pages/team.astro:tm-hero-h1">
+            The company<br />
+            <em class="not-italic text-[#EC5A00]">behind the work.</em>
+          </h1>
+          <p class="mt-3 sm:mt-4 md:mt-6 max-w-xl text-sm sm:text-base md:text-lg text-white/90 leading-relaxed font-normal" data-ps="src/pages/team.astro:tm-hero-p">
+            Real vans. Real jobs. Real results. UDG Services is a veteran-owned, family-run appliance repair team trusted across the Tri-Cities and Washington's Columbia Basin.
+          </p>
+          <div class="mt-5 sm:mt-6 md:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3" data-ps="src/pages/team.astro:tm-hero-actions">
+            <a
+              class="group inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-full bg-[#EC5A00] text-white text-sm md:text-base font-semibold hover:bg-[#d45100] transition-all hover:-translate-y-0.5 no-underline shadow-sm whitespace-nowrap"
+              href="/book"
+              data-ps="src/pages/team.astro:tm-hero-cta1"
+            >
+              Book Service
+              <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <a
+              class="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-full bg-white/10 border border-white/25 text-white text-sm md:text-base font-semibold hover:bg-white/20 transition-all no-underline whitespace-nowrap backdrop-blur-sm"
+              href="/services"
+              data-ps="src/pages/team.astro:tm-hero-cta2"
+            >
+              See services
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3-Column Highlights Section -->
+    <section class="px-4 md:px-8 py-12 sm:py-16 md:py-20 bg-[#FBFAF7]" data-ps="src/pages/team.astro:tm-highlights-sec">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8" data-ps="src/pages/team.astro:tm-highlights-grid">
+        <!-- Card 1 -->
+        <div class="p-6 md:p-8 rounded-2xl bg-[#F5F3ED] border border-[#eae6de]" data-ps="src/pages/team.astro:tm-card-1">
+          <span class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#EC5A00]/10 text-[#EC5A00]" data-ps="src/pages/team.astro:tm-card-icon-1">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 12 15 16 10"></polyline>
+            </svg>
+          </span>
+          <h3 class="mt-5 text-lg md:text-xl font-heading font-semibold text-[#020203]" data-ps="src/pages/team.astro:tm-card-title-1">Licensed &amp; Insured</h3>
+          <p class="mt-2 text-sm text-[#5a5661] leading-relaxed" data-ps="src/pages/team.astro:tm-card-desc-1">
+            Every job is handled by a licensed, insured technician with ongoing training on the latest appliances and safety protocols. WA License #UDGSES*15704.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="p-6 md:p-8 rounded-2xl bg-[#F5F3ED] border border-[#eae6de]" data-ps="src/pages/team.astro:tm-card-2">
+          <span class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#EC5A00]/10 text-[#EC5A00]" data-ps="src/pages/team.astro:tm-card-icon-2">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </span>
+          <h3 class="mt-5 text-lg md:text-xl font-heading font-semibold text-[#020203]" data-ps="src/pages/team.astro:tm-card-title-2">Veteran-Owned</h3>
+          <p class="mt-2 text-sm text-[#5a5661] leading-relaxed" data-ps="src/pages/team.astro:tm-card-desc-2">
+            Founded by Coast Guard veteran Greg Cooper, we bring service-first values to every home and business across the Tri-Cities.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="p-6 md:p-8 rounded-2xl bg-[#F5F3ED] border border-[#eae6de]" data-ps="src/pages/team.astro:tm-card-3">
+          <span class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#EC5A00]/10 text-[#EC5A00]" data-ps="src/pages/team.astro:tm-card-icon-3">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
+          </span>
+          <h3 class="mt-5 text-lg md:text-xl font-heading font-semibold text-[#020203]" data-ps="src/pages/team.astro:tm-card-title-3">All Major Brands</h3>
+          <p class="mt-2 text-sm text-[#5a5661] leading-relaxed" data-ps="src/pages/team.astro:tm-card-desc-3">
+            From senior techs with decades in the field to the newest tools in the van, we repair every major appliance brand the same day, done right.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="px-4 md:px-8 py-12 sm:py-16 md:py-24 bg-[#F5F3ED]" data-ps="src/pages/team.astro:tm-gallery-sec">
+      <div class="max-w-7xl mx-auto" data-ps="src/pages/team.astro:tm-gallery-wrap">
+        <!-- Gallery Header -->
+        <div class="text-center mb-8 md:mb-12" data-ps="src/pages/team.astro:tm-gallery-header">
+          <div class="inline-flex items-center gap-2 mb-4 px-3 py-1 rounded-full bg-[#FBFAF7] border border-[#eae6de] text-[11px] uppercase tracking-[0.18em] text-[#5a5661] font-medium" data-ps="src/pages/team.astro:tm-gallery-badge">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/team.astro:tm-gallery-dot"></span>
+            Gallery
+          </div>
+          <h2 class="text-2xl sm:text-3xl md:text-5xl font-heading font-semibold tracking-tight text-[#020203] leading-[1.05]" data-ps="src/pages/team.astro:tm-gallery-h2">
+            The vans, the tools, <em class="not-italic text-[#EC5A00]">the work.</em>
+          </h2>
+          <p class="mt-4 text-sm md:text-base text-[#5a5661] max-w-xl mx-auto leading-relaxed" data-ps="src/pages/team.astro:tm-gallery-p">
+            No stock photos — a look at our fleet and the appliance repairs we handle every day across the Tri-Cities.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="flex items-center justify-center gap-2 mb-8 md:mb-10" id="gallery-filters" data-ps="src/pages/team.astro:tm-gallery-filters">
+          <button
+            type="button"
+            data-filter="all"
+            class="gallery-filter-btn px-4 py-2 rounded-full text-sm font-medium transition-all cursor-pointer whitespace-nowrap bg-[#EC5A00] text-white shadow-xs"
+            data-ps="src/pages/team.astro:tm-filter-all"
+          >
+            All Photos
+          </button>
+          <button
+            type="button"
+            data-filter="fleet"
+            class="gallery-filter-btn px-4 py-2 rounded-full text-sm font-medium transition-all cursor-pointer whitespace-nowrap bg-[#FBFAF7] text-[#020203]/80 hover:bg-[#eae6de] border border-[#eae6de]"
+            data-ps="src/pages/team.astro:tm-filter-fleet"
+          >
+            Our Fleet
+          </button>
+          <button
+            type="button"
+            data-filter="job"
+            class="gallery-filter-btn px-4 py-2 rounded-full text-sm font-medium transition-all cursor-pointer whitespace-nowrap bg-[#FBFAF7] text-[#020203]/80 hover:bg-[#eae6de] border border-[#eae6de]"
+            data-ps="src/pages/team.astro:tm-filter-job"
+          >
+            On the Job
+          </button>
+        </div>
+
+        <!-- Masonry / Columns Image Grid -->
+        <div class="columns-1 sm:columns-2 lg:columns-3 gap-3 md:gap-4" id="gallery-grid" data-ps="src/pages/team.astro:tm-gallery-grid">
+          {galleryImages.map((img, idx) => (
+            <div
+              class="gallery-item mb-3 md:mb-4 block w-full rounded-xl overflow-hidden bg-[#eae6de] group cursor-pointer relative break-inside-avoid shadow-xs transition-opacity duration-300"
+              data-category={img.category}
+              data-ps={`src/pages/team.astro:tm-gallery-item-${idx}`}
+            >
+              <img
+                alt={img.alt}
+                loading="lazy"
+                decoding="async"
+                class="w-full object-cover transition-transform duration-500 group-hover:scale-105 block"
+                src={img.src}
+                data-ps={`src/pages/team.astro:tm-gallery-img-${idx}`}
+              />
+              <div class="absolute inset-0 bg-[#090a0d]/0 group-hover:bg-[#090a0d]/40 transition-colors duration-300 flex items-end justify-start p-4" data-ps={`src/pages/team.astro:tm-gallery-overlay-${idx}`}>
+                <span class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 leading-snug drop-shadow-sm" data-ps={`src/pages/team.astro:tm-gallery-caption-${idx}`}>
+                  {img.alt}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section class="px-4 md:px-8 py-12 sm:py-16 md:py-24 bg-[#FBFAF7]" data-ps="src/pages/team.astro:tm-careers-sec">
+      <div class="max-w-7xl mx-auto" data-ps="src/pages/team.astro:tm-careers-wrap">
+        <!-- Section Header -->
+        <div class="text-center mb-10 md:mb-14" data-ps="src/pages/team.astro:tm-careers-header">
+          <div class="inline-flex items-center gap-2 mb-4 px-3 py-1 rounded-full bg-[#F5F3ED] border border-[#eae6de] text-[11px] uppercase tracking-[0.18em] text-[#5a5661] font-medium" data-ps="src/pages/team.astro:tm-careers-badge">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/team.astro:tm-careers-dot"></span>
+            Careers
+          </div>
+          <h2 class="text-2xl sm:text-3xl md:text-5xl font-heading font-semibold tracking-tight text-[#020203] leading-[1.05]" data-ps="src/pages/team.astro:tm-careers-h2">
+            Join the <em class="not-italic text-[#EC5A00]">UDG Services crew.</em>
+          </h2>
+          <p class="mt-4 text-sm md:text-base text-[#5a5661] max-w-xl mx-auto leading-relaxed" data-ps="src/pages/team.astro:tm-careers-p">
+            We're growing across the Tri-Cities and looking for skilled, reliable people who take pride in honest work. If that sounds like you, let's talk.
+          </p>
+        </div>
+
+        <!-- 2-Column Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-10 items-start" data-ps="src/pages/team.astro:tm-careers-grid">
+          <!-- Left: 4 Job Listing Cards -->
+          <div class="lg:col-span-7 space-y-4" data-ps="src/pages/team.astro:tm-jobs-col">
+            {jobOpenings.map((job, idx) => (
+              <div
+                class="p-5 md:p-6 rounded-2xl bg-[#F5F3ED] border border-[#eae6de] hover:border-[#EC5A00]/40 transition-colors shadow-2xs"
+                data-ps={`src/pages/team.astro:tm-job-${idx}`}
+              >
+                <div class="flex items-start gap-4" data-ps={`src/pages/team.astro:a9sl7z-${idx}`}>
+                  <!-- Job Icon -->
+                  <span class="w-11 h-11 flex items-center justify-center rounded-xl bg-[#EC5A00]/10 text-[#EC5A00] shrink-0" data-ps={`src/pages/team.astro:tm-job-icon-${idx}`}>
+                    {job.icon === 'wrench' && (
+                      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                      </svg>
+                    )}
+                    {job.icon === 'fridge' && (
+                      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                        <line x1="4" y1="10" x2="20" y2="10"></line>
+                        <line x1="9" y1="6" x2="9" y2="7"></line>
+                        <line x1="9" y1="14" x2="9" y2="16"></line>
+                      </svg>
+                    )}
+                    {job.icon === 'headset' && (
+                      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                        <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+                      </svg>
+                    )}
+                    {job.icon === 'academic' && (
+                      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                      </svg>
+                    )}
+                  </span>
+
+                  <!-- Job Details -->
+                  <div class="flex-1 min-w-0" data-ps={`src/pages/team.astro:a9sl80-${idx}`}>
+                    <div class="flex flex-wrap items-center gap-2 mb-1" data-ps={`src/pages/team.astro:a9sl81-${idx}`}>
+                      <h3 class="text-base md:text-lg font-heading font-semibold text-[#020203]" data-ps={`src/pages/team.astro:tm-job-title-${idx}`}>
+                        {job.title}
+                      </h3>
+                      <span class="px-2.5 py-0.5 rounded-full bg-[#EC5A00]/10 text-[#EC5A00] text-[11px] font-semibold uppercase tracking-wide" data-ps={`src/pages/team.astro:tm-job-badge-${idx}`}>
+                        {job.badge}
+                      </span>
+                    </div>
+                    <p class="text-xs text-[#5a5661] font-medium" data-ps={`src/pages/team.astro:tm-job-loc-${idx}`}>{job.location}</p>
+                    <p class="mt-2 text-sm text-[#5a5661] leading-relaxed" data-ps={`src/pages/team.astro:tm-job-desc-${idx}`}>
+                      {job.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <!-- Right: Why Work Here Sticky Card -->
+          <div class="lg:col-span-5" data-ps="src/pages/team.astro:tm-benefits-col">
+            <div class="sticky top-24 p-6 md:p-8 rounded-2xl bg-[#090a0d] text-[#FBFAF7] shadow-xl border border-white/5" data-ps="src/pages/team.astro:tm-benefits-card">
+              <h3 class="text-lg md:text-xl font-heading font-semibold text-white mb-6" data-ps="src/pages/team.astro:tm-benefits-h3">
+                Why work here?
+              </h3>
+              <ul class="space-y-4 list-none p-0 m-0" data-ps="src/pages/team.astro:tm-benefits-list">
+                {benefits.map((item, idx) => (
+                  <li class="flex items-start gap-3" data-ps={`src/pages/team.astro:tm-benefit-${idx}`}>
+                    <span class="text-[#EC5A00] shrink-0 mt-0.5" data-ps={`src/pages/team.astro:tm-benefit-icon-${idx}`}>
+                      {item.icon === 'money' && (
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
+                          <path d="M12 18V6"></path>
+                        </svg>
+                      )}
+                      {item.icon === 'health' && (
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                        </svg>
+                      )}
+                      {item.icon === 'calendar' && (
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                          <line x1="16" y1="2" x2="16" y2="6"></line>
+                          <line x1="8" y1="2" x2="8" y2="6"></line>
+                          <line x1="3" y1="10" x2="21" y2="10"></line>
+                          <path d="m9 16 2 2 4-4"></path>
+                        </svg>
+                      )}
+                      {item.icon === 'van' && (
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <rect x="1" y="3" width="15" height="13"></rect>
+                          <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                          <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                          <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                        </svg>
+                      )}
+                      {item.icon === 'training' && (
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                          <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                      )}
+                      {item.icon === 'veteran' && (
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                          <polygon points="12 8 13.5 11 17 11.5 14.5 14 15 17.5 12 16 9 17.5 9.5 14 7 11.5 10.5 11"></polygon>
+                        </svg>
+                      )}
+                    </span>
+                    <span class="text-sm text-[#d4d4d8] leading-relaxed" data-ps={`src/pages/team.astro:tm-benefit-txt-${idx}`}>{item.text}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div class="mt-8 pt-6 border-t border-white/10" data-ps="src/pages/team.astro:tm-benefits-cta">
+                <a
+                  href="mailto:careers@udgservices.com?subject=Career%20Inquiry%20-%20UDG%20Services"
+                  class="group w-full flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-[#EC5A00] text-white text-sm font-semibold hover:bg-[#d45100] transition-all no-underline shadow-sm hover:-translate-y-0.5"
+                  data-ps="src/pages/team.astro:tm-benefits-btn"
+                >
+                  Apply now
+                  <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+                <p class="mt-3.5 text-center text-xs text-[#a1a1aa]" data-ps="src/pages/team.astro:tm-benefits-phone">
+                  Or call us at{' '}
+                  <a href="tel:+15093004042" class="text-[#EC5A00] hover:underline font-semibold no-underline" data-ps="src/pages/team.astro:tm-benefits-call">
+                    (509) 300-4042
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Want to work with the best? CTA Section -->
+    <section class="px-4 md:px-8 py-12 sm:py-16 md:py-24 bg-[#FBFAF7]" data-ps="src/pages/team.astro:tm-cta-sec">
+      <div class="max-w-5xl mx-auto text-center flex flex-col items-center" data-ps="src/pages/team.astro:tm-cta-wrap">
+        <div class="inline-flex items-center gap-2 mb-5 px-3 py-1 rounded-full bg-[#F5F3ED] border border-[#eae6de] text-[11px] uppercase tracking-[0.18em] text-[#5a5661] font-medium" data-ps="src/pages/team.astro:tm-cta-badge">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#EC5A00]" data-ps="src/pages/team.astro:tm-cta-dot"></span>
+          Join the team
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-6xl font-heading font-semibold tracking-tight text-[#020203] leading-[1.05] max-w-3xl" data-ps="src/pages/team.astro:tm-cta-h2">
+          Want to work with<br />
+          <em class="not-italic text-[#EC5A00]">the best?</em>
+        </h2>
+        <p class="mt-4 sm:mt-5 text-sm sm:text-base md:text-lg text-[#5a5661] max-w-xl leading-relaxed" data-ps="src/pages/team.astro:tm-cta-p">
+          We're always looking for hardworking appliance technicians who take pride in honest work. Reach out and tell us about yourself.
+        </p>
+        <div class="mt-6 sm:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto justify-center" data-ps="src/pages/team.astro:tm-cta-actions">
+          <a
+            class="group inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-4 rounded-full bg-[#090a0d] text-white text-sm font-semibold hover:bg-black transition-all hover:-translate-y-0.5 no-underline shadow-sm whitespace-nowrap"
+            href="/book"
+            data-ps="src/pages/team.astro:tm-cta-btn1"
+          >
+            Book Service
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+          <a
+            class="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-4 rounded-full bg-transparent text-[#020203] text-sm font-semibold hover:text-[#EC5A00] transition-colors no-underline whitespace-nowrap"
+            href="/contact"
+            data-ps="src/pages/team.astro:tm-cta-btn2"
+          >
+            Send a message
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile Floating Action Bar -->
+    <div class="lg:hidden fixed bottom-3 left-3 right-3 z-40" data-ps="src/pages/team.astro:tm-mobile-bar">
+      <div class="flex items-center gap-2 p-2 rounded-2xl bg-[#090a0d]/95 backdrop-blur-md border border-white/10 shadow-xl" data-ps="src/pages/team.astro:tm-mobile-bar-inner">
+        <a
+          href="tel:+15093004042"
+          aria-label="Call UDG Services"
+          class="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 text-white hover:bg-white/15 transition-colors shrink-0 no-underline"
+          data-ps="src/pages/team.astro:tm-mobile-call"
+        >
+          <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/>
+          </svg>
+        </a>
+        <a
+          href="/book"
+          class="flex-1 h-12 flex items-center justify-center gap-2 rounded-xl bg-[#EC5A00] text-white text-sm font-semibold hover:bg-[#d45100] transition-colors no-underline shadow-sm"
+          data-ps="src/pages/team.astro:tm-mobile-book"
+        >
+          Book a Repair Now
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script is:inline>
+    const filterButtons = document.querySelectorAll('.gallery-filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+
+        // Update button active styles
+        filterButtons.forEach((b) => {
+          b.classList.remove('bg-[#EC5A00]', 'text-white', 'shadow-xs');
+          b.classList.add('bg-[#FBFAF7]', 'text-[#020203]/80', 'border', 'border-[#eae6de]');
+        });
+        btn.classList.remove('bg-[#FBFAF7]', 'text-[#020203]/80', 'border', 'border-[#eae6de]');
+        btn.classList.add('bg-[#EC5A00]', 'text-white', 'shadow-xs');
+
+        // Filter images
+        galleryItems.forEach((item) => {
+          const category = item.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</BaseLayout>

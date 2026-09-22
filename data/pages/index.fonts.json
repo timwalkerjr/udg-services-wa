@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "siteUrl": "https://udgservices-wa.readdy.co/",
+  "candidates": [
+    {
+      "family": "Bricolage Grotesque",
+      "key": "bricolage grotesque",
+      "roles": [
+        "heading"
+      ],
+      "verdict": "registry",
+      "slug": "bricolage-grotesque"
+    },
+    {
+      "family": "Inter",
+      "key": "inter",
+      "roles": [
+        "body"
+      ],
+      "verdict": "registry",
+      "slug": "inter"
+    }
+  ],
+  "faces": [],
+  "stylesheets": {
+    "browserRules": 0,
+    "embedded": 0,
+    "fetched": 0,
+    "failed": 0,
+    "skipped": 0
+  },
+  "thirdPartyStylesheetHosts": [
+    "cdnjs.cloudflare.com",
+    "fonts.googleapis.com"
+  ],
+  "installed": [],
+  "failures": []
+}

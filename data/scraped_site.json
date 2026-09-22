@@ -1,0 +1,138 @@
+{
+  "success": true,
+  "url": "https://udgservices-wa.readdy.co/",
+  "structured": {
+    "title": "West Michigan Septic Sewer & Drain | Muskegon Plumbing Services",
+    "description": "Family-owned septic, sewer, drain and plumbing services in Muskegon and West Michigan since 1987. 24/7 emergency service, free estimates within 24 hours, warranty on installed septic systems.",
+    "url": "https://udgservices-wa.readdy.co/",
+    "imageCount": 26,
+    "branding": {
+      "colors": {
+        "primary": "#EC5A00",
+        "secondary": "#171F2E",
+        "accent": "#EC5A00",
+        "background": "#FBFAF7",
+        "textPrimary": "#020203",
+        "link": "#F2823B"
+      },
+      "typography": {
+        "fontFamilies": {
+          "primary": "Inter",
+          "heading": "Bricolage Grotesque"
+        },
+        "fontStacks": {
+          "heading": [
+            "Bricolage Grotesque",
+            "ui-sans-serif",
+            "system-ui",
+            "sans-serif"
+          ],
+          "body": [
+            "Inter",
+            "ui-sans-serif",
+            "system-ui",
+            "sans-serif"
+          ],
+          "paragraph": [
+            "Inter",
+            "ui-sans-serif",
+            "system-ui",
+            "sans-serif"
+          ]
+        },
+        "fontSizes": {
+          "h1": "86px",
+          "h2": "48px",
+          "body": "18px"
+        }
+      },
+      "spacing": {
+        "baseUnit": 4,
+        "borderRadius": "6px"
+      },
+      "logo": null,
+      "favicon": "https://udgservices-wa.readdy.co/vite.svg"
+    },
+    "pages": [
+      {
+        "slug": "index",
+        "path": "/",
+        "title": "West Michigan Septic Sewer & Drain | Muskegon Plumbing Services",
+        "file": "data/pages/index.md"
+      }
+    ],
+    "availablePages": [
+      {
+        "path": "/services/",
+        "label": "Services",
+        "slug": "services",
+        "scraped": false
+      },
+      {
+        "path": "/pricing/",
+        "label": "Pricing",
+        "slug": "pricing",
+        "scraped": false
+      },
+      {
+        "path": "/about/",
+        "label": "About",
+        "slug": "about",
+        "scraped": false
+      },
+      {
+        "path": "/team/",
+        "label": "Team",
+        "slug": "team",
+        "scraped": false
+      },
+      {
+        "path": "/reviews/",
+        "label": "Reviews",
+        "slug": "reviews",
+        "scraped": false
+      },
+      {
+        "path": "/area/",
+        "label": "Area",
+        "slug": "area",
+        "scraped": false
+      },
+      {
+        "path": "/contact/",
+        "label": "Contact",
+        "slug": "contact",
+        "scraped": false
+      },
+      {
+        "path": "/book/",
+        "label": "Book",
+        "slug": "book",
+        "scraped": false
+      },
+      {
+        "path": "/careers/",
+        "label": "Careers",
+        "slug": "careers",
+        "scraped": false
+      }
+    ]
+  },
+  "metadata": {
+    "scraper": "firecrawl-crawl-endpoint",
+    "timestamp": "2026-09-22T19:30:29.603Z",
+    "homepageContentLength": 14038,
+    "imageCount": 26,
+    "hasBranding": true,
+    "hasElementorEnrichment": false,
+    "hasVisibleIr": false,
+    "pagesDiscovered": 9,
+    "pagesScraped": 1,
+    "screenshotUrl": "https://storage.googleapis.com/firecrawl-scrape-media/screenshot-8b195fad-2b4a-48c8-93eb-2552278dc48a.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1790710195&Signature=uJTDwBigurzFvBqOjhqHOqT4zyWCNpiUVu10Ciy1q5TA3sPORldqq57%2FX1j0SjBRsbMxdbn2Z3xHBfZWKDyI53bXrRN02F5rcAsNPzwEdarXIy6uIqkpp1O0i8GKyfkEnwff3EDD9ESCOKHRpVxw8KGqW1RUYLQqIZyf1TFU3hSnwtzog307g6cdaJ1Iv3x10CKqnlkgEslXxGnBqwLLrvcx285d2CZpEd6C4k%2FajAZtkzWbWdJfmnGn9sjJIPdDsbCwEUJloUywqfPdK%2BxNNr8R70dOozdf1Yz3zO8lYTTW%2Fvh7Vv7M0llKfXjIgrIDhUp%2FKZUcwknjEOv9meusJQ%3D%3D",
+    "viewportScreenshots": [
+      "https://storage.googleapis.com/firecrawl-scrape-media/screenshot-cc94999c-82f7-4a9c-9b0a-6b5ffd55f145.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1790710196&Signature=XKLCHlgTdxl0qSoVbaSILnVrR4%2Bxi%2BYkKy4WMkIwAigGoTagxit8ClQo6ySTgS5wXk8g%2FAR5h2cc%2FfSSgz%2FbYEVHkQkreWnmKXwIUr3C6VxKTuAgvtONgXQ8kHh%2BRDZ2rYdGv10e%2F4W2y5QlLOdI9%2BkBWmko4%2FapzgT%2B%2Bb%2FEvEl7ieP8yWDpWaDhfH6SuXn7feDNG8Hs0HFqHhvlUIujqVKgh6I%2F9%2BIfXs4%2F62MX949dLQkFqz8mj1SHXww3bMn9OmImb0YRI6qJdWII0Zu3uQXEglG6vUxxJ3lO9eWSJYhtni5NmzHKnGG6u5dNWl8apRE3iC0eIakpfQXlrgTv1Q%3D%3D",
+      "https://storage.googleapis.com/firecrawl-scrape-media/screenshot-16d4c15f-ff14-45da-8e01-a641607b1ac8.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1790710199&Signature=Zga5KYrA9bxvgf%2BwXy%2BgDNC53ACL49gSVsbaCOoLi3KOnSehFa7n4AtTxUE6PWDp5lB326yBnl93hs3EvRvzTH5j5x2NgJqWySK%2FushpqlIGGXSMay21djLwRFaGPG%2BIS1zwOG8rP4qus%2FcqXqSXFBId2BRfy0EUbKlUFR6jYSC3b3RlHvoAXqpU5kk57bUM7%2BWXAdTLk%2FnDGzgnpjQEtlVSqsX4ddC%2Fvt2YbF2T6aoo3KzxTymgriN%2BY%2B3%2F9XpuN8ybvL5TffjqGHl1NjezKP4dDnlAKhDVyMHDKiy3f3H8O14iPFHRZG7q5Re0ptBSDQ5%2Bo%2BgiGKn2v2ItsAt1uQ%3D%3D",
+      "https://storage.googleapis.com/firecrawl-scrape-media/screenshot-cd9754b0-d994-4edb-9f22-aa06d246c5a5.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1790710202&Signature=plTWyqiUsl0FLhdi859R5ZrnUw%2BRsNuQFCX03fCTTEbKeFufY4YdbsP%2FkSnLzvIPz4OQ2xtgFhAf7bDfKbubtYsimnpp0N099u7wPhlUQX2wmPnMBf%2FGh5CJttggdnfptiY8eVYM4UEuJwhKB8I1xFRniWysx4fLnZG4utAd4hzrvGcJbOvGEZ2gjTfHV6WK21ImtgcGka1Dv26CQT%2FgWfpgTXX%2B5LN8MrgNg0PAIu9UNBq3hain4HFoALy%2BezOgtWcb%2BaOA%2FUrRQ2mI8%2FZGDqZvFtRMCI8q2Tn1fm9O0zQdsNLdp4UXKBDUO1EBS3v4GxrGxp58K5Nj98LHUNezSw%3D%3D"
+    ]
+  }
+}
