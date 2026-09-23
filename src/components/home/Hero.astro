@@ -2,7 +2,7 @@
 // Hero component matching the exact layout, copy, badges, buttons and 3 bottom cards
 ---
 
-<section id="hero" class="relative min-h-[920px] w-full flex flex-col justify-between overflow-hidden pt-28 pb-12 bg-dark text-white" data-ps="src/components/home/Hero.astro:ah8lbe">
+<section id="hero" class="relative min-h-[760px] w-full flex flex-col justify-between overflow-hidden pt-28 pb-12 bg-dark text-white" data-ps="src/components/home/Hero.astro:ah8lbe">
   <!-- Background Full-Bleed Image -->
   <img
     src="https://pagesmith-cdn.com/9cf36851/images/edited_0ecdb9b10fed21b734c6418c01adf37c_aabcefed-a87446-1024.webp"
@@ -30,38 +30,73 @@
       </div>
     </div>
 
-    <!-- Center Hero Copy -->
-    <div class="max-w-3xl my-auto py-12" data-ps="src/components/home/Hero.astro:iy4tag">
-      <h1 class="font-heading font-semibold text-[44px] sm:text-[68px] lg:text-[84px] leading-[0.98] tracking-[-1.5px] text-white" data-ps="src/components/home/Hero.astro:307k1k">
-        Appliance Repair,<br />
-        done <span class="text-[#EC5A00]" data-ps="src/components/home/Hero.astro:z1i1y9">right</span><br />
-        across the <span class="italic font-medium" data-ps="src/components/home/Hero.astro:z1i1y8">Tri-Cities, WA.</span>
-      </h1>
-      <p class="text-[16px] sm:text-[18px] text-white/90 mt-6 leading-relaxed max-w-2xl font-normal" data-ps="src/components/home/Hero.astro:6uykny">
-        Veteran-owned. All major brands. 90%+ of repairs completed on the first visit — with upfront pricing and same-day emergency service across Richland, Pasco, and Kennewick.
-      </p>
+    <!-- Compact hero copy and rotating customer review -->
+    <div class="my-auto grid lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,.75fr)] gap-8 lg:gap-12 items-center py-8 sm:py-10 lg:py-12">
+      <div class="max-w-2xl">
+        <h1 class="font-heading font-semibold text-[42px] sm:text-[58px] lg:text-[68px] leading-[1.02] tracking-[-1.5px] text-white">
+          Appliance repair,<br class="hidden sm:block" />
+          done <span class="text-[#EC5A00]">right</span> in the<br class="hidden sm:block" />
+          <span class="italic font-medium">Tri-Cities.</span>
+        </h1>
+        <p class="text-[16px] sm:text-[18px] text-white/90 mt-5 leading-relaxed max-w-xl font-normal">
+          Veteran-owned appliance repair with upfront pricing and same-day emergency service across Richland, Pasco, and Kennewick.
+        </p>
 
-      <!-- CTA Buttons Row -->
-      <div class="mt-8 flex flex-wrap items-center gap-4" data-ps="src/components/home/Hero.astro:iy4tah">
-        <a
-          href="/book"
-          class="bg-[#EC5A00] text-white font-semibold px-7 py-3.5 rounded-full text-[15px] sm:text-[16px] inline-flex items-center gap-2 hover:bg-[#d45100] transition shadow-lg no-underline"
-         data-ps="src/components/home/Hero.astro:8zc0y">
-          Book a Repair
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="7" y1="17" x2="17" y2="7"></line>
-            <polyline points="7 7 17 7 17 17"></polyline>
-          </svg>
-        </a>
-        <a
-          href="tel:+15093004042"
-          class="bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/25 text-white font-semibold px-7 py-3.5 rounded-full text-[15px] sm:text-[16px] inline-flex items-center gap-2 transition no-underline"
-         data-ps="src/components/home/Hero.astro:8zc0z">
-          <svg class="w-4 h-4 text-[#EC5A00]" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/>
-          </svg>
-          (509) 300-4042
-        </a>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <a href="/book" class="bg-[#EC5A00] text-white font-semibold px-7 py-3.5 rounded-full text-[15px] sm:text-[16px] inline-flex items-center gap-2 hover:bg-[#d45100] transition shadow-lg no-underline">
+            Book a Repair
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+          <a href="tel:+15093004042" class="bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/25 text-white font-semibold px-7 py-3.5 rounded-full text-[15px] sm:text-[16px] inline-flex items-center gap-2 transition no-underline">
+            <svg class="w-4 h-4 text-[#EC5A00]" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/>
+            </svg>
+            (509) 300-4042
+          </a>
+        </div>
+      </div>
+
+      <div class="w-full max-w-xl lg:justify-self-end">
+        <div data-hero-reviews role="region" aria-label="Customer reviews" aria-roledescription="carousel" class="rounded-3xl border border-white/20 bg-[#111317]/80 p-6 sm:p-8 shadow-2xl backdrop-blur-md">
+          <div class="flex items-center justify-between gap-4">
+            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-white/75">
+              <span class="text-amber-400 text-base tracking-normal" aria-hidden="true">★★★★★</span>
+              <span>5.0 · Google Reviews</span>
+            </span>
+            <span class="rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-white/80">Local customers</span>
+          </div>
+
+          <div class="mt-7 min-h-[190px] sm:min-h-[176px]" aria-live="polite" aria-atomic="true">
+            <p data-review-quote class="font-heading text-[23px] sm:text-[27px] leading-snug text-white">“Our fridge died on a Friday and they had a tech out the same day. Diagnosed it, quoted the repair upfront, and had it cooling again within the hour. Honest, veteran-owned crew.”</p>
+          </div>
+
+          <div class="mt-6 flex items-end justify-between gap-4 border-t border-white/15 pt-5">
+            <div>
+              <p data-review-name class="font-semibold text-white">Marcus T.</p>
+              <p data-review-location class="mt-1 text-sm text-white/60">Richland, WA</p>
+            </div>
+            <a href="/reviews" class="text-sm font-semibold text-white underline decoration-white/40 underline-offset-4 transition hover:text-[#ff8a45]">Read reviews</a>
+          </div>
+
+          <div class="mt-7 flex items-center justify-between">
+            <div class="flex items-center gap-2" aria-label="Choose a review">
+              <button type="button" data-review-dot="0" aria-label="Show review 1" aria-current="true" class="h-2 w-7 rounded-full bg-[#EC5A00] transition-all"></button>
+              <button type="button" data-review-dot="1" aria-label="Show review 2" aria-current="false" class="h-2 w-2 rounded-full bg-white/35 transition-all hover:bg-white/70"></button>
+              <button type="button" data-review-dot="2" aria-label="Show review 3" aria-current="false" class="h-2 w-2 rounded-full bg-white/35 transition-all hover:bg-white/70"></button>
+            </div>
+            <div class="flex items-center gap-2">
+              <button type="button" data-review-prev aria-label="Previous review" class="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white transition hover:bg-white/10">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+              </button>
+              <button type="button" data-review-next aria-label="Next review" class="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white transition hover:bg-white/10">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -114,3 +149,81 @@
     </div>
   </div>
 </section>
+
+
+<script>
+  const heroReviewCarousel = document.querySelector<HTMLElement>('[data-hero-reviews]');
+  if (heroReviewCarousel) {
+    const reviews = [
+      {
+        quote: '“Our fridge died on a Friday and they had a tech out the same day. Diagnosed it, quoted the repair upfront, and had it cooling again within the hour. Honest, veteran-owned crew.”',
+        name: 'Marcus T.',
+        location: 'Richland, WA',
+      },
+      {
+        quote: '“Washer wouldn’t spin and I figured I’d be buying a new one. They fixed it on the first visit for a fraction of the cost. Friendly and explained everything.”',
+        name: 'Dana R.',
+        location: 'Kennewick, WA',
+      },
+      {
+        quote: '“Oven quit the day before Thanksgiving. UDG treated it like the emergency it was — same-day service and back to baking by dinner. Can’t thank them enough.”',
+        name: 'Sofia M.',
+        location: 'Pasco, WA',
+      },
+    ];
+    const quote = heroReviewCarousel.querySelector<HTMLElement>('[data-review-quote]');
+    const name = heroReviewCarousel.querySelector<HTMLElement>('[data-review-name]');
+    const location = heroReviewCarousel.querySelector<HTMLElement>('[data-review-location]');
+    const dots = Array.from(heroReviewCarousel.querySelectorAll<HTMLButtonElement>('[data-review-dot]'));
+    let activeIndex = 0;
+    let timer: number | undefined;
+
+    const showReview = (index: number) => {
+      activeIndex = (index + reviews.length) % reviews.length;
+      const review = reviews[activeIndex];
+      if (quote) quote.textContent = review.quote;
+      if (name) name.textContent = review.name;
+      if (location) location.textContent = review.location;
+      dots.forEach((dot, dotIndex) => {
+        const isActive = dotIndex === activeIndex;
+        dot.setAttribute('aria-current', String(isActive));
+        dot.classList.toggle('w-7', isActive);
+        dot.classList.toggle('bg-[#EC5A00]', isActive);
+        dot.classList.toggle('w-2', !isActive);
+        dot.classList.toggle('bg-white/35', !isActive);
+      });
+    };
+
+    const stopTimer = () => {
+      if (timer !== undefined) window.clearInterval(timer);
+    };
+    const startTimer = () => {
+      stopTimer();
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        timer = window.setInterval(() => showReview(activeIndex + 1), 7000);
+      }
+    };
+
+    heroReviewCarousel.querySelector('[data-review-prev]')?.addEventListener('click', () => {
+      showReview(activeIndex - 1);
+      startTimer();
+    });
+    heroReviewCarousel.querySelector('[data-review-next]')?.addEventListener('click', () => {
+      showReview(activeIndex + 1);
+      startTimer();
+    });
+    dots.forEach((dot) => {
+      dot.addEventListener('click', () => {
+        showReview(Number(dot.dataset.reviewDot));
+        startTimer();
+      });
+    });
+    heroReviewCarousel.addEventListener('mouseenter', stopTimer);
+    heroReviewCarousel.addEventListener('mouseleave', startTimer);
+    heroReviewCarousel.addEventListener('focusin', stopTimer);
+    heroReviewCarousel.addEventListener('focusout', (event) => {
+      if (!heroReviewCarousel.contains(event.relatedTarget as Node | null)) startTimer();
+    });
+    startTimer();
+  }
+</script>
